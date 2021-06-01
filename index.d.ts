@@ -1,7 +1,7 @@
 /**
  * xk6-faker random fake data generator
  *
- * The main generator class is [Faker](docs/classes/faker.md).
+ * The main generator class is [Faker](classes/faker.md).
  *
  * ```js
  * import { Faker } from "k6/x/faker"
@@ -10,7 +10,7 @@
  * console.log(f.name());
  * ```
  *
- * Pass a random seed number to [Faker constructor](docs/classes/faker.md#constructor) if you want to get deterministic random values.
+ * Pass a random seed number to [Faker constructor](classes/faker.md#constructor) if you want to get deterministic random values.
  *
  * ```js
  * import { Faker } from "k6/x/faker"
@@ -19,7 +19,7 @@
  * console.log(f.name());
  * ```
  *
- * For easier usage, the module's default export is a Faker instance too, so you can use generator functions without instantiating the [Faker](docs/classes/faker.md) class:
+ * For easier usage, the module's default export is a Faker instance too, so you can use generator functions without instantiating the [Faker](classes/faker.md) class:
  *
  * ```js
  * import faker from "k6/x/faker"
