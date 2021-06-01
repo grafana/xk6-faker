@@ -1,7 +1,11 @@
 package faker
 
 import (
+	"context"
+
 	"github.com/brianvoe/gofakeit/v6"
+	"github.com/dop251/goja"
+	"go.k6.io/k6/js/common"
 	"lukechampine.com/frand"
 )
 
@@ -51,14 +55,10 @@ func (f *Faker) RgbColor() []int {
 	return f.RGBColor()
 }
 
-func (f *Faker) Csv(opts *gofakeit.CSVOptions) ([]byte, error) {
-	return f.CSV(opts)
+func (f *Faker) ImageJpeg(ctx context.Context, width int, height int) goja.ArrayBuffer {
+	return common.GetRuntime(ctx).NewArrayBuffer(f.Faker.ImageJpeg(width, height))
 }
 
-func (f *Faker) Json(opts *gofakeit.JSONOptions) ([]byte, error) {
-	return f.JSON(opts)
-}
-
-func (f *Faker) Xml(opts *gofakeit.XMLOptions) ([]byte, error) {
-	return f.XML(opts)
+func (f *Faker) ImagePng(ctx context.Context, width int, height int) goja.ArrayBuffer {
+	return common.GetRuntime(ctx).NewArrayBuffer(f.Faker.ImagePng(width, height))
 }
