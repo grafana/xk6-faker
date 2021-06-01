@@ -244,4 +244,33 @@ export default function () {
         .toBeTruthy();
     }
   });
+
+  describe("generate", (t) => {
+    const f1 = new Faker(42);
+    const f2 = new Faker(42);
+    const result = `${f1.name()}`;
+    t.expect(f2.generate("{name}")).as(`{name}`).toEqual(result);
+    t.expect(f2.generate("##"))
+      .as(`##`)
+      .toEqual(`${f1.digitN(2)}`);
+    t.expect(f2.generate("??"))
+      .as(`??`)
+      .toEqual(`${f1.letterN(2)}`);
+  });
+
+  describe("numerify", (t) => {
+    const f1 = new Faker(42);
+    const f2 = new Faker(42);
+    t.expect(f2.numerify("##"))
+      .as(`##`)
+      .toEqual(`${f1.digitN(2)}`);
+  });
+
+  describe("lexify", (t) => {
+    const f1 = new Faker(42);
+    const f2 = new Faker(42);
+    t.expect(f2.lexify("??"))
+      .as(`??`)
+      .toEqual(`${f1.letterN(2)}`);
+  });
 }
