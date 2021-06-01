@@ -570,11 +570,11 @@ ___
 
 ### contact
 
-▸ **contact**(): [*Contact*](contact.md)
+▸ **contact**(): [*Contact*](../interfaces/contact.md)
 
 contact will generate a struct with information randomly populated contact information
 
-**Returns:** [*Contact*](contact.md)
+**Returns:** [*Contact*](../interfaces/contact.md)
 
 ___
 
@@ -743,9 +743,15 @@ ___
 
 ### digitN
 
-▸ **digitN**(): *string*
+▸ **digitN**(`m`: *number*): *string*
 
 digitN will generate a random string of length N consists of ASCII digits (note it can start with 0).
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `m` | *number* |
 
 **Returns:** *string*
 
@@ -997,7 +1003,25 @@ ___
 
 ### generate
 
-▸ **generate**(): *string*
+▸ **generate**(`dataVal`: *string*): *string*
+
+Generate fake information from given string. Replaceable values should be within {}
+
+**Functions**
+- `{firstname}` - `billy`
+- `{sentence:3}` - `Record river mind.`
+- `{number:1,10}` - `4`
+- `{uuid}` - `590c1440-9888-45b0-bd51-a817ee07c3f2`
+
+**Letters/Numbers**
+- random numbers: `###` - `481`
+- random letters: `???` - `fda`
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `dataVal` | *string* | template string |
 
 **Returns:** *string*
 
@@ -1351,7 +1375,7 @@ ___
 
 ### latitudeInRange
 
-▸ **latitudeInRange**(`min`: *number*, `may`: *number*): *number*
+▸ **latitudeInRange**(`min`: *number*, `max`: *number*): *number*
 
 latitudeInRange will generate a random latitude within the input range
 
@@ -1360,7 +1384,7 @@ latitudeInRange will generate a random latitude within the input range
 | Name | Type |
 | :------ | :------ |
 | `min` | *number* |
-| `may` | *number* |
+| `max` | *number* |
 
 **Returns:** *number*
 
@@ -1384,9 +1408,9 @@ letterN will generate a random ASCII string with length N
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `n` | *number* |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `n` | *number* | number of letters to generate |
 
 **Returns:** *string*
 
@@ -1396,7 +1420,7 @@ ___
 
 ▸ **lexify**(`str`: *string*): *string*
 
-lexify will replace ? will random generated letters
+lexify will replace ? with random generated letters
 
 #### Parameters
 
@@ -1430,7 +1454,7 @@ ___
 
 ### longitudeInRange
 
-▸ **longitudeInRange**(`min`: *number*, `may`: *number*): *number*
+▸ **longitudeInRange**(`min`: *number*, `max`: *number*): *number*
 
 longitudeInRange will generate a random longitude within the input range
 
@@ -1439,7 +1463,7 @@ longitudeInRange will generate a random longitude within the input range
 | Name | Type |
 | :------ | :------ |
 | `min` | *number* |
-| `may` | *number* |
+| `max` | *number* |
 
 **Returns:** *number*
 
@@ -1807,7 +1831,7 @@ ___
 
 ### randomString
 
-▸ **randomString**(`aéé`: *string*[]): *string*
+▸ **randomString**(`all`: *string*[]): *string*
 
 randomString will take in a slice of string and return a randomly selected value
 
@@ -1815,7 +1839,7 @@ randomString will take in a slice of string and return a randomly selected value
 
 | Name | Type |
 | :------ | :------ |
-| `aéé` | *string*[] |
+| `all` | *string*[] |
 
 **Returns:** *string*
 

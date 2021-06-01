@@ -25,7 +25,7 @@ ___
 
 ### contact
 
-• **contact**: [*Contact*](../classes/contact.md)
+• **contact**: [*Contact*](contact.md)
 
 ___
 

@@ -1,17 +1,33 @@
 /**
  * xk6-faker random fake data generator
  *
- * ## Usage
+ * The main generator class is [Faker](docs/classes/faker.md).
  *
- * Import an entire module's contents:
- * ```JavaScript
- * import faker from "k6/x/faker";
+ * ```js
+ * import { Faker } from "k6/x/faker"
+ *
+ * let f = new Faker();
+ * console.log(f.name());
  * ```
  *
- * Import a single export from a module:
- * ```JavaScript
- * import { Faker } from "k6/x/faker";
+ * Pass a random seed number to [Faker constructor](docs/classes/faker.md#constructor) if you want to get deterministic random values.
+ *
+ * ```js
+ * import { Faker } from "k6/x/faker"
+ *
+ * let f = new Faker(1234);
+ * console.log(f.name());
  * ```
+ *
+ * For easier usage, the module's default export is a Faker instance too, so you can use generator functions without instantiating the [Faker](docs/classes/faker.md) class:
+ *
+ * ```js
+ * import faker from "k6/x/faker"
+ *
+ * console.log(faker.name())
+ * ```
+ *
+ * You can pass random seed value in `XK6_FAKER_SEED` env if you want deterministic generated random values.
  */
 
 /**
@@ -43,7 +59,7 @@ export declare interface Car {
 /**
  * Contact struct full of contact info
  */
-export declare class Contact {
+export declare interface Contact {
   phone: string;
   email: string;
 }
@@ -370,8 +386,9 @@ export declare class Faker {
 
   /**
    * digitN will generate a random string of length N consists of ASCII digits (note it can start with 0).
+   * @param n number of letters to generate
    */
-  digitN(): string;
+  digitN(m: number): string;
 
   /**
    * dinner will return a random dinner name
@@ -488,7 +505,22 @@ export declare class Faker {
    */
   gender(): string;
 
-  generate(): string;
+  /**
+   * Generate fake information from given string. Replaceable values should be within {}
+   *
+   * **Functions**
+   * - `{firstname}` - `billy`
+   * - `{sentence:3}` - `Record river mind.`
+   * - `{number:1,10}` - `4`
+   * - `{uuid}` - `590c1440-9888-45b0-bd51-a817ee07c3f2`
+   *
+   * **Letters/Numbers**
+   * - random numbers: `###` - `481`
+   * - random letters: `???` - `fda`
+   *
+   * @param dataVal template string
+   */
+  generate(dataVal: string): string;
 
   /**
    * httpMethod will generate a random http method
@@ -648,7 +680,7 @@ export declare class Faker {
   /**
    * latitudeInRange will generate a random latitude within the input range
    */
-  latitudeInRange(min: number, may: number): number;
+  latitudeInRange(min: number, max: number): number;
 
   /**
    * letter will generate a single random lower case ASCII letter
@@ -657,11 +689,12 @@ export declare class Faker {
 
   /**
    * letterN will generate a random ASCII string with length N
+   * @param n number of letters to generate
    */
   letterN(n: number): string;
 
   /**
-   * lexify will replace ? will random generated letters
+   * lexify will replace ? with random generated letters
    */
   lexify(str: string): string;
 
@@ -678,7 +711,7 @@ export declare class Faker {
   /**
    * longitudeInRange will generate a random longitude within the input range
    */
-  longitudeInRange(min: number, may: number): number;
+  longitudeInRange(min: number, max: number): number;
 
   /**
    * loremIpsumParagraph will generate a random paragraphGenerator
@@ -838,7 +871,7 @@ export declare class Faker {
   /**
    * randomString will take in a slice of string and return a randomly selected value
    */
-  randomString(aéé: string[]): string;
+  randomString(all: string[]): string;
 
   /**
    * randomUint will take in a slice of uint and return a randomly selected value
