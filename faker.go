@@ -1,26 +1,26 @@
 package faker
 
 import (
-	"context"
-
 	"github.com/brianvoe/gofakeit/v6"
 	"github.com/dop251/goja"
-	"go.k6.io/k6/js/common"
+	"go.k6.io/k6/js/modules"
 	"lukechampine.com/frand"
 )
 
 type Faker struct {
+	vu modules.VU
+
 	*gofakeit.Faker
 }
 
-func newFaker(seed int64) *Faker {
+func newFaker(vu modules.VU, seed int64) *Faker {
 	src := frand.NewSource()
 
 	if seed != 0 {
 		src.Seed(seed)
 	}
 
-	return &Faker{Faker: gofakeit.NewCustom(src)}
+	return &Faker{vu: vu, Faker: gofakeit.NewCustom(src)}
 }
 
 func (f *Faker) Ipv4Address() string {
@@ -55,10 +55,10 @@ func (f *Faker) RgbColor() []int {
 	return f.RGBColor()
 }
 
-func (f *Faker) ImageJpeg(ctx context.Context, width int, height int) goja.ArrayBuffer {
-	return common.GetRuntime(ctx).NewArrayBuffer(f.Faker.ImageJpeg(width, height))
+func (f *Faker) ImageJpeg(width int, height int) goja.ArrayBuffer {
+	return f.vu.Runtime().NewArrayBuffer(f.Faker.ImageJpeg(width, height))
 }
 
-func (f *Faker) ImagePng(ctx context.Context, width int, height int) goja.ArrayBuffer {
-	return common.GetRuntime(ctx).NewArrayBuffer(f.Faker.ImagePng(width, height))
+func (f *Faker) ImagePng(width int, height int) goja.ArrayBuffer {
+	return f.vu.Runtime().NewArrayBuffer(f.Faker.ImagePng(width, height))
 }
