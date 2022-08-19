@@ -23,7 +23,6 @@
 package faker
 
 import (
-	"context"
 	"os"
 	"strconv"
 
