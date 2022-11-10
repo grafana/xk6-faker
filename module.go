@@ -23,12 +23,10 @@
 package faker
 
 import (
-	"context"
 	"os"
 	"strconv"
 
 	"github.com/sirupsen/logrus"
-	"go.k6.io/k6/js/common"
 	"go.k6.io/k6/js/modules"
 )
 
@@ -39,20 +37,44 @@ func init() {
 	modules.Register("k6/x/faker", New())
 }
 
-type Module struct {
-	*Faker
+type (
+	// RootModule is the global module instance that will create module
+	// instances for each VU.
+	RootModule struct{}
+
+	// ModuleInstance represents an instance of the JS module.
+	ModuleInstance struct {
+		// vu provides methods for accessing internal k6 objects for a VU
+		vu modules.VU
+		// faker is the exported type
+		faker *Faker
+	}
+)
+
+// Ensure the interfaces are implemented correctly.
+var (
+	_ modules.Instance = &ModuleInstance{}
+	_ modules.Module   = &RootModule{}
+)
+
+// NewModuleInstance implements the modules.Module interface returning a new instance for each VU.
+func (*RootModule) NewModuleInstance(vu modules.VU) modules.Instance {
+	return &ModuleInstance{
+		vu:    vu,
+		faker: newFaker(vu, seed()),
+	}
 }
 
-func New() *Module {
-	return &Module{Faker: newFaker(seed())}
+// Exports implements the modules.Instance interface and returns the exported types for the JS module.
+func (mi *ModuleInstance) Exports() modules.Exports {
+	return modules.Exports{
+		Default: mi.faker,
+	}
 }
 
-func (m *Module) XFaker(ctxPtr *context.Context, seed int64) (interface{}, error) {
-	rt := common.GetRuntime(*ctxPtr)
-
-	faker := newFaker(seed)
-
-	return common.Bind(rt, faker, ctxPtr), nil
+// New returns a pointer to a new RootModule instance.
+func New() *RootModule {
+	return &RootModule{}
 }
 
 func seed() int64 {
@@ -64,7 +86,6 @@ func seed() int64 {
 	n, err := strconv.ParseInt(str, 10, 64)
 	if err != nil {
 		logrus.Error(err) // no module logger on k6 extension API...
-
 		return 0
 	}
 
