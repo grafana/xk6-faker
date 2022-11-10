@@ -26,6 +26,7 @@ import (
 	"os"
 	"strconv"
 
+	"github.com/dop251/goja"
 	"github.com/sirupsen/logrus"
 	"go.k6.io/k6/js/modules"
 )
@@ -65,9 +66,19 @@ func (*RootModule) NewModuleInstance(vu modules.VU) modules.Instance {
 	}
 }
 
+func (mi *ModuleInstance) namedConstructor(call goja.ConstructorCall) *goja.Object {
+	rt := mi.vu.Runtime()
+	return rt.ToValue(
+		newFaker(mi.vu, call.Argument(0).ToInteger()),
+	).ToObject(rt)
+}
+
 // Exports implements the modules.Instance interface and returns the exported types for the JS module.
 func (mi *ModuleInstance) Exports() modules.Exports {
 	return modules.Exports{
+		Named: map[string]interface{}{
+			"Faker": mi.namedConstructor,
+		},
 		Default: mi.faker,
 	}
 }
