@@ -23,12 +23,11 @@
 package faker
 
 import (
-	"context"
 	"os"
 	"strconv"
 
+	"github.com/dop251/goja"
 	"github.com/sirupsen/logrus"
-	"go.k6.io/k6/js/common"
 	"go.k6.io/k6/js/modules"
 )
 
@@ -39,20 +38,54 @@ func init() {
 	modules.Register("k6/x/faker", New())
 }
 
-type Module struct {
-	*Faker
+type (
+	RootModule struct{}
+
+	ModuleInstance struct {
+		vu      modules.VU
+		exports map[string]interface{}
+	}
+)
+
+// Ensure the interfaces are implemented correctly.
+var (
+	_ modules.Instance = &ModuleInstance{}
+	_ modules.Module   = &RootModule{}
+)
+
+// New returns a pointer to a new RootModule instance.
+func New() *RootModule {
+	return &RootModule{}
 }
 
-func New() *Module {
-	return &Module{Faker: newFaker(seed())}
+// NewModuleInstance implements the modules.Module interface and returns
+// a new instance for each VU.
+func (*RootModule) NewModuleInstance(vu modules.VU) modules.Instance {
+	mi := &ModuleInstance{
+		vu:      vu,
+		exports: make(map[string]interface{}),
+	}
+
+	mi.exports["Faker"] = mi.newFaker
+
+	return mi
 }
 
-func (m *Module) XFaker(ctxPtr *context.Context, seed int64) (interface{}, error) {
-	rt := common.GetRuntime(*ctxPtr)
+// Exports implements the modules.Instance interface and returns the exports
+// of the JS module.
+func (mi *ModuleInstance) Exports() modules.Exports {
+	return modules.Exports{
+		Named:   mi.exports,
+		Default: newFaker(mi.vu, seed()),
+	}
+}
 
-	faker := newFaker(seed)
+func (mi *ModuleInstance) newFaker(call goja.ConstructorCall) *goja.Object {
+	rt := mi.vu.Runtime()
 
-	return common.Bind(rt, faker, ctxPtr), nil
+	seed := call.Argument(0).ToInteger()
+
+	return rt.ToValue(newFaker(mi.vu, seed)).ToObject(rt)
 }
 
 func seed() int64 {
