@@ -13,7 +13,7 @@ type Faker struct {
 	*gofakeit.Faker
 }
 
-func newFaker(vu modules.VU, seed int64) *Faker {
+func newFaker(vu modules.VU, seed int64) *Faker { //nolint:varnamelen
 	src := frand.NewSource()
 
 	if seed != 0 {
@@ -31,15 +31,15 @@ func (f *Faker) Ipv6Address() string {
 	return f.IPv6Address()
 }
 
-func (f *Faker) HttpStatusCodeSimple() int {
+func (f *Faker) HttpStatusCodeSimple() int { //nolint:golint,revive,stylecheck
 	return f.HTTPStatusCodeSimple()
 }
 
-func (f *Faker) HttpStatusCode() int {
+func (f *Faker) HttpStatusCode() int { //nolint:golint,revive,stylecheck
 	return f.HTTPStatusCode()
 }
 
-func (f *Faker) HttpMethod() string {
+func (f *Faker) HttpMethod() string { //nolint:golint,revive,stylecheck
 	return f.HTTPMethod()
 }
 
@@ -47,7 +47,7 @@ func (f *Faker) Bs() string {
 	return f.BS()
 }
 
-func (f *Faker) Uuid() string {
+func (f *Faker) Uuid() string { //nolint:golint,revive,stylecheck
 	return f.UUID()
 }
 
