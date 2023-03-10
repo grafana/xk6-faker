@@ -49,7 +49,7 @@ type (
 
 // Ensure the interfaces are implemented correctly.
 var (
-	_ modules.Instance = &ModuleInstance{}
+	_ modules.Instance = &ModuleInstance{} //nolint:exhaustruct
 	_ modules.Module   = &RootModule{}
 )
 
@@ -60,15 +60,15 @@ func New() *RootModule {
 
 // NewModuleInstance implements the modules.Module interface and returns
 // a new instance for each VU.
-func (*RootModule) NewModuleInstance(vu modules.VU) modules.Instance {
-	mi := &ModuleInstance{
+func (*RootModule) NewModuleInstance(vu modules.VU) modules.Instance { //nolint:varnamelen,ireturn
+	instance := &ModuleInstance{
 		vu:      vu,
 		exports: make(map[string]interface{}),
 	}
 
-	mi.exports["Faker"] = mi.newFaker
+	instance.exports["Faker"] = instance.newFaker
 
-	return mi
+	return instance
 }
 
 // Exports implements the modules.Instance interface and returns the exports
@@ -94,12 +94,12 @@ func seed() int64 {
 		return 0
 	}
 
-	n, err := strconv.ParseInt(str, 10, 64)
+	value, err := strconv.ParseInt(str, 10, 64)
 	if err != nil {
 		logrus.Error(err) // no module logger on k6 extension API...
 
 		return 0
 	}
 
-	return n
+	return value
 }
