@@ -1,9 +1,20 @@
 {
-  "compilerOptions": {
-    "target": "es2015",
-    "module": "commonjs",
-    "rootDir": ".",
-    "strict": true
-  },
-  "exclude": ["node_modules"]
+  "typedocOptions": {
+    "entryPoints": ["./index.d.ts"],
+    "out": "build/docs",
+    "name": "xk6-faker",
+    "readme": "none",
+    "hideGenerator": true,
+    "disableSources": true,
+    "navigation": {
+      "includeCategories": false,
+      "includeGroups": false,
+      "includeFolders": false
+    },
+    "categorizeByGroup": false,
+    "visibilityFilters": {},
+    "navigationLinks": {
+      "GitHub": "https://github.com/szkiba/xk6-faker"
+    }
+  }
 }

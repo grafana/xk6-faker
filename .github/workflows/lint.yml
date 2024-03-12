@@ -1,0 +1,32 @@
+name: lint
+
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - "docs/**"
+      - README.md
+      - "releases/**"
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup go
+        uses: actions/setup-go@v4
+        with:
+          go-version: "1.21"
+          cache: false
+      - name: Go linter
+        uses: golangci/golangci-lint-action@v3
+        with:
+          version: v1.55
+          args: --timeout=30m
+          install-mode: binary

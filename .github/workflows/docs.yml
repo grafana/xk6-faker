@@ -1,0 +1,40 @@
+name: Docs
+on:
+  push:
+    branches: [master, feature/simplifa-api]
+    paths:
+      - .github/workflows/docs.yml
+      - index.js
+      - index.d.ts
+      - tsconfig.json
+
+jobs:
+  docs:
+    name: Docs
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install bun
+        uses: oven-sh/setup-bun@v1
+      - name: Generate API doc
+        run: bun x typedoc
+      - name: Copy index.d.ts
+        run: cp index.d.ts build/docs/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: "build/docs"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
