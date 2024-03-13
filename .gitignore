@@ -1,4 +1,6 @@
 /k6
-.task
-node_modules
-vendor/
+*_skeleton.go
+/build
+/node_modules
+yarn.lock
+bun.lockb

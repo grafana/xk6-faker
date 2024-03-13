@@ -1,9 +1,29 @@
 {
-  "compilerOptions": {
-    "target": "es2015",
-    "module": "commonjs",
-    "rootDir": ".",
-    "strict": true
+  "typedocOptions": {
+    "entryPoints": ["./types/k6/x/faker/index.d.ts"],
+    "out": "build/docs",
+    "name": "xk6-faker",
+    "readme": "none",
+    "hideGenerator": true,
+    "disableSources": true,
+    "navigation": {
+      "includeCategories": false,
+      "includeGroups": false,
+      "includeFolders": false
+    },
+    "categorizeByGroup": false,
+    "visibilityFilters": {},
+    "navigationLinks": {
+      "GitHub": "https://github.com/szkiba/xk6-faker"
+    }
   },
-  "exclude": ["node_modules"]
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types", "./types"]
+  }
 }

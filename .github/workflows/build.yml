@@ -1,0 +1,19 @@
+name: Build
+on: [pull_request]
+
+jobs:
+  build:
+    name: Bundle xk6 extensions
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build
+        id: build
+        uses: szkiba/xk6bundler@v0
+        with:
+          with: github.com/szkiba/xk6-faker=/github/workspace
