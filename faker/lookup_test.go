@@ -12,7 +12,7 @@ func TestGetFuncLookups(t *testing.T) {
 
 	funcs := faker.GetFuncLookups()
 
-	require.Len(t, funcs, 317)
+	require.Len(t, funcs, 303)
 	require.Contains(t, funcs, "intRange")
 	require.Contains(t, funcs, "randomString")
 }
@@ -22,7 +22,7 @@ func TestGetCategoryFuncs(t *testing.T) {
 
 	categories := faker.GetCategoryFuncs()
 
-	require.Len(t, categories, 37)
+	require.Len(t, categories, 29)
 	require.Contains(t, categories, "zen")
 	require.Contains(t, categories, "number")
 

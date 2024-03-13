@@ -58,9 +58,24 @@ func requireFuncLookups() {
 //nolint:gochecknoglobals
 var (
 	funcToSkip = map[string]struct{}{
-		"template": {},
-		"generate": {},
-		"weighted": {},
+		"template":    {},
+		"generate":    {},
+		"weighted":    {},
+		"imagejpeg":   {},
+		"imagepng":    {},
+		"imagesvg":    {},
+		"svg":         {},
+		"sql":         {},
+		"fixed_width": {},
+		"map":         {},
+		"regex":       {},
+		"json":        {},
+		"xml":         {},
+		"csv":         {},
+		"email_text":  {},
+		"markdown":    {},
+		"vowel":       {},
+		"flipacoin":   {},
 	}
 
 	addPrefix = map[string]string{
@@ -71,8 +86,21 @@ var (
 	}
 
 	funcRename = map[string]string{
-		"imageSvg":  "imageSVG",
-		"gRpcError": "gRPCError",
+		"gRpcError":     "gRPCError",
+		"creditCardCvv": "creditCardCVV",
+	}
+
+	categoryRename = map[string]string{
+		"auth":   "internet",
+		"image":  "internet",
+		"html":   "internet",
+		"school": "person",
+	}
+
+	categoryByFunc = map[string]string{
+		"uuid":      "string",
+		"flipACoin": "string",
+		"boolean":   "number",
 	}
 )
 
@@ -85,6 +113,14 @@ func fixLookup(name string, info *gofakeit.Info) string {
 
 	if fixed, need := funcRename[key]; need {
 		key = fixed
+	}
+
+	if fixed, need := categoryByFunc[key]; need {
+		info.Category = fixed
+	}
+
+	if fixed, need := categoryRename[info.Category]; need {
+		info.Category = fixed
 	}
 
 	return key
@@ -101,7 +137,6 @@ func convertFuncLookups() {
 		}
 
 		info := info
-		info.Any = key
 		key = fixLookup(key, &info)
 		_funcLookups[key] = &info
 

@@ -70,12 +70,30 @@ func convertLookup(src *gofakeit.Info) (*gofakeit.Info, bool) {
 }
 
 func getFuncLookups() map[string]*gofakeit.Info {
-	all := map[string]*gofakeit.Info{}
+	all := make(map[string]*gofakeit.Info)
 
 	for key, value := range faker.GetFuncLookups() {
 		if info, ok := convertLookup(value); ok {
 			all[key] = info
 		}
+	}
+
+	return all
+}
+
+func getCategoryFuncs() map[string]map[string]*gofakeit.Info {
+	all := make(map[string]map[string]*gofakeit.Info)
+
+	for cname, funcs := range faker.GetCategoryFuncs() {
+		category := make(map[string]*gofakeit.Info, len(funcs))
+
+		for fun, info := range funcs {
+			if converted, ok := convertLookup(info); ok {
+				category[fun] = converted
+			}
+		}
+
+		all[cname] = category
 	}
 
 	return all

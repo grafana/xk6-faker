@@ -1,6 +1,7 @@
 package faker
 
 import (
+	"bytes"
 	_ "embed"
 	"encoding/json"
 	"fmt"
@@ -10,9 +11,12 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/szkiba/xk6-faker/faker"
 	"github.com/szkiba/xk6-faker/module"
+	"go.k6.io/k6/cmd"
+	"go.k6.io/k6/cmd/tests"
 	"go.k6.io/k6/js/modulestest"
 )
 
+//go:generate go run -tags codegen ./tools/codegen json ./functions.json
 //go:embed functions.json
 var functionsJSON []byte
 
@@ -50,3 +54,31 @@ func Test_functions_json(t *testing.T) {
 		require.Equal(t, "function", val.String())
 	}
 }
+
+//go:generate go run -tags codegen ./tools/codegen test ./functions-test.js
+//go:embed functions-test.js
+var testJS []byte
+
+func Test_run_k6_test(t *testing.T) {
+	if testing.Short() {
+		t.Skip()
+	}
+
+	t.Parallel()
+
+	ts := tests.NewGlobalTestState(t)
+
+	ts.CmdArgs = []string{"k6", "run", "--quiet", "-"}
+	ts.Stdin = bytes.NewBuffer(testJS)
+	cmd.ExecuteWithGlobalState(ts.GlobalState)
+
+	if stdout := ts.Stdout.String(); len(stdout) != 0 {
+		t.Log(stdout)
+	}
+
+	if stderr := ts.Stderr.String(); len(stderr) != 0 {
+		t.Error(stderr)
+	}
+}
+
+//go:generate go run -tags codegen ./tools/codegen ts ./types/k6/x/faker/index.d.ts

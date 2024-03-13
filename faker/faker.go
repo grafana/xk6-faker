@@ -187,5 +187,3 @@ func (c *category) Keys() []string {
 func (c *category) Set(_ string, _ goja.Value) bool {
 	return false
 }
-
-//go:generate go run -tags codegen ../tools/codegen json ../functions.json

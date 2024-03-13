@@ -32,9 +32,10 @@ jobs:
 
       - name: Upload Coverage
         if: ${{ matrix.platform == 'ubuntu-latest' && github.ref_name == 'master' }}
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4.0.1
         with:
-          directory: build
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: szkiba/xk6-faker
 
       - name: Generate Go Report Card
         if: ${{ matrix.platform == 'ubuntu-latest' && github.ref_name == 'master' }}

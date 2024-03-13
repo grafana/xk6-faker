@@ -7,7 +7,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "achaccount"
+    "any": null
   },
   "achRoutingNumber": {
     "display": "ACH Routing Number",
@@ -17,7 +17,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "achrouting"
+    "any": null
   },
   "actionVerb": {
     "display": "Action Verb",
@@ -27,7 +27,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "verbaction"
+    "any": null
   },
   "address": {
     "display": "Address",
@@ -37,7 +37,7 @@
     "output": "Record\u003cstring,unknown\u003e",
     "content_type": "application/json",
     "params": null,
-    "any": "address"
+    "any": null
   },
   "adjective": {
     "display": "Adjective",
@@ -47,7 +47,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adjective"
+    "any": null
   },
   "adverb": {
     "display": "Adverb",
@@ -57,7 +57,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adverb"
+    "any": null
   },
   "adverbDegree": {
     "display": "Adverb Degree",
@@ -67,7 +67,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adverbdegree"
+    "any": null
   },
   "adverbFrequencyDefinite": {
     "display": "Adverb Frequency Definite",
@@ -77,7 +77,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adverbfrequencydefinite"
+    "any": null
   },
   "adverbFrequencyIndefinite": {
     "display": "Adverb Frequency Indefinite",
@@ -87,7 +87,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adverbfrequencyindefinite"
+    "any": null
   },
   "adverbManner": {
     "display": "Adverb Manner",
@@ -97,7 +97,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adverbmanner"
+    "any": null
   },
   "adverbPhrase": {
     "display": "Adverb Phrase",
@@ -107,7 +107,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "phraseadverb"
+    "any": null
   },
   "adverbPlace": {
     "display": "Adverb Place",
@@ -117,7 +117,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adverbplace"
+    "any": null
   },
   "adverbTimeDefinite": {
     "display": "Adverb Time Definite",
@@ -127,7 +127,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adverbtimedefinite"
+    "any": null
   },
   "adverbTimeIndefinite": {
     "display": "Adverb Time Indefinite",
@@ -137,7 +137,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adverbtimeindefinite"
+    "any": null
   },
   "animal": {
     "display": "Animal",
@@ -147,7 +147,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "animal"
+    "any": null
   },
   "animalType": {
     "display": "Animal Type",
@@ -157,7 +157,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "animaltype"
+    "any": null
   },
   "appAuthor": {
     "display": "App Author",
@@ -167,7 +167,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "appauthor"
+    "any": null
   },
   "appName": {
     "display": "App Name",
@@ -177,7 +177,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "appname"
+    "any": null
   },
   "appVersion": {
     "display": "App Version",
@@ -187,7 +187,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "appversion"
+    "any": null
   },
   "beerAlcohol": {
     "display": "Beer Alcohol",
@@ -197,7 +197,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "beeralcohol"
+    "any": null
   },
   "beerBlg": {
     "display": "Beer BLG",
@@ -207,7 +207,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "beerblg"
+    "any": null
   },
   "beerHop": {
     "display": "Beer Hop",
@@ -217,7 +217,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "beerhop"
+    "any": null
   },
   "beerIbu": {
     "display": "Beer IBU",
@@ -227,7 +227,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "beeribu"
+    "any": null
   },
   "beerMalt": {
     "display": "Beer Malt",
@@ -237,7 +237,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "beermalt"
+    "any": null
   },
   "beerName": {
     "display": "Beer Name",
@@ -247,7 +247,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "beername"
+    "any": null
   },
   "beerStyle": {
     "display": "Beer Style",
@@ -257,7 +257,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "beerstyle"
+    "any": null
   },
   "beerYeast": {
     "display": "Beer Yeast",
@@ -267,7 +267,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "beeryeast"
+    "any": null
   },
   "bird": {
     "display": "Bird",
@@ -277,7 +277,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "bird"
+    "any": null
   },
   "bitcoinAddress": {
     "display": "Bitcoin Address",
@@ -287,7 +287,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "bitcoinaddress"
+    "any": null
   },
   "bitcoinPrivateKey": {
     "display": "Bitcoin Private Key",
@@ -297,7 +297,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "bitcoinprivatekey"
+    "any": null
   },
   "blurb": {
     "display": "Blurb",
@@ -307,7 +307,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "blurb"
+    "any": null
   },
   "book": {
     "display": "Book",
@@ -317,7 +317,7 @@
     "output": "Record\u003cstring,string\u003e",
     "content_type": "application/json",
     "params": null,
-    "any": "book"
+    "any": null
   },
   "bookAuthor": {
     "display": "Book Author",
@@ -327,7 +327,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "bookauthor"
+    "any": null
   },
   "bookGenre": {
     "display": "Book Genre",
@@ -337,7 +337,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "bookgenre"
+    "any": null
   },
   "bookTitle": {
     "display": "Book Title",
@@ -347,17 +347,17 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "booktitle"
+    "any": null
   },
   "boolean": {
     "display": "Boolean",
-    "category": "misc",
+    "category": "number",
     "description": "Data type that represents one of two possible values, typically true or false",
     "example": "true",
     "output": "boolean",
     "content_type": "text/plain",
     "params": null,
-    "any": "bool"
+    "any": null
   },
   "breakfast": {
     "display": "Breakfast",
@@ -367,7 +367,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "breakfast"
+    "any": null
   },
   "bs": {
     "display": "BS",
@@ -377,7 +377,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "bs"
+    "any": null
   },
   "buzzword": {
     "display": "Buzzword",
@@ -387,7 +387,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "buzzword"
+    "any": null
   },
   "car": {
     "display": "Car",
@@ -397,7 +397,7 @@
     "output": "Record\u003cstring,unknown\u003e",
     "content_type": "application/json",
     "params": null,
-    "any": "car"
+    "any": null
   },
   "carFuelType": {
     "display": "Car Fuel Type",
@@ -407,7 +407,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "carfueltype"
+    "any": null
   },
   "carMaker": {
     "display": "Car Maker",
@@ -417,7 +417,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "carmaker"
+    "any": null
   },
   "carModel": {
     "display": "Car Model",
@@ -427,7 +427,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "carmodel"
+    "any": null
   },
   "carTransmissionType": {
     "display": "Car Transmission Type",
@@ -437,7 +437,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "cartransmissiontype"
+    "any": null
   },
   "carType": {
     "display": "Car Type",
@@ -447,7 +447,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "cartype"
+    "any": null
   },
   "cat": {
     "display": "Cat",
@@ -457,7 +457,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "cat"
+    "any": null
   },
   "celebrityActor": {
     "display": "Celebrity Actor",
@@ -467,7 +467,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "celebrityactor"
+    "any": null
   },
   "celebrityBusiness": {
     "display": "Celebrity Business",
@@ -477,7 +477,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "celebritybusiness"
+    "any": null
   },
   "celebritySport": {
     "display": "Celebrity Sport",
@@ -487,7 +487,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "celebritysport"
+    "any": null
   },
   "chromeUserAgent": {
     "display": "Chrome User Agent",
@@ -497,7 +497,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "chromeuseragent"
+    "any": null
   },
   "city": {
     "display": "City",
@@ -507,7 +507,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "city"
+    "any": null
   },
   "color": {
     "display": "Color",
@@ -517,7 +517,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "color"
+    "any": null
   },
   "comment": {
     "display": "Comment",
@@ -527,7 +527,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "comment"
+    "any": null
   },
   "company": {
     "display": "Company",
@@ -537,7 +537,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "company"
+    "any": null
   },
   "companySuffix": {
     "display": "Company Suffix",
@@ -547,7 +547,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "companysuffix"
+    "any": null
   },
   "connective": {
     "display": "Connective",
@@ -557,7 +557,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "connective"
+    "any": null
   },
   "connectiveCasual": {
     "display": "Connective Casual",
@@ -567,7 +567,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "connectivecasual"
+    "any": null
   },
   "connectiveComparitive": {
     "display": "Connective Comparitive",
@@ -577,7 +577,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "connectivecomparative"
+    "any": null
   },
   "connectiveComplaint": {
     "display": "Connective Complaint",
@@ -587,7 +587,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "connectivecomplaint"
+    "any": null
   },
   "connectiveExamplify": {
     "display": "Connective Examplify",
@@ -597,7 +597,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "connectiveexamplify"
+    "any": null
   },
   "connectiveListing": {
     "display": "Connective Listing",
@@ -607,7 +607,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "connectivelisting"
+    "any": null
   },
   "connectiveTime": {
     "display": "Connective Time",
@@ -617,7 +617,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "connectivetime"
+    "any": null
   },
   "country": {
     "display": "Country",
@@ -627,7 +627,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "country"
+    "any": null
   },
   "countryAbbreviation": {
     "display": "Country Abbreviation",
@@ -637,7 +637,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "countryabr"
+    "any": null
   },
   "creditCard": {
     "display": "Credit Card",
@@ -647,9 +647,9 @@
     "output": "Record\u003cstring,unknown\u003e",
     "content_type": "application/json",
     "params": null,
-    "any": "creditcard"
+    "any": null
   },
-  "creditCardCvv": {
+  "creditCardCVV": {
     "display": "Credit Card CVV",
     "category": "payment",
     "description": "Three or four-digit security code on a credit card used for online and remote transactions",
@@ -657,7 +657,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "creditcardcvv"
+    "any": null
   },
   "creditCardExp": {
     "display": "Credit Card Exp",
@@ -667,7 +667,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "creditcardexp"
+    "any": null
   },
   "creditCardExpMonth": {
     "display": "Credit Card Exp Month",
@@ -677,7 +677,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "creditcardexpmonth"
+    "any": null
   },
   "creditCardExpYear": {
     "display": "Credit Card Exp Year",
@@ -687,7 +687,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "creditcardexpyear"
+    "any": null
   },
   "creditCardNumber": {
     "display": "Credit Card Number",
@@ -737,7 +737,7 @@
         "description": "Whether or not to have gaps in number"
       }
     ],
-    "any": "creditcardnumber"
+    "any": null
   },
   "creditCardNumberFormatted": {
     "display": "Credit Card Number Formatted",
@@ -747,7 +747,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "creditcardstring"
+    "any": null
   },
   "creditCardType": {
     "display": "Credit Card Type",
@@ -757,45 +757,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "creditcardtype"
-  },
-  "csv": {
-    "display": "CSV",
-    "category": "file",
-    "description": "Individual lines or data entries within a CSV (Comma-Separated Values) format",
-    "example": "id,first_name,last_name,password\n1,Markus,Moen,Dc0VYXjkWABx\n2,Osborne,Hilll,XPJ9OVNbs5lm",
-    "output": "number[]",
-    "content_type": "text/csv",
-    "params": [
-      {
-        "field": "delimiter",
-        "display": "Delimiter",
-        "type": "string",
-        "optional": false,
-        "default": ",",
-        "options": null,
-        "description": "Separator in between row values"
-      },
-      {
-        "field": "rowcount",
-        "display": "Row Count",
-        "type": "number",
-        "optional": false,
-        "default": "100",
-        "options": null,
-        "description": "Number of rows"
-      },
-      {
-        "field": "fields",
-        "display": "Fields",
-        "type": "",
-        "optional": false,
-        "default": "",
-        "options": null,
-        "description": "Fields containing key name and function"
-      }
-    ],
-    "any": "csv"
+    "any": null
   },
   "currency": {
     "display": "Currency",
@@ -805,7 +767,7 @@
     "output": "Record\u003cstring,string\u003e",
     "content_type": "application/json",
     "params": null,
-    "any": "currency"
+    "any": null
   },
   "currencyLong": {
     "display": "Currency Long",
@@ -815,7 +777,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "currencylong"
+    "any": null
   },
   "currencyShort": {
     "display": "Currency Short",
@@ -825,7 +787,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "currencyshort"
+    "any": null
   },
   "cusip": {
     "display": "CUSIP",
@@ -835,7 +797,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "cusip"
+    "any": null
   },
   "databaseError": {
     "display": "Database error",
@@ -845,7 +807,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "errordatabase"
+    "any": null
   },
   "date": {
     "display": "Date",
@@ -876,7 +838,7 @@
         "description": "Date time string format output. You may also use golang time format or java time format"
       }
     ],
-    "any": "date"
+    "any": null
   },
   "dateRange": {
     "display": "DateRange",
@@ -900,7 +862,7 @@
         "display": "End Date",
         "type": "string",
         "optional": false,
-        "default": "2024-03-12",
+        "default": "2024-03-13",
         "options": null,
         "description": "End date time string"
       },
@@ -914,7 +876,7 @@
         "description": "Date time string format"
       }
     ],
-    "any": "daterange"
+    "any": null
   },
   "day": {
     "display": "Day",
@@ -924,7 +886,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "day"
+    "any": null
   },
   "demonstrativeAdjective": {
     "display": "Demonstrative Adjective",
@@ -934,7 +896,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adjectivedemonstrative"
+    "any": null
   },
   "descriptiveAdjective": {
     "display": "Descriptive Adjective",
@@ -944,7 +906,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adjectivedescriptive"
+    "any": null
   },
   "dessert": {
     "display": "Dessert",
@@ -954,7 +916,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "dessert"
+    "any": null
   },
   "dice": {
     "display": "Dice",
@@ -983,7 +945,7 @@
         "description": "Number of sides on each dice"
       }
     ],
-    "any": "dice"
+    "any": null
   },
   "digit": {
     "display": "Digit",
@@ -993,7 +955,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "digit"
+    "any": null
   },
   "digitN": {
     "display": "DigitN",
@@ -1013,7 +975,7 @@
         "description": "Number of digits to generate"
       }
     ],
-    "any": "digitn"
+    "any": null
   },
   "dinner": {
     "display": "Dinner",
@@ -1023,7 +985,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "dinner"
+    "any": null
   },
   "dog": {
     "display": "Dog",
@@ -1033,7 +995,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "dog"
+    "any": null
   },
   "domainName": {
     "display": "Domain Name",
@@ -1043,7 +1005,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "domainname"
+    "any": null
   },
   "domainSuffix": {
     "display": "Domain Suffix",
@@ -1053,7 +1015,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "domainsuffix"
+    "any": null
   },
   "drink": {
     "display": "Drink",
@@ -1063,7 +1025,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "drink"
+    "any": null
   },
   "email": {
     "display": "Email",
@@ -1073,7 +1035,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "email"
+    "any": null
   },
   "emoji": {
     "display": "Emoji",
@@ -1083,7 +1045,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "emoji"
+    "any": null
   },
   "emojiAlias": {
     "display": "Emoji Alias",
@@ -1093,7 +1055,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "emojialias"
+    "any": null
   },
   "emojiCategory": {
     "display": "Emoji Category",
@@ -1103,7 +1065,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "emojicategory"
+    "any": null
   },
   "emojiDescription": {
     "display": "Emoji Description",
@@ -1113,7 +1075,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "emojidescription"
+    "any": null
   },
   "emojiTag": {
     "display": "Emoji Tag",
@@ -1123,7 +1085,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "emojitag"
+    "any": null
   },
   "error": {
     "display": "Error",
@@ -1133,7 +1095,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "error"
+    "any": null
   },
   "errorObjectWord": {
     "display": "Error object word",
@@ -1143,7 +1105,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "errorobject"
+    "any": null
   },
   "farmAnimal": {
     "display": "Farm Animal",
@@ -1153,7 +1115,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "farmanimal"
+    "any": null
   },
   "fileExtension": {
     "display": "File Extension",
@@ -1163,7 +1125,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "fileextension"
+    "any": null
   },
   "fileMimeType": {
     "display": "File Mime Type",
@@ -1173,7 +1135,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "filemimetype"
+    "any": null
   },
   "firefoxUserAgent": {
     "display": "Firefox User Agent",
@@ -1183,7 +1145,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "firefoxuseragent"
+    "any": null
   },
   "firstName": {
     "display": "First Name",
@@ -1193,46 +1155,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "firstname"
-  },
-  "fixedWidth": {
-    "display": "Fixed Width",
-    "category": "generate",
-    "description": "Fixed width rows of output data based on input fields",
-    "example": "Name               Email                          Password         Age\nMarkus Moen        sylvanmraz@murphy.net          6VlvH6qqXc7g     13\nAlayna Wuckert     santinostanton@carroll.biz     g7sLrS0gEwLO     46\nLura Lockman       zacherykuhic@feil.name         S8gV7Z64KlHG     12",
-    "output": "number[]",
-    "content_type": "text/plain",
-    "params": [
-      {
-        "field": "rowcount",
-        "display": "Row Count",
-        "type": "number",
-        "optional": false,
-        "default": "10",
-        "options": null,
-        "description": "Number of rows"
-      },
-      {
-        "field": "fields",
-        "display": "Fields",
-        "type": "",
-        "optional": false,
-        "default": "",
-        "options": null,
-        "description": "Fields name, function and params"
-      }
-    ],
-    "any": "fixed_width"
-  },
-  "flipACoin": {
-    "display": "Flip A Coin",
-    "category": "misc",
-    "description": "Decision-making method involving the tossing of a coin to determine outcomes",
-    "example": "Tails",
-    "output": "string",
-    "content_type": "text/plain",
-    "params": null,
-    "any": "flipacoin"
+    "any": null
   },
   "float32": {
     "display": "Float32",
@@ -1242,7 +1165,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "float32"
+    "any": null
   },
   "float32Range": {
     "display": "Float32 Range",
@@ -1271,7 +1194,7 @@
         "description": "Maximum float32 value"
       }
     ],
-    "any": "float32range"
+    "any": null
   },
   "float64": {
     "display": "Float64",
@@ -1281,7 +1204,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "float64"
+    "any": null
   },
   "float64Range": {
     "display": "Float64 Range",
@@ -1310,7 +1233,7 @@
         "description": "Maximum float64 value"
       }
     ],
-    "any": "float64range"
+    "any": null
   },
   "fruit": {
     "display": "Fruit",
@@ -1320,7 +1243,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "fruit"
+    "any": null
   },
   "futureTime": {
     "display": "FutureTime",
@@ -1330,7 +1253,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "futuretime"
+    "any": null
   },
   "gRPCError": {
     "display": "gRPC error",
@@ -1340,7 +1263,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "errorgrpc"
+    "any": null
   },
   "gamertag": {
     "display": "Gamertag",
@@ -1350,7 +1273,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "gamertag"
+    "any": null
   },
   "gender": {
     "display": "Gender",
@@ -1360,7 +1283,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "gender"
+    "any": null
   },
   "hackerAbbreviation": {
     "display": "Hacker Abbreviation",
@@ -1370,7 +1293,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hackerabbreviation"
+    "any": null
   },
   "hackerAdjective": {
     "display": "Hacker Adjective",
@@ -1380,7 +1303,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hackeradjective"
+    "any": null
   },
   "hackerNoun": {
     "display": "Hacker Noun",
@@ -1390,7 +1313,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hackernoun"
+    "any": null
   },
   "hackerPhrase": {
     "display": "Hacker Phrase",
@@ -1400,7 +1323,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hackerphrase"
+    "any": null
   },
   "hackerVerb": {
     "display": "Hacker Verb",
@@ -1410,7 +1333,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hackerverb"
+    "any": null
   },
   "hackeringVerb": {
     "display": "Hackering Verb",
@@ -1420,7 +1343,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hackeringverb"
+    "any": null
   },
   "helpingVerb": {
     "display": "Helping Verb",
@@ -1430,7 +1353,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "verbhelping"
+    "any": null
   },
   "hexColor": {
     "display": "Hex Color",
@@ -1440,7 +1363,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hexcolor"
+    "any": null
   },
   "hexUint128": {
     "display": "HexUint128",
@@ -1450,7 +1373,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hexuint128"
+    "any": null
   },
   "hexUint16": {
     "display": "HexUint16",
@@ -1460,7 +1383,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hexuint16"
+    "any": null
   },
   "hexUint256": {
     "display": "HexUint256",
@@ -1470,7 +1393,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hexuint256"
+    "any": null
   },
   "hexUint32": {
     "display": "HexUint32",
@@ -1480,7 +1403,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hexuint32"
+    "any": null
   },
   "hexUint64": {
     "display": "HexUint64",
@@ -1490,7 +1413,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hexuint64"
+    "any": null
   },
   "hexUint8": {
     "display": "HexUint8",
@@ -1500,7 +1423,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hexuint8"
+    "any": null
   },
   "hipsterParagraph": {
     "display": "Hipster Paragraph",
@@ -1547,7 +1470,7 @@
         "description": "String value to add between paragraphs"
       }
     ],
-    "any": "hipsterparagraph"
+    "any": null
   },
   "hipsterSentence": {
     "display": "Hipster Sentence",
@@ -1567,7 +1490,7 @@
         "description": "Number of words in a sentence"
       }
     ],
-    "any": "hipstersentence"
+    "any": null
   },
   "hipsterWord": {
     "display": "Hipster Word",
@@ -1577,7 +1500,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hipsterword"
+    "any": null
   },
   "hobby": {
     "display": "Hobby",
@@ -1587,7 +1510,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "hobby"
+    "any": null
   },
   "hour": {
     "display": "Hour",
@@ -1597,7 +1520,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "hour"
+    "any": null
   },
   "httpClientError": {
     "display": "HTTP client error",
@@ -1607,7 +1530,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "errorhttpclient"
+    "any": null
   },
   "httpError": {
     "display": "HTTP error",
@@ -1617,7 +1540,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "errorhttp"
+    "any": null
   },
   "httpMethod": {
     "display": "HTTP Method",
@@ -1627,7 +1550,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "httpmethod"
+    "any": null
   },
   "httpServerError": {
     "display": "HTTP server error",
@@ -1637,7 +1560,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "errorhttpserver"
+    "any": null
   },
   "httpStatusCode": {
     "display": "HTTP Status Code",
@@ -1647,7 +1570,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "httpstatuscode"
+    "any": null
   },
   "httpStatusCodeSimple": {
     "display": "HTTP Status Code Simple",
@@ -1657,7 +1580,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "httpstatuscodesimple"
+    "any": null
   },
   "httpVersion": {
     "display": "HTTP Version",
@@ -1667,123 +1590,11 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "httpversion"
-  },
-  "imageJpeg": {
-    "display": "Image JPEG",
-    "category": "image",
-    "description": "Image file format known for its efficient compression and compatibility",
-    "example": "file.jpeg - bytes",
-    "output": "number[]",
-    "content_type": "image/jpeg",
-    "params": [
-      {
-        "field": "width",
-        "display": "Width",
-        "type": "number",
-        "optional": false,
-        "default": "500",
-        "options": null,
-        "description": "Image width in px"
-      },
-      {
-        "field": "height",
-        "display": "Height",
-        "type": "number",
-        "optional": false,
-        "default": "500",
-        "options": null,
-        "description": "Image height in px"
-      }
-    ],
-    "any": "imagejpeg"
-  },
-  "imagePng": {
-    "display": "Image PNG",
-    "category": "image",
-    "description": "Image file format known for its lossless compression and support for transparency",
-    "example": "file.png - bytes",
-    "output": "number[]",
-    "content_type": "image/png",
-    "params": [
-      {
-        "field": "width",
-        "display": "Width",
-        "type": "number",
-        "optional": false,
-        "default": "500",
-        "options": null,
-        "description": "Image width in px"
-      },
-      {
-        "field": "height",
-        "display": "Height",
-        "type": "number",
-        "optional": false,
-        "default": "500",
-        "options": null,
-        "description": "Image height in px"
-      }
-    ],
-    "any": "imagepng"
-  },
-  "imageSVG": {
-    "display": "Image SVG",
-    "category": "html",
-    "description": "Scalable Vector Graphics used to display vector images in web content",
-    "example": "\u003csvg width=\"369\" height=\"289\"\u003e\n\t\u003crect fill=\"#4f2958\" /\u003e\n\t\u003cpolygon points=\"382,87 418,212 415,110\" fill=\"#fffbb7\" /\u003e\n\u003c/svg\u003e",
-    "output": "string",
-    "content_type": "image/svg+xml",
-    "params": [
-      {
-        "field": "width",
-        "display": "Width",
-        "type": "number",
-        "optional": false,
-        "default": "500",
-        "options": null,
-        "description": "Width in px"
-      },
-      {
-        "field": "height",
-        "display": "Height",
-        "type": "number",
-        "optional": false,
-        "default": "500",
-        "options": null,
-        "description": "Height in px"
-      },
-      {
-        "field": "type",
-        "display": "Type",
-        "type": "string",
-        "optional": true,
-        "default": "",
-        "options": [
-          "rect",
-          "circle",
-          "ellipse",
-          "line",
-          "polyline",
-          "polygon"
-        ],
-        "description": "Sub child element type"
-      },
-      {
-        "field": "colors",
-        "display": "Colors",
-        "type": "string[]",
-        "optional": true,
-        "default": "",
-        "options": null,
-        "description": "Hex or RGB array of colors to use"
-      }
-    ],
-    "any": "svg"
+    "any": null
   },
   "imageUrl": {
     "display": "Image URL",
-    "category": "image",
+    "category": "internet",
     "description": "Web address pointing to an image file that can be accessed and displayed online",
     "example": "https://picsum.photos/500/500",
     "output": "string",
@@ -1808,7 +1619,7 @@
         "description": "Image height in px"
       }
     ],
-    "any": "imageurl"
+    "any": null
   },
   "indefiniteAdjective": {
     "display": "Indefinite Adjective",
@@ -1818,17 +1629,17 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adjectiveindefinite"
+    "any": null
   },
   "inputName": {
     "display": "Input Name",
-    "category": "html",
+    "category": "internet",
     "description": "Attribute used to define the name of an input element in web forms",
     "example": "first_name",
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "inputname"
+    "any": null
   },
   "int16": {
     "display": "Int16",
@@ -1838,7 +1649,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "int16"
+    "any": null
   },
   "int32": {
     "display": "Int32",
@@ -1848,7 +1659,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "int32"
+    "any": null
   },
   "int64": {
     "display": "Int64",
@@ -1858,7 +1669,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "int64"
+    "any": null
   },
   "int8": {
     "display": "Int8",
@@ -1868,7 +1679,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "int8"
+    "any": null
   },
   "intRange": {
     "display": "IntRange",
@@ -1897,7 +1708,7 @@
         "description": "Maximum int value"
       }
     ],
-    "any": "intrange"
+    "any": null
   },
   "interjection": {
     "display": "Interjection",
@@ -1907,7 +1718,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "interjection"
+    "any": null
   },
   "interrogativeAdjective": {
     "display": "Interrogative Adjective",
@@ -1917,7 +1728,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adjectiveinterrogative"
+    "any": null
   },
   "intransitiveVerb": {
     "display": "Intransitive Verb",
@@ -1927,7 +1738,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "verbintransitive"
+    "any": null
   },
   "ipv4Address": {
     "display": "IPv4 Address",
@@ -1937,7 +1748,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "ipv4address"
+    "any": null
   },
   "ipv6Address": {
     "display": "IPv6 Address",
@@ -1947,7 +1758,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "ipv6address"
+    "any": null
   },
   "isin": {
     "display": "ISIN",
@@ -1957,7 +1768,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "isin"
+    "any": null
   },
   "job": {
     "display": "Job",
@@ -1967,7 +1778,7 @@
     "output": "Record\u003cstring,string\u003e",
     "content_type": "application/json",
     "params": null,
-    "any": "job"
+    "any": null
   },
   "jobDescriptor": {
     "display": "Job Descriptor",
@@ -1977,7 +1788,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "jobdescriptor"
+    "any": null
   },
   "jobLevel": {
     "display": "Job Level",
@@ -1987,7 +1798,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "joblevel"
+    "any": null
   },
   "jobTitle": {
     "display": "Job Title",
@@ -1997,57 +1808,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "jobtitle"
-  },
-  "json": {
-    "display": "JSON",
-    "category": "file",
-    "description": "Format for structured data interchange used in programming, returns an object or an array of objects",
-    "example": "[\n\t\t\t{ \"first_name\": \"Markus\", \"last_name\": \"Moen\", \"password\": \"Dc0VYXjkWABx\" },\n\t\t\t{ \"first_name\": \"Osborne\", \"last_name\": \"Hilll\", \"password\": \"XPJ9OVNbs5lm\" },\n\t\t\t{ \"first_name\": \"Mertie\", \"last_name\": \"Halvorson\", \"password\": \"eyl3bhwfV8wA\" }\n\t\t]",
-    "output": "number[]",
-    "content_type": "application/json",
-    "params": [
-      {
-        "field": "type",
-        "display": "Type",
-        "type": "string",
-        "optional": false,
-        "default": "object",
-        "options": [
-          "object",
-          "array"
-        ],
-        "description": "Type of JSON, object or array"
-      },
-      {
-        "field": "rowcount",
-        "display": "Row Count",
-        "type": "number",
-        "optional": false,
-        "default": "100",
-        "options": null,
-        "description": "Number of rows in JSON array"
-      },
-      {
-        "field": "indent",
-        "display": "Indent",
-        "type": "boolean",
-        "optional": false,
-        "default": "false",
-        "options": null,
-        "description": "Whether or not to add indents and newlines"
-      },
-      {
-        "field": "fields",
-        "display": "Fields",
-        "type": "",
-        "optional": false,
-        "default": "",
-        "options": null,
-        "description": "Fields containing key name and function to run in json format"
-      }
-    ],
-    "any": "json"
+    "any": null
   },
   "language": {
     "display": "Language",
@@ -2057,7 +1818,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "language"
+    "any": null
   },
   "languageAbbreviation": {
     "display": "Language Abbreviation",
@@ -2067,7 +1828,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "languageabbreviation"
+    "any": null
   },
   "languageBcp": {
     "display": "Language BCP",
@@ -2077,7 +1838,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "languagebcp"
+    "any": null
   },
   "lastName": {
     "display": "Last Name",
@@ -2087,7 +1848,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "lastname"
+    "any": null
   },
   "latitude": {
     "display": "Latitude",
@@ -2097,7 +1858,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "latitude"
+    "any": null
   },
   "latitudeRange": {
     "display": "Latitude Range",
@@ -2126,7 +1887,7 @@
         "description": "Maximum range"
       }
     ],
-    "any": "latituderange"
+    "any": null
   },
   "letter": {
     "display": "Letter",
@@ -2136,7 +1897,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "letter"
+    "any": null
   },
   "letterN": {
     "display": "LetterN",
@@ -2156,7 +1917,7 @@
         "description": "Number of digits to generate"
       }
     ],
-    "any": "lettern"
+    "any": null
   },
   "lexify": {
     "display": "Lexify",
@@ -2176,7 +1937,7 @@
         "description": "String value to replace ?'s"
       }
     ],
-    "any": "lexify"
+    "any": null
   },
   "linkingVerb": {
     "display": "Linking Verb",
@@ -2186,7 +1947,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "verblinking"
+    "any": null
   },
   "logLevel": {
     "display": "Log Level",
@@ -2196,7 +1957,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "loglevel"
+    "any": null
   },
   "longitude": {
     "display": "Longitude",
@@ -2206,7 +1967,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "longitude"
+    "any": null
   },
   "longitudeRange": {
     "display": "Longitude Range",
@@ -2235,7 +1996,7 @@
         "description": "Maximum range"
       }
     ],
-    "any": "longituderange"
+    "any": null
   },
   "loremIpsumParagraph": {
     "display": "Lorem Ipsum Paragraph",
@@ -2282,7 +2043,7 @@
         "description": "String value to add between paragraphs"
       }
     ],
-    "any": "loremipsumparagraph"
+    "any": null
   },
   "loremIpsumSentence": {
     "display": "Lorem Ipsum Sentence",
@@ -2302,7 +2063,7 @@
         "description": "Number of words in a sentence"
       }
     ],
-    "any": "loremipsumsentence"
+    "any": null
   },
   "loremIpsumWord": {
     "display": "Lorem Ipsum Word",
@@ -2312,7 +2073,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "loremipsumword"
+    "any": null
   },
   "lunch": {
     "display": "Lunch",
@@ -2322,7 +2083,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "lunch"
+    "any": null
   },
   "macAddress": {
     "display": "MAC Address",
@@ -2332,17 +2093,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "macaddress"
-  },
-  "map": {
-    "display": "Map",
-    "category": "generate",
-    "description": "Data structure that stores key-value pairs",
-    "example": "{\n\t\"software\": 7518355,\n\t\"that\": [\"despite\", \"pack\", \"whereas\", \"recently\", \"there\", \"anyone\", \"time\", \"read\"],\n\t\"use\": 683598,\n\t\"whom\": \"innovate\",\n\t\"yourselves\": 1987784\n}",
-    "output": "Record\u003cstring,unknown\u003e",
-    "content_type": "application/json",
-    "params": null,
-    "any": "map"
+    "any": null
   },
   "middleName": {
     "display": "Middle Name",
@@ -2352,7 +2103,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "middlename"
+    "any": null
   },
   "minecraftAnimal": {
     "display": "Minecraft animal",
@@ -2362,7 +2113,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftanimal"
+    "any": null
   },
   "minecraftArmorPart": {
     "display": "Minecraft armor part",
@@ -2372,7 +2123,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftarmorpart"
+    "any": null
   },
   "minecraftArmorTier": {
     "display": "Minecraft armor tier",
@@ -2382,7 +2133,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftarmortier"
+    "any": null
   },
   "minecraftBiome": {
     "display": "Minecraft biome",
@@ -2392,7 +2143,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftbiome"
+    "any": null
   },
   "minecraftDye": {
     "display": "Minecraft dye",
@@ -2402,7 +2153,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftdye"
+    "any": null
   },
   "minecraftFood": {
     "display": "Minecraft food",
@@ -2412,7 +2163,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftfood"
+    "any": null
   },
   "minecraftMobBoss": {
     "display": "Minecraft mob boss",
@@ -2422,7 +2173,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftmobboss"
+    "any": null
   },
   "minecraftMobHostile": {
     "display": "Minecraft mob hostile",
@@ -2432,7 +2183,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftmobhostile"
+    "any": null
   },
   "minecraftMobNeutral": {
     "display": "Minecraft mob neutral",
@@ -2442,7 +2193,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftmobneutral"
+    "any": null
   },
   "minecraftMobPassive": {
     "display": "Minecraft mob passive",
@@ -2452,7 +2203,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftmobpassive"
+    "any": null
   },
   "minecraftOre": {
     "display": "Minecraft ore",
@@ -2462,7 +2213,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftore"
+    "any": null
   },
   "minecraftTool": {
     "display": "Minecraft tool",
@@ -2472,7 +2223,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecrafttool"
+    "any": null
   },
   "minecraftVillagerJob": {
     "display": "Minecraft villager job",
@@ -2482,7 +2233,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftvillagerjob"
+    "any": null
   },
   "minecraftVillagerLevel": {
     "display": "Minecraft villager level",
@@ -2492,7 +2243,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftvillagerlevel"
+    "any": null
   },
   "minecraftVillagerStation": {
     "display": "Minecraft villager station",
@@ -2502,7 +2253,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftvillagerstation"
+    "any": null
   },
   "minecraftWeapon": {
     "display": "Minecraft weapon",
@@ -2512,7 +2263,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftweapon"
+    "any": null
   },
   "minecraftWeather": {
     "display": "Minecraft weather",
@@ -2522,7 +2273,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftweather"
+    "any": null
   },
   "minecraftWood": {
     "display": "Minecraft wood",
@@ -2532,7 +2283,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "minecraftwood"
+    "any": null
   },
   "minute": {
     "display": "Minute",
@@ -2542,7 +2293,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "minute"
+    "any": null
   },
   "month": {
     "display": "Month",
@@ -2552,7 +2303,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "month"
+    "any": null
   },
   "monthString": {
     "display": "Month String",
@@ -2562,7 +2313,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "monthstring"
+    "any": null
   },
   "movie": {
     "display": "Movie",
@@ -2572,7 +2323,7 @@
     "output": "Record\u003cstring,string\u003e",
     "content_type": "application/json",
     "params": null,
-    "any": "movie"
+    "any": null
   },
   "movieGenre": {
     "display": "Movie Genre",
@@ -2582,7 +2333,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "moviegenre"
+    "any": null
   },
   "movieName": {
     "display": "Movie Name",
@@ -2592,7 +2343,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "moviename"
+    "any": null
   },
   "name": {
     "display": "Name",
@@ -2602,7 +2353,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "name"
+    "any": null
   },
   "namePrefix": {
     "display": "Name Prefix",
@@ -2612,7 +2363,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "nameprefix"
+    "any": null
   },
   "nameSuffix": {
     "display": "Name Suffix",
@@ -2622,7 +2373,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "namesuffix"
+    "any": null
   },
   "nanosecond": {
     "display": "Nanosecond",
@@ -2632,7 +2383,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "nanosecond"
+    "any": null
   },
   "niceColors": {
     "display": "Nice Colors",
@@ -2642,7 +2393,7 @@
     "output": "string[]",
     "content_type": "application/json",
     "params": null,
-    "any": "nicecolors"
+    "any": null
   },
   "noun": {
     "display": "Noun",
@@ -2652,7 +2403,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "noun"
+    "any": null
   },
   "nounAbstract": {
     "display": "Noun Abstract",
@@ -2662,7 +2413,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "nounabstract"
+    "any": null
   },
   "nounCollectiveAnimal": {
     "display": "Noun Collective Animal",
@@ -2672,7 +2423,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "nouncollectiveanimal"
+    "any": null
   },
   "nounCollectivePeople": {
     "display": "Noun Collective People",
@@ -2682,7 +2433,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "nouncollectivepeople"
+    "any": null
   },
   "nounCollectiveThing": {
     "display": "Noun Collective Thing",
@@ -2692,7 +2443,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "nouncollectivething"
+    "any": null
   },
   "nounCommon": {
     "display": "Noun Common",
@@ -2702,7 +2453,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "nouncommon"
+    "any": null
   },
   "nounConcrete": {
     "display": "Noun Concrete",
@@ -2712,7 +2463,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "nounconcrete"
+    "any": null
   },
   "nounCountable": {
     "display": "Noun Countable",
@@ -2722,7 +2473,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "nouncountable"
+    "any": null
   },
   "nounDeterminer": {
     "display": "Noun Determiner",
@@ -2732,7 +2483,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "noundeterminer"
+    "any": null
   },
   "nounPhrase": {
     "display": "Noun Phrase",
@@ -2742,7 +2493,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "phrasenoun"
+    "any": null
   },
   "nounProper": {
     "display": "Noun Proper",
@@ -2752,7 +2503,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "nounproper"
+    "any": null
   },
   "nounUncountable": {
     "display": "Noun Uncountable",
@@ -2762,7 +2513,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "noununcountable"
+    "any": null
   },
   "number": {
     "display": "Number",
@@ -2791,7 +2542,7 @@
         "description": "Maximum integer value"
       }
     ],
-    "any": "number"
+    "any": null
   },
   "numerify": {
     "display": "Numerify",
@@ -2811,7 +2562,7 @@
         "description": "String value to replace #'s"
       }
     ],
-    "any": "numerify"
+    "any": null
   },
   "operaUserAgent": {
     "display": "Opera User Agent",
@@ -2821,7 +2572,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "operauseragent"
+    "any": null
   },
   "paragraph": {
     "display": "Paragraph",
@@ -2868,11 +2619,11 @@
         "description": "String value to add between paragraphs"
       }
     ],
-    "any": "paragraph"
+    "any": null
   },
   "password": {
     "display": "Password",
-    "category": "auth",
+    "category": "internet",
     "description": "Secret word or phrase used to authenticate access to a system or account",
     "example": "EEP+wwpk 4lU-eHNXlJZ4n K9%v\u0026TZ9e",
     "output": "string",
@@ -2933,7 +2684,7 @@
         "description": "Number of characters in password"
       }
     ],
-    "any": "password"
+    "any": null
   },
   "pastTime": {
     "display": "PastTime",
@@ -2943,7 +2694,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "pasttime"
+    "any": null
   },
   "person": {
     "display": "Person",
@@ -2953,7 +2704,7 @@
     "output": "Record\u003cstring,unknown\u003e",
     "content_type": "application/json",
     "params": null,
-    "any": "person"
+    "any": null
   },
   "petName": {
     "display": "Pet Name",
@@ -2963,7 +2714,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "petname"
+    "any": null
   },
   "phone": {
     "display": "Phone",
@@ -2973,7 +2724,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "phone"
+    "any": null
   },
   "phoneFormatted": {
     "display": "Phone Formatted",
@@ -2983,7 +2734,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "phoneformatted"
+    "any": null
   },
   "phrase": {
     "display": "Phrase",
@@ -2993,7 +2744,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "phrase"
+    "any": null
   },
   "possessiveAdjective": {
     "display": "Possessive Adjective",
@@ -3003,7 +2754,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adjectivepossessive"
+    "any": null
   },
   "preposition": {
     "display": "Preposition",
@@ -3013,7 +2764,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "preposition"
+    "any": null
   },
   "prepositionCompound": {
     "display": "Preposition Compound",
@@ -3023,7 +2774,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "prepositioncompound"
+    "any": null
   },
   "prepositionDouble": {
     "display": "Preposition Double",
@@ -3033,7 +2784,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "prepositiondouble"
+    "any": null
   },
   "prepositionPhrase": {
     "display": "Preposition Phrase",
@@ -3043,7 +2794,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "phrasepreposition"
+    "any": null
   },
   "prepositionSimple": {
     "display": "Preposition Simple",
@@ -3053,7 +2804,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "prepositionsimple"
+    "any": null
   },
   "price": {
     "display": "Price",
@@ -3082,7 +2833,7 @@
         "description": "Maximum price value"
       }
     ],
-    "any": "price"
+    "any": null
   },
   "product": {
     "display": "Product",
@@ -3092,7 +2843,7 @@
     "output": "Record\u003cstring,unknown\u003e",
     "content_type": "application/json",
     "params": null,
-    "any": "product"
+    "any": null
   },
   "productCategory": {
     "display": "Product Category",
@@ -3102,7 +2853,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "productcategory"
+    "any": null
   },
   "productDescription": {
     "display": "Product Description",
@@ -3112,7 +2863,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "productdescription"
+    "any": null
   },
   "productFeature": {
     "display": "Product Feature",
@@ -3122,7 +2873,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "productfeature"
+    "any": null
   },
   "productMaterial": {
     "display": "Product Material",
@@ -3132,7 +2883,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "productmaterial"
+    "any": null
   },
   "productName": {
     "display": "Product Name",
@@ -3142,7 +2893,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "productname"
+    "any": null
   },
   "productUpc": {
     "display": "Product UPC",
@@ -3152,7 +2903,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "productupc"
+    "any": null
   },
   "programmingLanguage": {
     "display": "Programming Language",
@@ -3162,7 +2913,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "programminglanguage"
+    "any": null
   },
   "pronoun": {
     "display": "Pronoun",
@@ -3172,7 +2923,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "pronoun"
+    "any": null
   },
   "pronounDemonstrative": {
     "display": "Pronoun Demonstrative",
@@ -3182,7 +2933,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "pronoundemonstrative"
+    "any": null
   },
   "pronounIndefinite": {
     "display": "Pronoun Indefinite",
@@ -3192,7 +2943,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "pronounindefinite"
+    "any": null
   },
   "pronounInterrogative": {
     "display": "Pronoun Interrogative",
@@ -3202,7 +2953,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "pronouninterrogative"
+    "any": null
   },
   "pronounObject": {
     "display": "Pronoun Object",
@@ -3212,7 +2963,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "pronounobject"
+    "any": null
   },
   "pronounPersonal": {
     "display": "Pronoun Personal",
@@ -3222,7 +2973,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "pronounpersonal"
+    "any": null
   },
   "pronounPossessive": {
     "display": "Pronoun Possessive",
@@ -3232,7 +2983,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "pronounpossessive"
+    "any": null
   },
   "pronounReflective": {
     "display": "Pronoun Reflective",
@@ -3242,7 +2993,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "pronounreflective"
+    "any": null
   },
   "pronounRelative": {
     "display": "Pronoun Relative",
@@ -3252,7 +3003,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "pronounrelative"
+    "any": null
   },
   "properAdjective": {
     "display": "Proper Adjective",
@@ -3262,7 +3013,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adjectiveproper"
+    "any": null
   },
   "quantitativeAdjective": {
     "display": "Quantitative Adjective",
@@ -3272,7 +3023,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "adjectivequantitative"
+    "any": null
   },
   "question": {
     "display": "Question",
@@ -3282,7 +3033,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "question"
+    "any": null
   },
   "quote": {
     "display": "Quote",
@@ -3292,7 +3043,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "quote"
+    "any": null
   },
   "randomInt": {
     "display": "Random Int",
@@ -3312,17 +3063,7 @@
         "description": "Delimited separated integers"
       }
     ],
-    "any": "randomint"
-  },
-  "randomMarkdownDocument": {
-    "display": "Random markdown document",
-    "category": "template",
-    "description": "Lightweight markup language used for formatting plain text",
-    "example": "# PurpleSheep5\n\n*Author: Amie Feil*\n\nQuarterly without week it hungry thing someone. Him regularly today whomever this revolt hence. From his timing as quantity us these. Yours live these frantic not may another. How this ours his them those whose.\n\nThem batch its Iraqi most that few. Abroad cheese this whereas next how there. Gorgeous genetics time choir fiction therefore yourselves. Am those infrequently heap software quarterly rather. Punctuation yellow where several his orchard to.\n\n## Table of Contents\n- [Installation](#installation)\n- [Usage](#usage)\n- [License](#license)\n\n## Installation\n'''bash\npip install PurpleSheep5\n'''\n\n## Usage\n'''python\nresult = purplesheep5.process(\"funny request\")\nprint(\"purplesheep5 result:\", \"in progress\")\n'''\n\n## License\nMIT",
-    "output": "string",
-    "content_type": "text/plain",
-    "params": null,
-    "any": "markdown"
+    "any": null
   },
   "randomString": {
     "display": "Random String",
@@ -3342,17 +3083,7 @@
         "description": "Delimited separated strings"
       }
     ],
-    "any": "randomstring"
-  },
-  "randomTextEmailDocument": {
-    "display": "Random text email Document",
-    "category": "template",
-    "description": "Written content of an email message, including the sender's message to the recipient",
-    "example": "Subject: Greetings from Marcel!\n\nDear Pagac,\n\nHello there! Sending positive vibes your way.\n\nI hope you're doing great. May your week be filled with joy.\n\nVirtually woman where team late quarterly without week it hungry. Thing someone him regularly today whomever this revolt hence from. His timing as quantity us these yours live these frantic. Not may another how this ours his them those whose. Them batch its Iraqi most that few abroad cheese this.\n\nWhereas next how there gorgeous genetics time choir fiction therefore. Yourselves am those infrequently heap software quarterly rather punctuation yellow. Where several his orchard to frequently hence victorious boxers each. Does auspicious yourselves first soup tomorrow this that must conclude. Anyway some yearly who cough laugh himself both yet rarely.\n\nMe dolphin intensely block would leap plane us first then. Down them eager would hundred super throughout animal yet themselves. Been group flock shake part purchase up usually it her. None it hers boat what their there Turkmen moreover one. Lebanese to brace these shower in it everybody should whatever.\n\nI'm curious to know what you think about it. If you have a moment, please feel free to check out the project on Bitbucket\n\nI'm eager to hear what you think. Looking forward to your feedback!\n\nThank you for your consideration! Thanks in advance for your time.\n\nKind regards\nMilford Johnston\njamelhaag@king.org\n(507)096-3058",
-    "output": "string",
-    "content_type": "text/plain",
-    "params": null,
-    "any": "email_text"
+    "any": null
   },
   "randomUint": {
     "display": "Random Uint",
@@ -3372,27 +3103,7 @@
         "description": "Delimited separated unsigned integers"
       }
     ],
-    "any": "randomuint"
-  },
-  "regex": {
-    "display": "Regex",
-    "category": "generate",
-    "description": "Pattern-matching tool used in text processing to search and manipulate strings",
-    "example": "[abcdef]{5} - affec",
-    "output": "string",
-    "content_type": "text/plain",
-    "params": [
-      {
-        "field": "str",
-        "display": "String",
-        "type": "string",
-        "optional": false,
-        "default": "",
-        "options": null,
-        "description": "Regex RE2 syntax string"
-      }
-    ],
-    "any": "regex"
+    "any": null
   },
   "rgbColor": {
     "display": "RGB Color",
@@ -3402,7 +3113,7 @@
     "output": "number[]",
     "content_type": "application/json",
     "params": null,
-    "any": "rgbcolor"
+    "any": null
   },
   "runtimeError": {
     "display": "Runtime error",
@@ -3412,7 +3123,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "errorruntime"
+    "any": null
   },
   "safariUserAgent": {
     "display": "Safari User Agent",
@@ -3422,7 +3133,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "safariuseragent"
+    "any": null
   },
   "safeColor": {
     "display": "Safe Color",
@@ -3432,17 +3143,17 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "safecolor"
+    "any": null
   },
   "school": {
     "display": "School",
-    "category": "school",
+    "category": "person",
     "description": "An institution for formal education and learning",
     "example": "Harborview State Academy",
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "school"
+    "any": null
   },
   "second": {
     "display": "Second",
@@ -3452,7 +3163,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "second"
+    "any": null
   },
   "sentence": {
     "display": "Sentence",
@@ -3472,7 +3183,7 @@
         "description": "Number of words in a sentence"
       }
     ],
-    "any": "sentence"
+    "any": null
   },
   "shuffleInts": {
     "display": "Shuffle Ints",
@@ -3492,7 +3203,7 @@
         "description": "Delimited separated integers"
       }
     ],
-    "any": "shuffleints"
+    "any": null
   },
   "shuffleStrings": {
     "display": "Shuffle Strings",
@@ -3512,7 +3223,7 @@
         "description": "Delimited separated strings"
       }
     ],
-    "any": "shufflestrings"
+    "any": null
   },
   "simpleSentence": {
     "display": "Simple Sentence",
@@ -3522,7 +3233,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "sentencesimple"
+    "any": null
   },
   "slogan": {
     "display": "Slogan",
@@ -3532,7 +3243,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "slogan"
+    "any": null
   },
   "snack": {
     "display": "Snack",
@@ -3542,45 +3253,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "snack"
-  },
-  "sql": {
-    "display": "SQL",
-    "category": "database",
-    "description": "Command in SQL used to add new data records into a database table",
-    "example": "INSERT INTO people \n\t(id, first_name, price, age, created_at) \nVALUES \n\t(1, 'Markus', 804.92, 21, '1937-01-30 07:58:01'),\n\t(2, 'Santino', 235.13, 40, '1964-07-07 22:25:40');",
-    "output": "string",
-    "content_type": "application/sql",
-    "params": [
-      {
-        "field": "table",
-        "display": "Table",
-        "type": "string",
-        "optional": false,
-        "default": "",
-        "options": null,
-        "description": "Name of the table to insert into"
-      },
-      {
-        "field": "count",
-        "display": "Count",
-        "type": "number",
-        "optional": false,
-        "default": "100",
-        "options": null,
-        "description": "Number of inserts to generate"
-      },
-      {
-        "field": "fields",
-        "display": "Fields",
-        "type": "",
-        "optional": false,
-        "default": "",
-        "options": null,
-        "description": "Fields containing key name and function to run in json format"
-      }
-    ],
-    "any": "sql"
+    "any": null
   },
   "ssn": {
     "display": "SSN",
@@ -3590,7 +3263,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "ssn"
+    "any": null
   },
   "state": {
     "display": "State",
@@ -3600,7 +3273,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "state"
+    "any": null
   },
   "stateAbbreviation": {
     "display": "State Abbreviation",
@@ -3610,7 +3283,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "stateabr"
+    "any": null
   },
   "street": {
     "display": "Street",
@@ -3620,7 +3293,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "street"
+    "any": null
   },
   "streetName": {
     "display": "Street Name",
@@ -3630,7 +3303,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "streetname"
+    "any": null
   },
   "streetNumber": {
     "display": "Street Number",
@@ -3640,7 +3313,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "streetnumber"
+    "any": null
   },
   "streetPrefix": {
     "display": "Street Prefix",
@@ -3650,7 +3323,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "streetprefix"
+    "any": null
   },
   "streetSuffix": {
     "display": "Street Suffix",
@@ -3660,7 +3333,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "streetsuffix"
+    "any": null
   },
   "teams": {
     "display": "Teams",
@@ -3689,7 +3362,7 @@
         "description": "Array of teams"
       }
     ],
-    "any": "teams"
+    "any": null
   },
   "timezone": {
     "display": "Timezone",
@@ -3699,7 +3372,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "timezone"
+    "any": null
   },
   "timezoneAbbreviation": {
     "display": "Timezone Abbreviation",
@@ -3709,7 +3382,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "timezoneabv"
+    "any": null
   },
   "timezoneFull": {
     "display": "Timezone Full",
@@ -3719,7 +3392,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "timezonefull"
+    "any": null
   },
   "timezoneOffset": {
     "display": "Timezone Offset",
@@ -3729,7 +3402,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "timezoneoffset"
+    "any": null
   },
   "timezoneRegion": {
     "display": "Timezone Region",
@@ -3739,7 +3412,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "timezoneregion"
+    "any": null
   },
   "transitiveVerb": {
     "display": "Transitive Verb",
@@ -3749,7 +3422,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "verbtransitive"
+    "any": null
   },
   "uint16": {
     "display": "Uint16",
@@ -3759,7 +3432,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "uint16"
+    "any": null
   },
   "uint32": {
     "display": "Uint32",
@@ -3769,7 +3442,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "uint32"
+    "any": null
   },
   "uint64": {
     "display": "Uint64",
@@ -3779,7 +3452,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "uint64"
+    "any": null
   },
   "uint8": {
     "display": "Uint8",
@@ -3789,7 +3462,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "uint8"
+    "any": null
   },
   "uintRange": {
     "display": "UintRange",
@@ -3818,7 +3491,7 @@
         "description": "Maximum uint value"
       }
     ],
-    "any": "uintrange"
+    "any": null
   },
   "url": {
     "display": "URL",
@@ -3828,7 +3501,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "url"
+    "any": null
   },
   "userAgent": {
     "display": "User Agent",
@@ -3838,27 +3511,27 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "useragent"
+    "any": null
   },
   "username": {
     "display": "Username",
-    "category": "auth",
+    "category": "internet",
     "description": "Unique identifier assigned to a user for accessing an account or system",
     "example": "Daniel1364",
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "username"
+    "any": null
   },
   "uuid": {
     "display": "UUID",
-    "category": "misc",
+    "category": "string",
     "description": "128-bit identifier used to uniquely identify objects or entities in computer systems",
     "example": "590c1440-9888-45b0-bd51-a817ee07c3f2",
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "uuid"
+    "any": null
   },
   "validationError": {
     "display": "Validation error",
@@ -3868,7 +3541,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "errorvalidation"
+    "any": null
   },
   "vegetable": {
     "display": "Vegetable",
@@ -3878,7 +3551,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "vegetable"
+    "any": null
   },
   "verb": {
     "display": "Verb",
@@ -3888,7 +3561,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "verb"
+    "any": null
   },
   "verbPhrase": {
     "display": "Verb Phrase",
@@ -3898,17 +3571,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "phraseverb"
-  },
-  "vowel": {
-    "display": "Vowel",
-    "category": "string",
-    "description": "Speech sound produced with an open vocal tract",
-    "example": "a",
-    "output": "string",
-    "content_type": "text/plain",
-    "params": null,
-    "any": "vowel"
+    "any": null
   },
   "weekday": {
     "display": "Weekday",
@@ -3918,7 +3581,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "weekday"
+    "any": null
   },
   "word": {
     "display": "Word",
@@ -3928,75 +3591,7 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "word"
-  },
-  "xml": {
-    "display": "XML",
-    "category": "file",
-    "description": "Generates an single or an array of elements in xml format",
-    "example": "\u003cxml\u003e\n\t\u003crecord\u003e\n\t\t\u003cfirst_name\u003eMarkus\u003c/first_name\u003e\n\t\t\u003clast_name\u003eMoen\u003c/last_name\u003e\n\t\t\u003cpassword\u003eDc0VYXjkWABx\u003c/password\u003e\n\t\u003c/record\u003e\n\t\u003crecord\u003e\n\t\t\u003cfirst_name\u003eOsborne\u003c/first_name\u003e\n\t\t\u003clast_name\u003eHilll\u003c/last_name\u003e\n\t\t\u003cpassword\u003eXPJ9OVNbs5lm\u003c/password\u003e\n\t\u003c/record\u003e\n\u003c/xml\u003e",
-    "output": "number[]",
-    "content_type": "application/xml",
-    "params": [
-      {
-        "field": "type",
-        "display": "Type",
-        "type": "string",
-        "optional": false,
-        "default": "single",
-        "options": [
-          "single",
-          "array"
-        ],
-        "description": "Type of XML, single or array"
-      },
-      {
-        "field": "rootelement",
-        "display": "Root Element",
-        "type": "string",
-        "optional": false,
-        "default": "xml",
-        "options": null,
-        "description": "Root element wrapper name"
-      },
-      {
-        "field": "recordelement",
-        "display": "Record Element",
-        "type": "string",
-        "optional": false,
-        "default": "record",
-        "options": null,
-        "description": "Record element for each record row"
-      },
-      {
-        "field": "rowcount",
-        "display": "Row Count",
-        "type": "number",
-        "optional": false,
-        "default": "100",
-        "options": null,
-        "description": "Number of rows in JSON array"
-      },
-      {
-        "field": "indent",
-        "display": "Indent",
-        "type": "boolean",
-        "optional": false,
-        "default": "false",
-        "options": null,
-        "description": "Whether or not to add indents and newlines"
-      },
-      {
-        "field": "fields",
-        "display": "Fields",
-        "type": "",
-        "optional": false,
-        "default": "",
-        "options": null,
-        "description": "Fields containing key name and function to run in json format"
-      }
-    ],
-    "any": "xml"
+    "any": null
   },
   "year": {
     "display": "Year",
@@ -4006,7 +3601,7 @@
     "output": "number",
     "content_type": "text/plain",
     "params": null,
-    "any": "year"
+    "any": null
   },
   "zip": {
     "display": "Zip",
@@ -4016,6 +3611,6 @@
     "output": "string",
     "content_type": "text/plain",
     "params": null,
-    "any": "zip"
+    "any": null
   }
 }

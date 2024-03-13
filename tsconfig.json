@@ -1,6 +1,6 @@
 {
   "typedocOptions": {
-    "entryPoints": ["./index.d.ts"],
+    "entryPoints": ["./types/k6/x/faker/index.d.ts"],
     "out": "build/docs",
     "name": "xk6-faker",
     "readme": "none",
@@ -16,5 +16,14 @@
     "navigationLinks": {
       "GitHub": "https://github.com/szkiba/xk6-faker"
     }
+  },
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types", "./types"]
   }
 }

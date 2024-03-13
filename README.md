@@ -1,68 +1,89 @@
+[![API Reference](https://img.shields.io/badge/API-reference-blue?logo=readme&logoColor=lightgray)](https://ivan.szkiba.hu/xk6-faker)
+[![GitHub Release](https://img.shields.io/github/v/release/szkiba/xk6-faker)](https://github.com/szkiba/xk6-faker/releases/)
+[![Go Report Card](https://goreportcard.com/badge/github.com/szkiba/xk6-faker)](https://goreportcard.com/report/github.com/szkiba/xk6-faker)
+[![GitHub Actions](https://github.com/szkiba/xk6-faker/actions/workflows/test.yml/badge.svg)](https://github.com/szkiba/xk6-faker/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/szkiba/xk6-faker/graph/badge.svg?token=RDJNHP8NFP)](https://codecov.io/gh/szkiba/xk6-faker)
+![GitHub Downloads](https://img.shields.io/github/downloads/szkiba/xk6-faker/total)
+
 # xk6-faker
 
-A k6 extension for random fake data generation.
+**Random fake data generator for k6.**
 
-Altought there is several good JavaScript fake data generator, but using these as remote module in k6 tests has several disadvantages (download size, memory usage, startup time, etc). The *xk6-faker* implemented as a golang extension, so tests starts faster and use less memory. The price is a little bit smaller feature set compared with popular JavaScript fake data generators.
+Altought there is several good JavaScript fake data generator, but using these in [k6](https://k6.io) tests has several disadvantages (download size, memory usage, startup time, etc). The xk6-faker implemented as a golang extension, so tests starts faster and use less memory. The price is a little bit smaller feature set compared with popular JavaScript fake data generators.
 
-The underlying implementation is https://github.com/brianvoe/gofakeit.
+For convenience, the xk6-faker API resembles the popular [Faker.js](https://fakerjs.dev/). The category names and the generator function names are often different (due to the [underlying go faker library](https://github.com/brianvoe/gofakeit)), but the way of use is similar.
 
-Built for [k6](https://go.k6.io/k6) using [xk6](https://github.com/grafana/xk6).
+Check out the API documentation [here](https://ivan.szkiba.hu/xk6-faker). The TypeScript declaration file can be downloaded from [here](https://ivan.szkiba.hu/xk6-faker/index.d.ts).
 
 ## Usage
 
-The main generator class is [Faker](docs/classes/faker.md).
+For convenient use, the default export of the module is a Faker instance, it just needs to be imported and it is ready for use.
 
-```js
-import { Faker } from "k6/x/faker"
+```ts file=examples/default-faker.js
+import faker from "k6/x/faker";
 
-let f = new Faker();
-console.log(f.name());
+export default function () {
+  console.log(faker.person.firstName());
+}
+
+// prints a random first name
 ```
 
-Pass a random seed number to [Faker constructor](docs/classes/faker.md#constructor) if you want to get deterministic random values.
+For a reproducible test run, a random seed value can be passed to the constructor of the Faker class.
 
-```js
-import { Faker } from "k6/x/faker"
 
-let f = new Faker(1234);
-console.log(f.name());
+```ts file=examples/custom-faker.js
+import { Faker } from "k6/x/faker";
+
+const faker = new Faker(11);
+
+export default function () {
+  console.log(faker.person.firstName());
+}
+
+// output: Josiah
 ```
 
-For easier usage, the module's default export is a Faker instance too, so you can use generator functions without instantiating the [Faker](docs/classes/faker.md) class:
+The reproducibility of the test can also be achieved using the default Faker instance, if the seed value is set in the `XK6_FAKER_SEED` environment variable.
 
-```js
-import faker from "k6/x/faker"
-
-console.log(faker.name())
+```bash
+k6 run --env XK6_FAKER_SEED=11 script.js
 ```
 
-You can pass random seed value in `XK6_FAKER_SEED` env if you want deterministic generated random values.
+then
 
-## API
+```ts file=examples/default-faker-env.js
+import faker from "k6/x/faker";
 
-General purpose generator functions:
+export default function () {
+  console.log(faker.person.firstName());
+}
 
- - [lexify(str)](docs/classes/faker.md#lexify) will replace `?` with random generated letters
- - [numerify(str)](docs/classes/faker.md#numerify) will replace `#` with random numerical values
- - [generate(str)](docs/classes/faker.md#generate) will replace values within `{}` with generator function return values
+// as long as XK6_FAKER_SEEED is 11
+// output: Josiah
+```
 
-For complete generated API documentation click [here](docs/README.md)!
+The [examples](https://github.com/szkiba/xk6-faker/blob/master/examples) directory contains examples of how to use the xk6-faker extension. A k6 binary containing the xk6-faker extension is required to run the examples.
 
-## Build
+> [!IMPORTANT]
+> If the search path also contains the k6 command, don't forget to specify which k6 you want to run (for example `./k6`).
 
-To build a `k6` binary with this extension, first ensure you have the prerequisites:
+## Download
 
-- [Go toolchain](https://go101.org/article/go-toolchain.html)
-- Git
+You can download pre-built k6 binaries from the [Releases](https://github.com/szkiba/xk6-faker/releases/) page.
 
-Then:
+**Build**
 
-1. Install `xk6`:
-  ```bash
-  $ go install go.k6.io/xk6/cmd/xk6@latest
-  ```
+The [xk6](https://github.com/grafana/xk6) build tool can be used to build a k6 that will include xk6-faker extension:
 
-2. Build the binary:
-  ```bash
-  $ xk6 build --with github.com/szkiba/xk6-faker@latest
-  ```
+```bash
+$ xk6 build --with github.com/szkiba/xk6-faker@latest
+```
+
+For more build options and how to use xk6, check out the [xk6 documentation](https://github.com/grafana/xk6).
+
+## Feedback
+
+If you find the xk6-faker extension useful, please star the repo. The number of stars will determine the time allocated for maintenance.
+
+[![Stargazers over time](https://starchart.cc/szkiba/xk6-faker.svg?variant=adaptive)](https://starchart.cc/szkiba/xk6-faker)

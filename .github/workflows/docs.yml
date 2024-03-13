@@ -1,7 +1,7 @@
 name: Docs
 on:
   push:
-    branches: [master, feature/simplifa-api]
+    branches: [master, feature/simplify-api]
     paths:
       - .github/workflows/docs.yml
       - index.js
@@ -27,7 +27,7 @@ jobs:
       - name: Generate API doc
         run: bun x typedoc
       - name: Copy index.d.ts
-        run: cp index.d.ts build/docs/
+        run: cp types/k6/x/faker/index.d.ts build/docs/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
