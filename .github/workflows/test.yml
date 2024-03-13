@@ -27,8 +27,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Test
-        run: go test -count 1 -race -coverprofile=coverage.txt ./...
+      - name: Short Test
+        run: go test -short -count 1 ./...
+
+      - name: Coverage Test
+        if: ${{ matrix.platform == 'ubuntu-latest' && github.ref_name == 'master' }}
+        run: go test -short -count 1 -coverprofile=coverage.txt ./...
 
       - name: Upload Coverage
         if: ${{ matrix.platform == 'ubuntu-latest' && github.ref_name == 'master' }}
@@ -36,6 +40,10 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: szkiba/xk6-faker
+
+      - name: Full Test
+        if: ${{ matrix.platform == 'ubuntu-latest' }}
+        run: go test -count 1 -race ./...
 
       - name: Generate Go Report Card
         if: ${{ matrix.platform == 'ubuntu-latest' && github.ref_name == 'master' }}

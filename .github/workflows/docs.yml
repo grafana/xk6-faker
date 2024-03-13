@@ -24,6 +24,10 @@ jobs:
 
       - name: Install bun
         uses: oven-sh/setup-bun@v1
+
+      - name: Install dependenvies
+        run: bun install
+
       - name: Generate API doc
         run: bun x typedoc
       - name: Copy index.d.ts
