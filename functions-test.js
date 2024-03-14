@@ -16,9 +16,9 @@ export default function () {
     check(faker.address.country(), { 'address.country()': checker });
     check(faker.address.countryAbbreviation(), { 'address.countryAbbreviation()': checker });
     check(faker.address.latitude(), { 'address.latitude()': checker });
-    check(faker.address.latitudeRange(13,13), { 'address.latitudeRange(13,13)': checker });
+    check(faker.address.latitudeRange(0,90), { 'address.latitudeRange(0,90)': checker });
     check(faker.address.longitude(), { 'address.longitude()': checker });
-    check(faker.address.longitudeRange(13,13), { 'address.longitudeRange(13,13)': checker });
+    check(faker.address.longitudeRange(0,180), { 'address.longitudeRange(0,180)': checker });
     check(faker.address.state(), { 'address.state()': checker });
     check(faker.address.stateAbbreviation(), { 'address.stateAbbreviation()': checker });
     check(faker.address.street(), { 'address.street()': checker });
@@ -127,7 +127,7 @@ export default function () {
     check(faker.food.vegetable(), { 'food.vegetable()': checker });
   });
   group('game', ()=> {
-    check(faker.game.dice(13,[5,4,13]), { 'game.dice(13,[5,4,13])': checker });
+    check(faker.game.dice(1,[5,4,13]), { 'game.dice(1,[5,4,13])': checker });
     check(faker.game.gamertag(), { 'game.gamertag()': checker });
   });
   group('hacker', ()=> {
@@ -139,8 +139,8 @@ export default function () {
     check(faker.hacker.hackeringVerb(), { 'hacker.hackeringVerb()': checker });
   });
   group('hipster', ()=> {
-    check(faker.hipster.hipsterParagraph(13,13,17,"\u003cbr /\u003e"), { 'hipster.hipsterParagraph(13,13,17,"\u003cbr /\u003e")': checker });
-    check(faker.hipster.hipsterSentence(13), { 'hipster.hipsterSentence(13)': checker });
+    check(faker.hipster.hipsterParagraph(2,2,5,"\u003cbr /\u003e"), { 'hipster.hipsterParagraph(2,2,5,"\u003cbr /\u003e")': checker });
+    check(faker.hipster.hipsterSentence(5), { 'hipster.hipsterSentence(5)': checker });
     check(faker.hipster.hipsterWord(), { 'hipster.hipsterWord()': checker });
   });
   group('internet', ()=> {
@@ -152,14 +152,14 @@ export default function () {
     check(faker.internet.httpStatusCode(), { 'internet.httpStatusCode()': checker });
     check(faker.internet.httpStatusCodeSimple(), { 'internet.httpStatusCodeSimple()': checker });
     check(faker.internet.httpVersion(), { 'internet.httpVersion()': checker });
-    check(faker.internet.imageUrl(13,13), { 'internet.imageUrl(13,13)': checker });
+    check(faker.internet.imageUrl(500,500), { 'internet.imageUrl(500,500)': checker });
     check(faker.internet.inputName(), { 'internet.inputName()': checker });
     check(faker.internet.ipv4Address(), { 'internet.ipv4Address()': checker });
     check(faker.internet.ipv6Address(), { 'internet.ipv6Address()': checker });
     check(faker.internet.logLevel(), { 'internet.logLevel()': checker });
     check(faker.internet.macAddress(), { 'internet.macAddress()': checker });
     check(faker.internet.operaUserAgent(), { 'internet.operaUserAgent()': checker });
-    check(faker.internet.password(true,false,true,true,false,13), { 'internet.password(true,false,true,true,false,13)': checker });
+    check(faker.internet.password(true,false,true,true,false,12), { 'internet.password(true,false,true,true,false,12)': checker });
     check(faker.internet.safariUserAgent(), { 'internet.safariUserAgent()': checker });
     check(faker.internet.url(), { 'internet.url()': checker });
     check(faker.internet.userAgent(), { 'internet.userAgent()': checker });
@@ -199,9 +199,9 @@ export default function () {
   group('number', ()=> {
     check(faker.number.boolean(), { 'number.boolean()': checker });
     check(faker.number.float32(), { 'number.float32()': checker });
-    check(faker.number.float32Range(13,13), { 'number.float32Range(13,13)': checker });
+    check(faker.number.float32Range(3,5), { 'number.float32Range(3,5)': checker });
     check(faker.number.float64(), { 'number.float64()': checker });
-    check(faker.number.float64Range(13,13), { 'number.float64Range(13,13)': checker });
+    check(faker.number.float64Range(3,5), { 'number.float64Range(3,5)': checker });
     check(faker.number.hexUint128(), { 'number.hexUint128()': checker });
     check(faker.number.hexUint16(), { 'number.hexUint16()': checker });
     check(faker.number.hexUint256(), { 'number.hexUint256()': checker });
@@ -212,8 +212,8 @@ export default function () {
     check(faker.number.int32(), { 'number.int32()': checker });
     check(faker.number.int64(), { 'number.int64()': checker });
     check(faker.number.int8(), { 'number.int8()': checker });
-    check(faker.number.intRange(13,13), { 'number.intRange(13,13)': checker });
-    check(faker.number.number(13,13), { 'number.number(13,13)': checker });
+    check(faker.number.intRange(3,5), { 'number.intRange(3,5)': checker });
+    check(faker.number.number(-2147483648,2147483647), { 'number.number(-2147483648,2147483647)': checker });
     check(faker.number.randomInt([14,8,13]), { 'number.randomInt([14,8,13])': checker });
     check(faker.number.randomUint([14,8,13]), { 'number.randomUint([14,8,13])': checker });
     check(faker.number.shuffleInts([14,8,13]), { 'number.shuffleInts([14,8,13])': checker });
@@ -221,7 +221,7 @@ export default function () {
     check(faker.number.uint32(), { 'number.uint32()': checker });
     check(faker.number.uint64(), { 'number.uint64()': checker });
     check(faker.number.uint8(), { 'number.uint8()': checker });
-    check(faker.number.uintRange(13,13), { 'number.uintRange(13,13)': checker });
+    check(faker.number.uintRange(0,4294967295), { 'number.uintRange(0,4294967295)': checker });
   });
   group('payment', ()=> {
     check(faker.payment.achAccountNumber(), { 'payment.achAccountNumber()': checker });
@@ -238,7 +238,7 @@ export default function () {
     check(faker.payment.currency(), { 'payment.currency()': checker });
     check(faker.payment.currencyLong(), { 'payment.currencyLong()': checker });
     check(faker.payment.currencyShort(), { 'payment.currencyShort()': checker });
-    check(faker.payment.price(13,13), { 'payment.price(13,13)': checker });
+    check(faker.payment.price(0,1000), { 'payment.price(0,1000)': checker });
   });
   group('person', ()=> {
     check(faker.person.email(), { 'person.email()': checker });
@@ -268,9 +268,9 @@ export default function () {
   });
   group('string', ()=> {
     check(faker.string.digit(), { 'string.digit()': checker });
-    check(faker.string.digitN(13), { 'string.digitN(13)': checker });
+    check(faker.string.digitN(3), { 'string.digitN(3)': checker });
     check(faker.string.letter(), { 'string.letter()': checker });
-    check(faker.string.letterN(13), { 'string.letterN(13)': checker });
+    check(faker.string.letterN(3), { 'string.letterN(3)': checker });
     check(faker.string.lexify("none"), { 'string.lexify("none")': checker });
     check(faker.string.numerify("none"), { 'string.numerify("none")': checker });
     check(faker.string.randomString(["none","how","these","keep","trip","congolese","choir","computer","still","far"]), { 'string.randomString(["none","how","these","keep","trip","congolese","choir","computer","still","far"])': checker });
@@ -279,7 +279,7 @@ export default function () {
   });
   group('time', ()=> {
     check(faker.time.date("RFC3339"), { 'time.date("RFC3339")': checker });
-    check(faker.time.dateRange("1970-01-01","2024-03-13","yyyy-MM-dd"), { 'time.dateRange("1970-01-01","2024-03-13","yyyy-MM-dd")': checker });
+    check(faker.time.dateRange("1970-01-01","2024-03-14","yyyy-MM-dd"), { 'time.dateRange("1970-01-01","2024-03-14","yyyy-MM-dd")': checker });
     check(faker.time.day(), { 'time.day()': checker });
     check(faker.time.futureTime(), { 'time.futureTime()': checker });
     check(faker.time.hour(), { 'time.hour()': checker });
@@ -325,8 +325,8 @@ export default function () {
     check(faker.word.interrogativeAdjective(), { 'word.interrogativeAdjective()': checker });
     check(faker.word.intransitiveVerb(), { 'word.intransitiveVerb()': checker });
     check(faker.word.linkingVerb(), { 'word.linkingVerb()': checker });
-    check(faker.word.loremIpsumParagraph(13,13,17,"\u003cbr /\u003e"), { 'word.loremIpsumParagraph(13,13,17,"\u003cbr /\u003e")': checker });
-    check(faker.word.loremIpsumSentence(13), { 'word.loremIpsumSentence(13)': checker });
+    check(faker.word.loremIpsumParagraph(2,2,5,"\u003cbr /\u003e"), { 'word.loremIpsumParagraph(2,2,5,"\u003cbr /\u003e")': checker });
+    check(faker.word.loremIpsumSentence(5), { 'word.loremIpsumSentence(5)': checker });
     check(faker.word.loremIpsumWord(), { 'word.loremIpsumWord()': checker });
     check(faker.word.noun(), { 'word.noun()': checker });
     check(faker.word.nounAbstract(), { 'word.nounAbstract()': checker });
@@ -340,7 +340,7 @@ export default function () {
     check(faker.word.nounPhrase(), { 'word.nounPhrase()': checker });
     check(faker.word.nounProper(), { 'word.nounProper()': checker });
     check(faker.word.nounUncountable(), { 'word.nounUncountable()': checker });
-    check(faker.word.paragraph(13,13,17,"\u003cbr /\u003e"), { 'word.paragraph(13,13,17,"\u003cbr /\u003e")': checker });
+    check(faker.word.paragraph(2,2,5,"\u003cbr /\u003e"), { 'word.paragraph(2,2,5,"\u003cbr /\u003e")': checker });
     check(faker.word.phrase(), { 'word.phrase()': checker });
     check(faker.word.possessiveAdjective(), { 'word.possessiveAdjective()': checker });
     check(faker.word.preposition(), { 'word.preposition()': checker });
@@ -361,7 +361,7 @@ export default function () {
     check(faker.word.quantitativeAdjective(), { 'word.quantitativeAdjective()': checker });
     check(faker.word.question(), { 'word.question()': checker });
     check(faker.word.quote(), { 'word.quote()': checker });
-    check(faker.word.sentence(13), { 'word.sentence(13)': checker });
+    check(faker.word.sentence(5), { 'word.sentence(5)': checker });
     check(faker.word.simpleSentence(), { 'word.simpleSentence()': checker });
     check(faker.word.transitiveVerb(), { 'word.transitiveVerb()': checker });
     check(faker.word.verb(), { 'word.verb()': checker });
@@ -523,8 +523,8 @@ export default function () {
     check(faker.call("databaseError"), { 'call("databaseError")': checker });
     check(faker.zen.date("RFC3339"), { 'zen.date("RFC3339")': checker });
     check(faker.call("date","RFC3339"), { 'call("date","RFC3339")': checker });
-    check(faker.zen.dateRange("1970-01-01","2024-03-13","yyyy-MM-dd"), { 'zen.dateRange("1970-01-01","2024-03-13","yyyy-MM-dd")': checker });
-    check(faker.call("dateRange","1970-01-01","2024-03-13","yyyy-MM-dd"), { 'call("dateRange","1970-01-01","2024-03-13","yyyy-MM-dd")': checker });
+    check(faker.zen.dateRange("1970-01-01","2024-03-14","yyyy-MM-dd"), { 'zen.dateRange("1970-01-01","2024-03-14","yyyy-MM-dd")': checker });
+    check(faker.call("dateRange","1970-01-01","2024-03-14","yyyy-MM-dd"), { 'call("dateRange","1970-01-01","2024-03-14","yyyy-MM-dd")': checker });
     check(faker.zen.day(), { 'zen.day()': checker });
     check(faker.call("day"), { 'call("day")': checker });
     check(faker.zen.demonstrativeAdjective(), { 'zen.demonstrativeAdjective()': checker });
@@ -533,12 +533,12 @@ export default function () {
     check(faker.call("descriptiveAdjective"), { 'call("descriptiveAdjective")': checker });
     check(faker.zen.dessert(), { 'zen.dessert()': checker });
     check(faker.call("dessert"), { 'call("dessert")': checker });
-    check(faker.zen.dice(13,[5,4,13]), { 'zen.dice(13,[5,4,13])': checker });
-    check(faker.call("dice",13,[5,4,13]), { 'call("dice",13,[5,4,13])': checker });
+    check(faker.zen.dice(1,[5,4,13]), { 'zen.dice(1,[5,4,13])': checker });
+    check(faker.call("dice",1,[5,4,13]), { 'call("dice",1,[5,4,13])': checker });
     check(faker.zen.digit(), { 'zen.digit()': checker });
     check(faker.call("digit"), { 'call("digit")': checker });
-    check(faker.zen.digitN(13), { 'zen.digitN(13)': checker });
-    check(faker.call("digitN",13), { 'call("digitN",13)': checker });
+    check(faker.zen.digitN(3), { 'zen.digitN(3)': checker });
+    check(faker.call("digitN",3), { 'call("digitN",3)': checker });
     check(faker.zen.dinner(), { 'zen.dinner()': checker });
     check(faker.call("dinner"), { 'call("dinner")': checker });
     check(faker.zen.dog(), { 'zen.dog()': checker });
@@ -577,12 +577,12 @@ export default function () {
     check(faker.call("firstName"), { 'call("firstName")': checker });
     check(faker.zen.float32(), { 'zen.float32()': checker });
     check(faker.call("float32"), { 'call("float32")': checker });
-    check(faker.zen.float32Range(13,13), { 'zen.float32Range(13,13)': checker });
-    check(faker.call("float32Range",13,13), { 'call("float32Range",13,13)': checker });
+    check(faker.zen.float32Range(3,5), { 'zen.float32Range(3,5)': checker });
+    check(faker.call("float32Range",3,5), { 'call("float32Range",3,5)': checker });
     check(faker.zen.float64(), { 'zen.float64()': checker });
     check(faker.call("float64"), { 'call("float64")': checker });
-    check(faker.zen.float64Range(13,13), { 'zen.float64Range(13,13)': checker });
-    check(faker.call("float64Range",13,13), { 'call("float64Range",13,13)': checker });
+    check(faker.zen.float64Range(3,5), { 'zen.float64Range(3,5)': checker });
+    check(faker.call("float64Range",3,5), { 'call("float64Range",3,5)': checker });
     check(faker.zen.fruit(), { 'zen.fruit()': checker });
     check(faker.call("fruit"), { 'call("fruit")': checker });
     check(faker.zen.futureTime(), { 'zen.futureTime()': checker });
@@ -621,10 +621,10 @@ export default function () {
     check(faker.call("hexUint64"), { 'call("hexUint64")': checker });
     check(faker.zen.hexUint8(), { 'zen.hexUint8()': checker });
     check(faker.call("hexUint8"), { 'call("hexUint8")': checker });
-    check(faker.zen.hipsterParagraph(13,13,17,"\u003cbr /\u003e"), { 'zen.hipsterParagraph(13,13,17,"\u003cbr /\u003e")': checker });
-    check(faker.call("hipsterParagraph",13,13,17,"\u003cbr /\u003e"), { 'call("hipsterParagraph",13,13,17,"\u003cbr /\u003e")': checker });
-    check(faker.zen.hipsterSentence(13), { 'zen.hipsterSentence(13)': checker });
-    check(faker.call("hipsterSentence",13), { 'call("hipsterSentence",13)': checker });
+    check(faker.zen.hipsterParagraph(2,2,5,"\u003cbr /\u003e"), { 'zen.hipsterParagraph(2,2,5,"\u003cbr /\u003e")': checker });
+    check(faker.call("hipsterParagraph",2,2,5,"\u003cbr /\u003e"), { 'call("hipsterParagraph",2,2,5,"\u003cbr /\u003e")': checker });
+    check(faker.zen.hipsterSentence(5), { 'zen.hipsterSentence(5)': checker });
+    check(faker.call("hipsterSentence",5), { 'call("hipsterSentence",5)': checker });
     check(faker.zen.hipsterWord(), { 'zen.hipsterWord()': checker });
     check(faker.call("hipsterWord"), { 'call("hipsterWord")': checker });
     check(faker.zen.hobby(), { 'zen.hobby()': checker });
@@ -645,8 +645,8 @@ export default function () {
     check(faker.call("httpStatusCodeSimple"), { 'call("httpStatusCodeSimple")': checker });
     check(faker.zen.httpVersion(), { 'zen.httpVersion()': checker });
     check(faker.call("httpVersion"), { 'call("httpVersion")': checker });
-    check(faker.zen.imageUrl(13,13), { 'zen.imageUrl(13,13)': checker });
-    check(faker.call("imageUrl",13,13), { 'call("imageUrl",13,13)': checker });
+    check(faker.zen.imageUrl(500,500), { 'zen.imageUrl(500,500)': checker });
+    check(faker.call("imageUrl",500,500), { 'call("imageUrl",500,500)': checker });
     check(faker.zen.indefiniteAdjective(), { 'zen.indefiniteAdjective()': checker });
     check(faker.call("indefiniteAdjective"), { 'call("indefiniteAdjective")': checker });
     check(faker.zen.inputName(), { 'zen.inputName()': checker });
@@ -659,8 +659,8 @@ export default function () {
     check(faker.call("int64"), { 'call("int64")': checker });
     check(faker.zen.int8(), { 'zen.int8()': checker });
     check(faker.call("int8"), { 'call("int8")': checker });
-    check(faker.zen.intRange(13,13), { 'zen.intRange(13,13)': checker });
-    check(faker.call("intRange",13,13), { 'call("intRange",13,13)': checker });
+    check(faker.zen.intRange(3,5), { 'zen.intRange(3,5)': checker });
+    check(faker.call("intRange",3,5), { 'call("intRange",3,5)': checker });
     check(faker.zen.interjection(), { 'zen.interjection()': checker });
     check(faker.call("interjection"), { 'call("interjection")': checker });
     check(faker.zen.interrogativeAdjective(), { 'zen.interrogativeAdjective()': checker });
@@ -691,12 +691,12 @@ export default function () {
     check(faker.call("lastName"), { 'call("lastName")': checker });
     check(faker.zen.latitude(), { 'zen.latitude()': checker });
     check(faker.call("latitude"), { 'call("latitude")': checker });
-    check(faker.zen.latitudeRange(13,13), { 'zen.latitudeRange(13,13)': checker });
-    check(faker.call("latitudeRange",13,13), { 'call("latitudeRange",13,13)': checker });
+    check(faker.zen.latitudeRange(0,90), { 'zen.latitudeRange(0,90)': checker });
+    check(faker.call("latitudeRange",0,90), { 'call("latitudeRange",0,90)': checker });
     check(faker.zen.letter(), { 'zen.letter()': checker });
     check(faker.call("letter"), { 'call("letter")': checker });
-    check(faker.zen.letterN(13), { 'zen.letterN(13)': checker });
-    check(faker.call("letterN",13), { 'call("letterN",13)': checker });
+    check(faker.zen.letterN(3), { 'zen.letterN(3)': checker });
+    check(faker.call("letterN",3), { 'call("letterN",3)': checker });
     check(faker.zen.lexify("none"), { 'zen.lexify("none")': checker });
     check(faker.call("lexify","none"), { 'call("lexify","none")': checker });
     check(faker.zen.linkingVerb(), { 'zen.linkingVerb()': checker });
@@ -705,12 +705,12 @@ export default function () {
     check(faker.call("logLevel"), { 'call("logLevel")': checker });
     check(faker.zen.longitude(), { 'zen.longitude()': checker });
     check(faker.call("longitude"), { 'call("longitude")': checker });
-    check(faker.zen.longitudeRange(13,13), { 'zen.longitudeRange(13,13)': checker });
-    check(faker.call("longitudeRange",13,13), { 'call("longitudeRange",13,13)': checker });
-    check(faker.zen.loremIpsumParagraph(13,13,17,"\u003cbr /\u003e"), { 'zen.loremIpsumParagraph(13,13,17,"\u003cbr /\u003e")': checker });
-    check(faker.call("loremIpsumParagraph",13,13,17,"\u003cbr /\u003e"), { 'call("loremIpsumParagraph",13,13,17,"\u003cbr /\u003e")': checker });
-    check(faker.zen.loremIpsumSentence(13), { 'zen.loremIpsumSentence(13)': checker });
-    check(faker.call("loremIpsumSentence",13), { 'call("loremIpsumSentence",13)': checker });
+    check(faker.zen.longitudeRange(0,180), { 'zen.longitudeRange(0,180)': checker });
+    check(faker.call("longitudeRange",0,180), { 'call("longitudeRange",0,180)': checker });
+    check(faker.zen.loremIpsumParagraph(2,2,5,"\u003cbr /\u003e"), { 'zen.loremIpsumParagraph(2,2,5,"\u003cbr /\u003e")': checker });
+    check(faker.call("loremIpsumParagraph",2,2,5,"\u003cbr /\u003e"), { 'call("loremIpsumParagraph",2,2,5,"\u003cbr /\u003e")': checker });
+    check(faker.zen.loremIpsumSentence(5), { 'zen.loremIpsumSentence(5)': checker });
+    check(faker.call("loremIpsumSentence",5), { 'call("loremIpsumSentence",5)': checker });
     check(faker.zen.loremIpsumWord(), { 'zen.loremIpsumWord()': checker });
     check(faker.call("loremIpsumWord"), { 'call("loremIpsumWord")': checker });
     check(faker.zen.lunch(), { 'zen.lunch()': checker });
@@ -801,16 +801,16 @@ export default function () {
     check(faker.call("nounProper"), { 'call("nounProper")': checker });
     check(faker.zen.nounUncountable(), { 'zen.nounUncountable()': checker });
     check(faker.call("nounUncountable"), { 'call("nounUncountable")': checker });
-    check(faker.zen.number(13,13), { 'zen.number(13,13)': checker });
-    check(faker.call("number",13,13), { 'call("number",13,13)': checker });
+    check(faker.zen.number(-2147483648,2147483647), { 'zen.number(-2147483648,2147483647)': checker });
+    check(faker.call("number",-2147483648,2147483647), { 'call("number",-2147483648,2147483647)': checker });
     check(faker.zen.numerify("none"), { 'zen.numerify("none")': checker });
     check(faker.call("numerify","none"), { 'call("numerify","none")': checker });
     check(faker.zen.operaUserAgent(), { 'zen.operaUserAgent()': checker });
     check(faker.call("operaUserAgent"), { 'call("operaUserAgent")': checker });
-    check(faker.zen.paragraph(13,13,17,"\u003cbr /\u003e"), { 'zen.paragraph(13,13,17,"\u003cbr /\u003e")': checker });
-    check(faker.call("paragraph",13,13,17,"\u003cbr /\u003e"), { 'call("paragraph",13,13,17,"\u003cbr /\u003e")': checker });
-    check(faker.zen.password(true,false,true,true,false,13), { 'zen.password(true,false,true,true,false,13)': checker });
-    check(faker.call("password",true,false,true,true,false,13), { 'call("password",true,false,true,true,false,13)': checker });
+    check(faker.zen.paragraph(2,2,5,"\u003cbr /\u003e"), { 'zen.paragraph(2,2,5,"\u003cbr /\u003e")': checker });
+    check(faker.call("paragraph",2,2,5,"\u003cbr /\u003e"), { 'call("paragraph",2,2,5,"\u003cbr /\u003e")': checker });
+    check(faker.zen.password(true,false,true,true,false,12), { 'zen.password(true,false,true,true,false,12)': checker });
+    check(faker.call("password",true,false,true,true,false,12), { 'call("password",true,false,true,true,false,12)': checker });
     check(faker.zen.pastTime(), { 'zen.pastTime()': checker });
     check(faker.call("pastTime"), { 'call("pastTime")': checker });
     check(faker.zen.person(), { 'zen.person()': checker });
@@ -835,8 +835,8 @@ export default function () {
     check(faker.call("prepositionPhrase"), { 'call("prepositionPhrase")': checker });
     check(faker.zen.prepositionSimple(), { 'zen.prepositionSimple()': checker });
     check(faker.call("prepositionSimple"), { 'call("prepositionSimple")': checker });
-    check(faker.zen.price(13,13), { 'zen.price(13,13)': checker });
-    check(faker.call("price",13,13), { 'call("price",13,13)': checker });
+    check(faker.zen.price(0,1000), { 'zen.price(0,1000)': checker });
+    check(faker.call("price",0,1000), { 'call("price",0,1000)': checker });
     check(faker.zen.product(), { 'zen.product()': checker });
     check(faker.call("product"), { 'call("product")': checker });
     check(faker.zen.productCategory(), { 'zen.productCategory()': checker });
@@ -897,8 +897,8 @@ export default function () {
     check(faker.call("school"), { 'call("school")': checker });
     check(faker.zen.second(), { 'zen.second()': checker });
     check(faker.call("second"), { 'call("second")': checker });
-    check(faker.zen.sentence(13), { 'zen.sentence(13)': checker });
-    check(faker.call("sentence",13), { 'call("sentence",13)': checker });
+    check(faker.zen.sentence(5), { 'zen.sentence(5)': checker });
+    check(faker.call("sentence",5), { 'call("sentence",5)': checker });
     check(faker.zen.shuffleInts([14,8,13]), { 'zen.shuffleInts([14,8,13])': checker });
     check(faker.call("shuffleInts",[14,8,13]), { 'call("shuffleInts",[14,8,13])': checker });
     check(faker.zen.shuffleStrings(["none","how","these","keep","trip","congolese","choir","computer","still","far"]), { 'zen.shuffleStrings(["none","how","these","keep","trip","congolese","choir","computer","still","far"])': checker });
@@ -947,8 +947,8 @@ export default function () {
     check(faker.call("uint64"), { 'call("uint64")': checker });
     check(faker.zen.uint8(), { 'zen.uint8()': checker });
     check(faker.call("uint8"), { 'call("uint8")': checker });
-    check(faker.zen.uintRange(13,13), { 'zen.uintRange(13,13)': checker });
-    check(faker.call("uintRange",13,13), { 'call("uintRange",13,13)': checker });
+    check(faker.zen.uintRange(0,4294967295), { 'zen.uintRange(0,4294967295)': checker });
+    check(faker.call("uintRange",0,4294967295), { 'call("uintRange",0,4294967295)': checker });
     check(faker.zen.url(), { 'zen.url()': checker });
     check(faker.call("url"), { 'call("url")': checker });
     check(faker.zen.userAgent(), { 'zen.userAgent()': checker });

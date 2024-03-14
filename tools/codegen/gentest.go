@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"io"
 	"sort"
+	"strconv"
 	"strings"
 
 	"github.com/brianvoe/gofakeit/v6"
@@ -35,7 +36,7 @@ func genParams(info *gofakeit.Info) (string, error) {
 
 	var buff strings.Builder
 
-	min := 11
+	min := 2
 
 	for idx, param := range info.Params {
 		if idx > 0 {
@@ -46,8 +47,8 @@ func genParams(info *gofakeit.Info) (string, error) {
 
 		switch param.Type {
 		case "number":
-			val = faker.Number(min, min+2)
-			min += 2
+			val = faker.Number(min, min+3)
+			min += 3
 		case "boolean":
 			val = faker.Bool()
 		case "string":
@@ -64,6 +65,12 @@ func genParams(info *gofakeit.Info) (string, error) {
 
 		if param.Type == "string" && len(param.Default) != 0 {
 			val = param.Default
+		}
+
+		if param.Type == "number" && len(param.Default) != 0 {
+			if v, e := strconv.Atoi(param.Default); e == nil {
+				val = v
+			}
 		}
 
 		b, err := json.Marshal(val)

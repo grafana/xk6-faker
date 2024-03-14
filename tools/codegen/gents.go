@@ -63,6 +63,11 @@ func tsGen(out io.Writer) error {
 			info := funcs[fname]
 
 			fmt.Fprintf(out, "  /**\n   * %s.\n", info.Description)
+
+			for _, param := range info.Params {
+				fmt.Fprintf(out, "   * @param %s - %s\n", param.Field, param.Display)
+			}
+
 			fmt.Fprintf(out, "   * @returns a random %s\n", strings.ToLower(info.Display))
 			fmt.Fprintf(out, "   * @example\n")
 			fmt.Fprintf(out, "   * ```ts\n")

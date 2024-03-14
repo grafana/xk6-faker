@@ -62,7 +62,7 @@
 export as namespace faker;
 
 /**
- * This is Faker's main class containing all generators that can be used to generate data.
+ * This is the faker module's main class containing all generators that can be used to generate data.
  *
  * Please have a look at the individual generators and methods for more information.
  *
