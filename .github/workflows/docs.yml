@@ -1,11 +1,11 @@
 name: Docs
 on:
+  workflow_dispatch:
   push:
-    branches: [master, feature/simplify-api]
+    branches: [master]
     paths:
       - .github/workflows/docs.yml
-      - index.js
-      - index.d.ts
+      - types/k6/x/faker/index.d.ts
       - tsconfig.json
 
 jobs:
