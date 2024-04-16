@@ -5,7 +5,7 @@ on:
     branches: [master]
     paths:
       - .github/workflows/docs.yml
-      - types/k6/x/faker/index.d.ts
+      - index.d.ts
       - tsconfig.json
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
       - name: Generate API doc
         run: bun x typedoc
       - name: Copy index.d.ts
-        run: cp types/k6/x/faker/index.d.ts build/docs/
+        run: cp index.d.ts build/docs/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -1,6 +1,6 @@
 {
   "typedocOptions": {
-    "entryPoints": ["./types/k6/x/faker/index.d.ts"],
+    "entryPoints": ["./index.d.ts"],
     "out": "build/docs",
     "name": "xk6-faker",
     "readme": "none",
@@ -23,7 +23,6 @@
     "esModuleInterop": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "typeRoots": ["node_modules/@types", "./types"]
+    "resolveJsonModule": true
   }
 }
