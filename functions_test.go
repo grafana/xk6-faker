@@ -81,4 +81,4 @@ func Test_run_k6_test(t *testing.T) {
 	}
 }
 
-//go:generate go run -tags codegen ./tools/codegen ts ./types/k6/x/faker/index.d.ts
+//go:generate go run -tags codegen ./tools/codegen ts ./index.d.ts
