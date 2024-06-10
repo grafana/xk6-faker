@@ -3,7 +3,7 @@ package faker_test
 import (
 	"testing"
 
-	"github.com/dop251/goja"
+	"github.com/grafana/sobek"
 	"github.com/stretchr/testify/require"
 	"github.com/szkiba/xk6-faker/faker"
 )
@@ -11,7 +11,7 @@ import (
 func Test_Constructor(t *testing.T) {
 	t.Parallel()
 
-	vm := goja.New()
+	vm := sobek.New()
 
 	require.NoError(t, vm.Set("Faker", faker.Constructor))
 
@@ -19,7 +19,7 @@ func Test_Constructor(t *testing.T) {
 
 	require.NoError(t, err)
 
-	_, ok := goja.AssertFunction(val.ToObject(vm).Get("call"))
+	_, ok := sobek.AssertFunction(val.ToObject(vm).Get("call"))
 
 	require.True(t, ok, "has call() method")
 
@@ -27,7 +27,7 @@ func Test_Constructor(t *testing.T) {
 
 	require.NoError(t, err)
 
-	_, ok = goja.AssertFunction(val.ToObject(vm).Get("call"))
+	_, ok = sobek.AssertFunction(val.ToObject(vm).Get("call"))
 
 	require.True(t, ok, "has call() method")
 }
@@ -35,15 +35,15 @@ func Test_Constructor(t *testing.T) {
 func Test_New(t *testing.T) {
 	t.Parallel()
 
-	vm := goja.New()
+	vm := sobek.New()
 
-	var val *goja.Object
+	var val *sobek.Object
 
 	require.NotPanics(t, func() {
 		val = faker.New(0, vm)
 	})
 
-	_, ok := goja.AssertFunction(val.ToObject(vm).Get("call"))
+	_, ok := sobek.AssertFunction(val.ToObject(vm).Get("call"))
 
 	require.True(t, ok, "has call() method")
 }
@@ -51,7 +51,7 @@ func Test_New(t *testing.T) {
 func Test_Faker_call(t *testing.T) {
 	t.Parallel()
 
-	vm := goja.New()
+	vm := sobek.New()
 
 	require.NoError(t, vm.Set("Faker", faker.Constructor))
 
@@ -72,7 +72,7 @@ func Test_Faker_call(t *testing.T) {
 func Test_Faker_no_parameter(t *testing.T) {
 	t.Parallel()
 
-	vm := goja.New()
+	vm := sobek.New()
 
 	require.NoError(t, vm.Set("Faker", faker.Constructor))
 
@@ -85,7 +85,7 @@ func Test_Faker_no_parameter(t *testing.T) {
 func Test_Faker_int_parameters(t *testing.T) {
 	t.Parallel()
 
-	vm := goja.New()
+	vm := sobek.New()
 
 	require.NoError(t, vm.Set("Faker", faker.Constructor))
 
@@ -98,7 +98,7 @@ func Test_Faker_int_parameters(t *testing.T) {
 func Test_Faker_string_array_parameter(t *testing.T) {
 	t.Parallel()
 
-	vm := goja.New()
+	vm := sobek.New()
 
 	require.NoError(t, vm.Set("Faker", faker.Constructor))
 
@@ -111,7 +111,7 @@ func Test_Faker_string_array_parameter(t *testing.T) {
 func Test_Faker_int_array_parameter(t *testing.T) {
 	t.Parallel()
 
-	vm := goja.New()
+	vm := sobek.New()
 
 	require.NoError(t, vm.Set("Faker", faker.Constructor))
 

@@ -6,22 +6,22 @@ import (
 	"testing"
 
 	"github.com/brianvoe/gofakeit/v6"
-	"github.com/dop251/goja"
+	"github.com/grafana/sobek"
 	"github.com/stretchr/testify/require"
 )
 
 func Test_faker_dynamic(t *testing.T) {
 	t.Parallel()
 
-	faker := newFaker(11, goja.New())
+	faker := newFaker(11, sobek.New())
 
 	// Delete
 	require.False(t, faker.Delete("foo"))
 
 	// Get
-	require.False(t, goja.IsUndefined(faker.Get("call")))
-	require.True(t, goja.IsUndefined(faker.Get("no such category")))
-	require.False(t, goja.IsUndefined(faker.Get("zen")))
+	require.False(t, sobek.IsUndefined(faker.Get("call")))
+	require.True(t, sobek.IsUndefined(faker.Get("no such category")))
+	require.False(t, sobek.IsUndefined(faker.Get("zen")))
 
 	// Has
 	require.False(t, faker.Has("zen"))
@@ -36,15 +36,15 @@ func Test_faker_dynamic(t *testing.T) {
 func Test_faker_invoke(t *testing.T) {
 	t.Parallel()
 
-	faker := newFaker(11, goja.New())
+	faker := newFaker(11, sobek.New())
 
 	info, ok := lookupFunc("username")
 
 	require.True(t, ok)
 
-	val := faker.invoke(info, goja.FunctionCall{This: goja.Undefined()})
+	val := faker.invoke(info, sobek.FunctionCall{This: sobek.Undefined()})
 
-	require.False(t, goja.IsUndefined(val))
+	require.False(t, sobek.IsUndefined(val))
 
 	clone := *info
 	info = &clone
@@ -54,14 +54,14 @@ func Test_faker_invoke(t *testing.T) {
 	}
 
 	require.Panics(t, func() {
-		faker.invoke(info, goja.FunctionCall{This: goja.Undefined()})
+		faker.invoke(info, sobek.FunctionCall{This: sobek.Undefined()})
 	})
 }
 
 func Test_newCategory(t *testing.T) {
 	t.Parallel()
 
-	faker := newFaker(11, goja.New())
+	faker := newFaker(11, sobek.New())
 
 	require.Nil(t, newCategory(faker, "no such category"))
 	require.NotNil(t, newCategory(faker, "zen"))
@@ -70,14 +70,14 @@ func Test_newCategory(t *testing.T) {
 func Test_category_dynamic(t *testing.T) {
 	t.Parallel()
 
-	category := newCategory(newFaker(11, goja.New()), "zen")
+	category := newCategory(newFaker(11, sobek.New()), "zen")
 
 	// Delete
 	require.False(t, category.Delete("foo"))
 
 	// Get
-	require.False(t, goja.IsUndefined(category.Get("username")))
-	require.True(t, goja.IsUndefined(category.Get("no such function")))
+	require.False(t, sobek.IsUndefined(category.Get("username")))
+	require.True(t, sobek.IsUndefined(category.Get("no such function")))
 
 	// Has
 	require.False(t, category.Has("username"))
@@ -92,14 +92,14 @@ func Test_category_dynamic(t *testing.T) {
 func Test_faker_toMapParams(t *testing.T) {
 	t.Parallel()
 
-	runtime := goja.New()
+	runtime := sobek.New()
 	faker := newFaker(11, runtime)
 
 	info, ok := lookupFunc("intRange")
 
 	require.True(t, ok)
 
-	var call goja.FunctionCall
+	var call sobek.FunctionCall
 
 	require.Panics(t, func() {
 		faker.toMapParams(info, call)
@@ -119,7 +119,7 @@ func Test_faker_toMapParams(t *testing.T) {
 
 	info.Params[1].Default = "24"
 
-	call.Arguments = []goja.Value{runtime.ToValue(1)}
+	call.Arguments = []sobek.Value{runtime.ToValue(1)}
 
 	mparams = faker.toMapParams(info, call)
 
