@@ -1,27 +1,27 @@
-// Package faker contains Faker class implementation for goja.
+// Package faker contains Faker class implementation for sobek.
 package faker
 
 import (
 	"math/rand"
 
 	"github.com/brianvoe/gofakeit/v6"
-	"github.com/dop251/goja"
+	"github.com/grafana/sobek"
 	"lukechampine.com/frand"
 )
 
 // Constructor is a Faker class constructor.
-func Constructor(call goja.ConstructorCall, runtime *goja.Runtime) *goja.Object {
+func Constructor(call sobek.ConstructorCall, runtime *sobek.Runtime) *sobek.Object {
 	seed := call.Argument(0).ToInteger()
 
 	return runtime.NewDynamicObject(newFaker(seed, runtime))
 }
 
 // New calls Faker constructor and returns new Faker object.
-func New(seed int64, runtime *goja.Runtime) *goja.Object {
+func New(seed int64, runtime *sobek.Runtime) *sobek.Object {
 	return Constructor(
-		goja.ConstructorCall{
+		sobek.ConstructorCall{
 			This:      runtime.NewObject(),
-			Arguments: []goja.Value{runtime.ToValue(seed)},
+			Arguments: []sobek.Value{runtime.ToValue(seed)},
 		},
 		runtime,
 	)
@@ -30,11 +30,11 @@ func New(seed int64, runtime *goja.Runtime) *goja.Object {
 // faker represents JavaScript Faker class.
 type faker struct {
 	rand    *rand.Rand
-	runtime *goja.Runtime
+	runtime *sobek.Runtime
 }
 
 // newFaker creates new Faker instance.
-func newFaker(seed int64, runtime *goja.Runtime) *faker {
+func newFaker(seed int64, runtime *sobek.Runtime) *faker {
 	src := frand.NewSource()
 
 	if seed != 0 {
@@ -44,46 +44,46 @@ func newFaker(seed int64, runtime *goja.Runtime) *faker {
 	return &faker{rand: rand.New(src), runtime: runtime} //nolint:gosec
 }
 
-// Delete implements goja.DynamicObject.
+// Delete implements sobek.DynamicObject.
 func (f *faker) Delete(_ string) bool {
 	return false
 }
 
-// Get implements goja.DynamicObject.
-func (f *faker) Get(key string) goja.Value {
+// Get implements sobek.DynamicObject.
+func (f *faker) Get(key string) sobek.Value {
 	if key == "call" {
 		return f.runtime.ToValue(f.call)
 	}
 
 	category := newCategory(f, key)
 	if category == nil {
-		return goja.Undefined()
+		return sobek.Undefined()
 	}
 
 	return f.runtime.NewDynamicObject(category)
 }
 
-// Has implements goja.DynamicObject.
+// Has implements sobek.DynamicObject.
 func (f *faker) Has(_ string) bool {
 	return false
 }
 
-// Keys implements goja.DynamicObject.
+// Keys implements sobek.DynamicObject.
 func (f *faker) Keys() []string {
 	return getCategoryNames()
 }
 
-// Set implements goja.DynamicObject.
-func (f *faker) Set(_ string, _ goja.Value) bool {
+// Set implements sobek.DynamicObject.
+func (f *faker) Set(_ string, _ sobek.Value) bool {
 	return false
 }
 
 // call invokes faker function by name.
 // The faker function name is the first parameter, the rest of parameters passed to function.
-func (f *faker) call(call goja.FunctionCall) goja.Value {
+func (f *faker) call(call sobek.FunctionCall) sobek.Value {
 	function := call.Argument(0)
 
-	if goja.IsUndefined(function) {
+	if sobek.IsUndefined(function) {
 		panic(f.runtime.NewTypeError(function))
 	}
 
@@ -97,7 +97,7 @@ func (f *faker) call(call goja.FunctionCall) goja.Value {
 	return f.invoke(info, call)
 }
 
-func (f *faker) toMapParams(info *gofakeit.Info, call goja.FunctionCall) *gofakeit.MapParams {
+func (f *faker) toMapParams(info *gofakeit.Info, call sobek.FunctionCall) *gofakeit.MapParams {
 	if len(info.Params) == 0 {
 		return nil
 	}
@@ -106,7 +106,7 @@ func (f *faker) toMapParams(info *gofakeit.Info, call goja.FunctionCall) *gofake
 
 	for idx, param := range info.Params {
 		val := call.Argument(idx)
-		if goja.IsUndefined(val) {
+		if sobek.IsUndefined(val) {
 			if len(param.Default) != 0 {
 				params.Add(param.Field, param.Default)
 				continue
@@ -131,7 +131,7 @@ func (f *faker) toMapParams(info *gofakeit.Info, call goja.FunctionCall) *gofake
 	return params
 }
 
-func (f *faker) invoke(info *gofakeit.Info, call goja.FunctionCall) goja.Value {
+func (f *faker) invoke(info *gofakeit.Info, call sobek.FunctionCall) sobek.Value {
 	params := f.toMapParams(info, call)
 
 	val, err := info.Generate(f.rand, params, info)
@@ -156,34 +156,34 @@ func newCategory(faker *faker, name string) *category {
 	return &category{faker: faker, funcs: funcs}
 }
 
-// Delete implements goja.DynamicObject.
+// Delete implements sobek.DynamicObject.
 func (c *category) Delete(_ string) bool {
 	return false
 }
 
-// Get implements goja.DynamicObject.
-func (c *category) Get(key string) goja.Value {
+// Get implements sobek.DynamicObject.
+func (c *category) Get(key string) sobek.Value {
 	info, ok := c.funcs[key]
 	if !ok {
-		return goja.Undefined()
+		return sobek.Undefined()
 	}
 
-	return c.faker.runtime.ToValue(func(call goja.FunctionCall) goja.Value {
+	return c.faker.runtime.ToValue(func(call sobek.FunctionCall) sobek.Value {
 		return c.faker.invoke(info, call)
 	})
 }
 
-// Has implements goja.DynamicObject.
+// Has implements sobek.DynamicObject.
 func (c *category) Has(_ string) bool {
 	return false
 }
 
-// Keys implements goja.DynamicObject.
+// Keys implements sobek.DynamicObject.
 func (c *category) Keys() []string {
 	return []string{}
 }
 
-// Set implements goja.DynamicObject.
-func (c *category) Set(_ string, _ goja.Value) bool {
+// Set implements sobek.DynamicObject.
+func (c *category) Set(_ string, _ sobek.Value) bool {
 	return false
 }

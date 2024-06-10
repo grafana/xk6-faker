@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	"github.com/brianvoe/gofakeit/v6"
-	"github.com/dop251/goja"
+	"github.com/grafana/sobek"
 	"github.com/iancoleman/strcase"
 	"github.com/szkiba/xk6-faker/faker"
 	"github.com/szkiba/xk6-faker/module"
@@ -119,7 +119,7 @@ func buildExample(name string, category string, info *gofakeit.Info) (string, st
 
 	call := fmt.Sprintf("faker.%s.%s(%s)", category, name, params)
 
-	runtime := goja.New()
+	runtime := sobek.New()
 	err = runtime.Set("Faker", faker.Constructor)
 	if err != nil {
 		return "", "", err
