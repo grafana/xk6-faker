@@ -9,9 +9,9 @@
 
 **Random fake data generator for k6.**
 
-Altought there is several good JavaScript fake data generator, but using these in [k6](https://k6.io) tests has several disadvantages (download size, memory usage, startup time, etc). The xk6-faker implemented as a golang extension, so tests starts faster and use less memory. The price is a little bit smaller feature set compared with popular JavaScript fake data generators.
+Although there are several good JavaScript fake data generators, using these in [k6](https://k6.io) tests has several disadvantages (download size, memory usage, startup time, etc). The xk6-faker implemented as a golang extension, so tests start faster and use less memory. The price is a little bit smaller feature set compared with popular JavaScript fake data generators.
 
-For convenience, the xk6-faker API resembles the popular [Faker.js](https://fakerjs.dev/). The category names and the generator function names are often different (due to the [underlying go faker library](https://github.com/brianvoe/gofakeit)), but the way of use is similar.
+For convenience, the xk6-faker API resembles the popular [Faker.js](https://fakerjs.dev/). The category names and the generator function names are often different (due to the [underlying go faker library](https://github.com/brianvoe/gofakeit)), but the usage pattern is similar.
 
 Check out the API documentation [here](https://ivan.szkiba.hu/xk6-faker). The TypeScript declaration file can be downloaded from [here](https://ivan.szkiba.hu/xk6-faker/index.d.ts).
 
@@ -44,7 +44,7 @@ export default function () {
 // output: Josiah
 ```
 
-The reproducibility of the test can also be achieved using the default Faker instance, if the seed value is set in the `XK6_FAKER_SEED` environment variable.
+Test reproducibility can also be achieved using the default Faker instance, if the seed value is set in the `XK6_FAKER_SEED` environment variable.
 
 ```bash
 k6 run --env XK6_FAKER_SEED=11 script.js
