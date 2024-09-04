@@ -351,7 +351,7 @@
   },
   "boolean": {
     "display": "Boolean",
-    "category": "number",
+    "category": "numbers",
     "description": "Data type that represents one of two possible values, typically true or false",
     "example": "true",
     "output": "boolean",
@@ -862,7 +862,7 @@
         "display": "End Date",
         "type": "string",
         "optional": false,
-        "default": "2024-03-13",
+        "default": "2024-09-04",
         "options": null,
         "description": "End date time string"
       },
@@ -949,7 +949,7 @@
   },
   "digit": {
     "display": "Digit",
-    "category": "string",
+    "category": "strings",
     "description": "Numerical symbol used to represent numbers",
     "example": "0",
     "output": "string",
@@ -959,7 +959,7 @@
   },
   "digitN": {
     "display": "DigitN",
-    "category": "string",
+    "category": "strings",
     "description": "string of length N consisting of ASCII digits",
     "example": "0136459948",
     "output": "string",
@@ -1159,7 +1159,7 @@
   },
   "float32": {
     "display": "Float32",
-    "category": "number",
+    "category": "numbers",
     "description": "Data type representing floating-point numbers with 32 bits of precision in computing",
     "example": "3.1128167e+37",
     "output": "number",
@@ -1169,7 +1169,7 @@
   },
   "float32Range": {
     "display": "Float32 Range",
-    "category": "number",
+    "category": "numbers",
     "description": "Float32 value between given range",
     "example": "914774.6",
     "output": "number",
@@ -1198,7 +1198,7 @@
   },
   "float64": {
     "display": "Float64",
-    "category": "number",
+    "category": "numbers",
     "description": "Data type representing floating-point numbers with 64 bits of precision in computing",
     "example": "1.644484108270445e+307",
     "output": "number",
@@ -1208,7 +1208,7 @@
   },
   "float64Range": {
     "display": "Float64 Range",
-    "category": "number",
+    "category": "numbers",
     "description": "Float64 value between given range",
     "example": "914774.5585333086",
     "output": "number",
@@ -1367,7 +1367,7 @@
   },
   "hexUint128": {
     "display": "HexUint128",
-    "category": "number",
+    "category": "numbers",
     "description": "Hexadecimal representation of an 128-bit unsigned integer",
     "example": "0x875469578e51b5e56c95b64681d147a1",
     "output": "string",
@@ -1377,7 +1377,7 @@
   },
   "hexUint16": {
     "display": "HexUint16",
-    "category": "number",
+    "category": "numbers",
     "description": "Hexadecimal representation of an 16-bit unsigned integer",
     "example": "0x8754",
     "output": "string",
@@ -1387,7 +1387,7 @@
   },
   "hexUint256": {
     "display": "HexUint256",
-    "category": "number",
+    "category": "numbers",
     "description": "Hexadecimal representation of an 256-bit unsigned integer",
     "example": "0x875469578e51b5e56c95b64681d147a12cde48a4f417231b0c486abbc263e48d",
     "output": "string",
@@ -1397,7 +1397,7 @@
   },
   "hexUint32": {
     "display": "HexUint32",
-    "category": "number",
+    "category": "numbers",
     "description": "Hexadecimal representation of an 32-bit unsigned integer",
     "example": "0x87546957",
     "output": "string",
@@ -1407,7 +1407,7 @@
   },
   "hexUint64": {
     "display": "HexUint64",
-    "category": "number",
+    "category": "numbers",
     "description": "Hexadecimal representation of an 64-bit unsigned integer",
     "example": "0x875469578e51b5e5",
     "output": "string",
@@ -1417,7 +1417,7 @@
   },
   "hexUint8": {
     "display": "HexUint8",
-    "category": "number",
+    "category": "numbers",
     "description": "Hexadecimal representation of an 8-bit unsigned integer",
     "example": "0x87",
     "output": "string",
@@ -1643,7 +1643,7 @@
   },
   "int16": {
     "display": "Int16",
-    "category": "number",
+    "category": "numbers",
     "description": "Signed 16-bit integer, capable of representing values from 32,768 to 32,767",
     "example": "2200",
     "output": "number",
@@ -1653,7 +1653,7 @@
   },
   "int32": {
     "display": "Int32",
-    "category": "number",
+    "category": "numbers",
     "description": "Signed 32-bit integer, capable of representing values from -2,147,483,648 to 2,147,483,647",
     "example": "-1072427943",
     "output": "number",
@@ -1663,7 +1663,7 @@
   },
   "int64": {
     "display": "Int64",
-    "category": "number",
+    "category": "numbers",
     "description": "Signed 64-bit integer, capable of representing values from -9,223,372,036,854,775,808 to -9,223,372,036,854,775,807",
     "example": "-8379641344161477543",
     "output": "number",
@@ -1673,7 +1673,7 @@
   },
   "int8": {
     "display": "Int8",
-    "category": "number",
+    "category": "numbers",
     "description": "Signed 8-bit integer, capable of representing values from -128 to 127",
     "example": "24",
     "output": "number",
@@ -1683,7 +1683,7 @@
   },
   "intRange": {
     "display": "IntRange",
-    "category": "number",
+    "category": "numbers",
     "description": "Integer value between given range",
     "example": "-8379477543",
     "output": "number",
@@ -1891,7 +1891,7 @@
   },
   "letter": {
     "display": "Letter",
-    "category": "string",
+    "category": "strings",
     "description": "Character or symbol from the American Standard Code for Information Interchange (ASCII) character set",
     "example": "g",
     "output": "string",
@@ -1901,7 +1901,7 @@
   },
   "letterN": {
     "display": "LetterN",
-    "category": "string",
+    "category": "strings",
     "description": "ASCII string with length N",
     "example": "gbRMaRxHki",
     "output": "string",
@@ -1921,7 +1921,7 @@
   },
   "lexify": {
     "display": "Lexify",
-    "category": "string",
+    "category": "strings",
     "description": "Replace ? with random generated letters",
     "example": "?????@??????.com =\u003e billy@mister.com",
     "output": "string",
@@ -2517,7 +2517,7 @@
   },
   "number": {
     "display": "Number",
-    "category": "number",
+    "category": "numbers",
     "description": "Mathematical concept used for counting, measuring, and expressing quantities or values",
     "example": "14866",
     "output": "number",
@@ -2546,7 +2546,7 @@
   },
   "numerify": {
     "display": "Numerify",
-    "category": "string",
+    "category": "strings",
     "description": "Replace # with random numerical values",
     "example": "(###)###-#### =\u003e (555)867-5309",
     "output": "string",
@@ -3047,7 +3047,7 @@
   },
   "randomInt": {
     "display": "Random Int",
-    "category": "number",
+    "category": "numbers",
     "description": "Randomly selected value from a slice of int",
     "example": "-1,2,-3,4 =\u003e -3",
     "output": "number",
@@ -3067,7 +3067,7 @@
   },
   "randomString": {
     "display": "Random String",
-    "category": "string",
+    "category": "strings",
     "description": "Return a random string from a string array",
     "example": "hello,world,whats,up =\u003e world",
     "output": "string[]",
@@ -3087,7 +3087,7 @@
   },
   "randomUint": {
     "display": "Random Uint",
-    "category": "number",
+    "category": "numbers",
     "description": "Randomly selected value from a slice of uint",
     "example": "1,2,3,4 =\u003e 4",
     "output": "number",
@@ -3187,7 +3187,7 @@
   },
   "shuffleInts": {
     "display": "Shuffle Ints",
-    "category": "number",
+    "category": "numbers",
     "description": "Shuffles an array of ints",
     "example": "1,2,3,4 =\u003e 3,1,4,2",
     "output": "number[]",
@@ -3207,7 +3207,7 @@
   },
   "shuffleStrings": {
     "display": "Shuffle Strings",
-    "category": "string",
+    "category": "strings",
     "description": "Shuffle an array of strings",
     "example": "hello,world,whats,up =\u003e whats,world,hello,up",
     "output": "string[]",
@@ -3426,7 +3426,7 @@
   },
   "uint16": {
     "display": "Uint16",
-    "category": "number",
+    "category": "numbers",
     "description": "Unsigned 16-bit integer, capable of representing values from 0 to 65,535",
     "example": "34968",
     "output": "number",
@@ -3436,7 +3436,7 @@
   },
   "uint32": {
     "display": "Uint32",
-    "category": "number",
+    "category": "numbers",
     "description": "Unsigned 32-bit integer, capable of representing values from 0 to 4,294,967,295",
     "example": "1075055705",
     "output": "number",
@@ -3446,7 +3446,7 @@
   },
   "uint64": {
     "display": "Uint64",
-    "category": "number",
+    "category": "numbers",
     "description": "Unsigned 64-bit integer, capable of representing values from 0 to 18,446,744,073,709,551,615",
     "example": "843730692693298265",
     "output": "number",
@@ -3456,7 +3456,7 @@
   },
   "uint8": {
     "display": "Uint8",
-    "category": "number",
+    "category": "numbers",
     "description": "Unsigned 8-bit integer, capable of representing values from 0 to 255",
     "example": "152",
     "output": "number",
@@ -3466,7 +3466,7 @@
   },
   "uintRange": {
     "display": "UintRange",
-    "category": "number",
+    "category": "numbers",
     "description": "Non-negative integer value between given range",
     "example": "1075055705",
     "output": "number",
@@ -3525,7 +3525,7 @@
   },
   "uuid": {
     "display": "UUID",
-    "category": "string",
+    "category": "strings",
     "description": "128-bit identifier used to uniquely identify objects or entities in computer systems",
     "example": "590c1440-9888-45b0-bd51-a817ee07c3f2",
     "output": "string",

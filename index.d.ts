@@ -221,7 +221,7 @@ export declare class Faker {
   /**
    * Generator to generate numbers.
    */
-  readonly number: Number;
+  readonly numbers: Numbers;
 
   /**
    * Generator to generate payment related entries.
@@ -241,7 +241,7 @@ export declare class Faker {
   /**
    * Generator to generate strings.
    */
-  readonly string: String;
+  readonly strings: Strings;
 
   /**
    * Generator to generate time and date.
@@ -2008,7 +2008,7 @@ export declare interface Finance {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "UYS4BL2MVY69"
+   * "FRS4BL2MVY67"
    * ```
    */
   isin(): string;
@@ -3416,7 +3416,7 @@ export declare interface Movie {
 /**
  * Generator to generate numbers.
  */
-export declare interface Number {
+export declare interface Numbers {
   /**
    * Data type that represents one of two possible values, typically true or false.
    * @returns a random boolean
@@ -3427,7 +3427,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.boolean())
+   *  console.log(faker.numbers.boolean())
    *}
    *
    *```
@@ -3448,7 +3448,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.float32())
+   *  console.log(faker.numbers.float32())
    *}
    *
    *```
@@ -3471,7 +3471,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.float32Range(3,5))
+   *  console.log(faker.numbers.float32Range(3,5))
    *}
    *
    *```
@@ -3492,7 +3492,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.float64())
+   *  console.log(faker.numbers.float64())
    *}
    *
    *```
@@ -3515,7 +3515,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.float64Range(3,5))
+   *  console.log(faker.numbers.float64Range(3,5))
    *}
    *
    *```
@@ -3536,7 +3536,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.hexUint128())
+   *  console.log(faker.numbers.hexUint128())
    *}
    *
    *```
@@ -3557,7 +3557,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.hexUint16())
+   *  console.log(faker.numbers.hexUint16())
    *}
    *
    *```
@@ -3578,7 +3578,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.hexUint256())
+   *  console.log(faker.numbers.hexUint256())
    *}
    *
    *```
@@ -3599,7 +3599,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.hexUint32())
+   *  console.log(faker.numbers.hexUint32())
    *}
    *
    *```
@@ -3620,7 +3620,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.hexUint64())
+   *  console.log(faker.numbers.hexUint64())
    *}
    *
    *```
@@ -3641,7 +3641,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.hexUint8())
+   *  console.log(faker.numbers.hexUint8())
    *}
    *
    *```
@@ -3662,7 +3662,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.int16())
+   *  console.log(faker.numbers.int16())
    *}
    *
    *```
@@ -3683,7 +3683,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.int32())
+   *  console.log(faker.numbers.int32())
    *}
    *
    *```
@@ -3704,7 +3704,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.int64())
+   *  console.log(faker.numbers.int64())
    *}
    *
    *```
@@ -3725,7 +3725,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.int8())
+   *  console.log(faker.numbers.int8())
    *}
    *
    *```
@@ -3748,7 +3748,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.intRange(3,5))
+   *  console.log(faker.numbers.intRange(3,5))
    *}
    *
    *```
@@ -3771,7 +3771,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.number(-2147483648,2147483647))
+   *  console.log(faker.numbers.number(-2147483648,2147483647))
    *}
    *
    *```
@@ -3793,7 +3793,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.randomInt([14,8,13]))
+   *  console.log(faker.numbers.randomInt([14,8,13]))
    *}
    *
    *```
@@ -3815,7 +3815,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.randomUint([14,8,13]))
+   *  console.log(faker.numbers.randomUint([14,8,13]))
    *}
    *
    *```
@@ -3837,7 +3837,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.shuffleInts([14,8,13]))
+   *  console.log(faker.numbers.shuffleInts([14,8,13]))
    *}
    *
    *```
@@ -3858,7 +3858,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.uint16())
+   *  console.log(faker.numbers.uint16())
    *}
    *
    *```
@@ -3879,7 +3879,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.uint32())
+   *  console.log(faker.numbers.uint32())
    *}
    *
    *```
@@ -3900,7 +3900,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.uint64())
+   *  console.log(faker.numbers.uint64())
    *}
    *
    *```
@@ -3921,7 +3921,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.uint8())
+   *  console.log(faker.numbers.uint8())
    *}
    *
    *```
@@ -3944,7 +3944,7 @@ export declare interface Number {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.number.uintRange(0,4294967295))
+   *  console.log(faker.numbers.uintRange(0,4294967295))
    *}
    *
    *```
@@ -4618,7 +4618,7 @@ export declare interface Person {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * {"unless":["these"],"army":["congolese"],"mine":["how"],"whichever":["keep"],"that":["none"],"party":["far"],"riches":["choir"],"theirs":["still"],"instead":["trip"],"here":["computer"]}
+   * {"unless":["these"],"army":["congolese"],"party":["far"],"theirs":["still"],"instead":["trip"],"here":["computer"],"mine":["how"],"riches":["choir"],"whichever":["keep"],"that":["none"]}
    * ```
    */
   teams(people: string[], teams: string[]): Record<string, Array<string>>;
@@ -4779,7 +4779,7 @@ export declare interface Product {
 /**
  * Generator to generate strings.
  */
-export declare interface String {
+export declare interface Strings {
   /**
    * Numerical symbol used to represent numbers.
    * @returns a random digit
@@ -4790,7 +4790,7 @@ export declare interface String {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.string.digit())
+   *  console.log(faker.strings.digit())
    *}
    *
    *```
@@ -4812,7 +4812,7 @@ export declare interface String {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.string.digitN(3))
+   *  console.log(faker.strings.digitN(3))
    *}
    *
    *```
@@ -4833,7 +4833,7 @@ export declare interface String {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.string.letter())
+   *  console.log(faker.strings.letter())
    *}
    *
    *```
@@ -4855,7 +4855,7 @@ export declare interface String {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.string.letterN(3))
+   *  console.log(faker.strings.letterN(3))
    *}
    *
    *```
@@ -4877,7 +4877,7 @@ export declare interface String {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.string.lexify("none"))
+   *  console.log(faker.strings.lexify("none"))
    *}
    *
    *```
@@ -4899,7 +4899,7 @@ export declare interface String {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.string.numerify("none"))
+   *  console.log(faker.strings.numerify("none"))
    *}
    *
    *```
@@ -4921,7 +4921,7 @@ export declare interface String {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.string.randomString(["none","how","these","keep","trip","congolese","choir","computer","still","far"]))
+   *  console.log(faker.strings.randomString(["none","how","these","keep","trip","congolese","choir","computer","still","far"]))
    *}
    *
    *```
@@ -4943,7 +4943,7 @@ export declare interface String {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.string.shuffleStrings(["none","how","these","keep","trip","congolese","choir","computer","still","far"]))
+   *  console.log(faker.strings.shuffleStrings(["none","how","these","keep","trip","congolese","choir","computer","still","far"]))
    *}
    *
    *```
@@ -4964,7 +4964,7 @@ export declare interface String {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.string.uuid())
+   *  console.log(faker.strings.uuid())
    *}
    *
    *```
@@ -4997,7 +4997,7 @@ export declare interface Time {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2009-06-15T16:18:52Z"
+   * "1947-09-07T20:35:43Z"
    * ```
    */
   date(format: string): string;
@@ -5015,13 +5015,13 @@ export declare interface Time {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.time.dateRange("1970-01-01","2024-03-14","yyyy-MM-dd"))
+   *  console.log(faker.time.dateRange("1970-01-01","2024-09-04","yyyy-MM-dd"))
    *}
    *
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2022-03-01"
+   * "1985-07-29"
    * ```
    */
   dateRange(startdate: string, enddate: string, format: string): string;
@@ -5063,7 +5063,7 @@ export declare interface Time {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2024-03-15T02:59:54.552303733+01:00"
+   * "2024-09-05T04:42:18.111798938+02:00"
    * ```
    */
   futureTime(): string;
@@ -5189,7 +5189,7 @@ export declare interface Time {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2024-03-14T06:59:54.552841607+01:00"
+   * "2024-09-04T08:42:18.111955114+02:00"
    * ```
    */
   pastTime(): string;
@@ -8468,7 +8468,7 @@ export declare interface Zen {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "1974-02-10T08:32:50Z"
+   * "1935-04-20T05:34:10Z"
    * ```
    */
   date(format: string): string;
@@ -8486,13 +8486,13 @@ export declare interface Zen {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.zen.dateRange("1970-01-01","2024-03-14","yyyy-MM-dd"))
+   *  console.log(faker.zen.dateRange("1970-01-01","2024-09-04","yyyy-MM-dd"))
    *}
    *
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "1989-10-31"
+   * "1985-12-31"
    * ```
    */
   dateRange(startdate: string, enddate: string, format: string): string;
@@ -9150,7 +9150,7 @@ export declare interface Zen {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2024-03-15T02:59:54.562133789+01:00"
+   * "2024-09-05T04:42:18.116635977+02:00"
    * ```
    */
   futureTime(): string;
@@ -10062,7 +10062,7 @@ export declare interface Zen {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "PFS4BL2MVY69"
+   * "MFS4BL2MVY62"
    * ```
    */
   isin(): string;
@@ -11556,7 +11556,7 @@ export declare interface Zen {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2024-03-14T06:59:54.567770239+01:00"
+   * "2024-09-04T08:42:18.119414026+02:00"
    * ```
    */
   pastTime(): string;
@@ -12763,7 +12763,7 @@ export declare interface Zen {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * {"instead":["trip"],"here":["computer"],"mine":["how"],"whichever":["keep"],"unless":["these"],"army":["congolese"],"riches":["choir"],"theirs":["still"],"party":["far"],"that":["none"]}
+   * {"whichever":["keep"],"army":["congolese"],"party":["far"],"mine":["how"],"instead":["trip"],"here":["computer"],"that":["none"],"unless":["these"],"riches":["choir"],"theirs":["still"]}
    * ```
    */
   teams(people: string[], teams: string[]): Record<string, Array<string>>;

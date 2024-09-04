@@ -66,6 +66,8 @@ func convertLookup(src *gofakeit.Info) (*gofakeit.Info, bool) {
 		info.Params[idx] = param
 	}
 
+	info.Category = convertCategory(src.Category)
+
 	return &info, true
 }
 
@@ -93,8 +95,19 @@ func getCategoryFuncs() map[string]map[string]*gofakeit.Info {
 			}
 		}
 
-		all[cname] = category
+		all[convertCategory(cname)] = category
 	}
 
 	return all
+}
+
+func convertCategory(name string) string {
+	switch name {
+	case "string":
+		return "strings"
+	case "number":
+		return "numbers"
+	default:
+		return name
+	}
 }
