@@ -24,9 +24,9 @@ func TestGetCategoryFuncs(t *testing.T) {
 
 	require.Len(t, categories, 29)
 	require.Contains(t, categories, "zen")
-	require.Contains(t, categories, "number")
+	require.Contains(t, categories, "numbers")
 
 	require.Contains(t, categories["zen"], "intRange")
-	require.Contains(t, categories["number"], "intRange")
-	require.Same(t, categories["zen"]["intRange"], categories["number"]["intRange"])
+	require.Contains(t, categories["numbers"], "intRange")
+	require.Same(t, categories["zen"]["intRange"], categories["numbers"]["intRange"])
 }

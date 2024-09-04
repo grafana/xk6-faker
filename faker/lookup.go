@@ -95,6 +95,8 @@ var (
 		"image":  "internet",
 		"html":   "internet",
 		"school": "person",
+		"string": "strings",
+		"number": "numbers",
 	}
 
 	categoryByFunc = map[string]string{
