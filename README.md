@@ -3,6 +3,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/szkiba/xk6-faker)](https://goreportcard.com/report/github.com/szkiba/xk6-faker)
 [![GitHub Actions](https://github.com/szkiba/xk6-faker/actions/workflows/test.yml/badge.svg)](https://github.com/szkiba/xk6-faker/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/szkiba/xk6-faker/graph/badge.svg?token=RDJNHP8NFP)](https://codecov.io/gh/szkiba/xk6-faker)
+![k6 registry](https://registry.k6.io/module/github.com/szkiba/xk6-faker/badge.svg)
 ![GitHub Downloads](https://img.shields.io/github/downloads/szkiba/xk6-faker/total)
 
 # xk6-faker
