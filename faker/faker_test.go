@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/grafana/sobek"
+	"github.com/grafana/xk6-faker/faker"
 	"github.com/stretchr/testify/require"
-	"github.com/szkiba/xk6-faker/faker"
 )
 
 func Test_Constructor(t *testing.T) {

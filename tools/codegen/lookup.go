@@ -5,7 +5,7 @@ package main
 import (
 	"strings"
 
-	"github.com/szkiba/xk6-faker/faker"
+	"github.com/grafana/xk6-faker/faker"
 
 	"github.com/brianvoe/gofakeit/v6"
 )

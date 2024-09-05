@@ -3,8 +3,8 @@ package faker_test
 import (
 	"testing"
 
+	"github.com/grafana/xk6-faker/faker"
 	"github.com/stretchr/testify/require"
-	"github.com/szkiba/xk6-faker/faker"
 )
 
 func TestGetFuncLookups(t *testing.T) {

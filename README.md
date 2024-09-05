@@ -1,10 +1,9 @@
-[![API Reference](https://img.shields.io/badge/API-reference-blue?logo=readme&logoColor=lightgray)](https://ivan.szkiba.hu/xk6-faker)
-[![GitHub Release](https://img.shields.io/github/v/release/szkiba/xk6-faker)](https://github.com/szkiba/xk6-faker/releases/)
-[![Go Report Card](https://goreportcard.com/badge/github.com/szkiba/xk6-faker)](https://goreportcard.com/report/github.com/szkiba/xk6-faker)
-[![GitHub Actions](https://github.com/szkiba/xk6-faker/actions/workflows/test.yml/badge.svg)](https://github.com/szkiba/xk6-faker/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/szkiba/xk6-faker/graph/badge.svg?token=RDJNHP8NFP)](https://codecov.io/gh/szkiba/xk6-faker)
-![k6 registry](https://registry.k6.io/module/github.com/szkiba/xk6-faker/badge.svg)
-![GitHub Downloads](https://img.shields.io/github/downloads/szkiba/xk6-faker/total)
+[![API Reference](https://img.shields.io/badge/API-reference-blue?logo=readme&logoColor=lightgray)](https://faker.x.k6.io)
+[![GitHub Release](https://img.shields.io/github/v/release/grafana/xk6-faker)](https://github.com/grafana/xk6-faker/releases/)
+[![Go Report Card](https://goreportcard.com/badge/github.com/grafana/xk6-faker)](https://goreportcard.com/report/github.com/grafana/xk6-faker)
+[![GitHub Actions](https://github.com/grafana/xk6-faker/actions/workflows/test.yml/badge.svg)](https://github.com/grafana/xk6-faker/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/grafana/xk6-faker/graph/badge.svg?token=RDJNHP8NFP)](https://codecov.io/gh/grafana/xk6-faker)
+![GitHub Downloads](https://img.shields.io/github/downloads/grafana/xk6-faker/total)
 
 # xk6-faker
 
@@ -14,7 +13,7 @@ Although there are several good JavaScript fake data generators, using these in 
 
 For convenience, the xk6-faker API resembles the popular [Faker.js](https://fakerjs.dev/). The category names and the generator function names are often different (due to the [underlying go faker library](https://github.com/brianvoe/gofakeit)), but the usage pattern is similar.
 
-Check out the API documentation [here](https://ivan.szkiba.hu/xk6-faker). The TypeScript declaration file can be downloaded from [here](https://ivan.szkiba.hu/xk6-faker/index.d.ts).
+Check out the API documentation [here](https://faker.x.k6.io). The TypeScript declaration file can be downloaded from [here](https://faker.x.k6.io/index.d.ts).
 
 ## Usage
 
@@ -64,21 +63,21 @@ export default function () {
 // output: Josiah
 ```
 
-The [examples](https://github.com/szkiba/xk6-faker/blob/master/examples) directory contains examples of how to use the xk6-faker extension. A k6 binary containing the xk6-faker extension is required to run the examples.
+The [examples](https://github.com/grafana/xk6-faker/blob/master/examples) directory contains examples of how to use the xk6-faker extension. A k6 binary containing the xk6-faker extension is required to run the examples.
 
 > [!IMPORTANT]
 > If the search path also contains the k6 command, don't forget to specify which k6 you want to run (for example `./k6`).
 
 ## Download
 
-You can download pre-built k6 binaries from the [Releases](https://github.com/szkiba/xk6-faker/releases/) page.
+You can download pre-built k6 binaries from the [Releases](https://github.com/grafana/xk6-faker/releases/) page.
 
 **Build**
 
 The [xk6](https://github.com/grafana/xk6) build tool can be used to build a k6 that will include xk6-faker extension:
 
 ```bash
-$ xk6 build --with github.com/szkiba/xk6-faker@latest
+$ xk6 build --with github.com/grafana/xk6-faker@latest
 ```
 
 For more build options and how to use xk6, check out the [xk6 documentation](https://github.com/grafana/xk6).
@@ -87,4 +86,4 @@ For more build options and how to use xk6, check out the [xk6 documentation](htt
 
 If you find the xk6-faker extension useful, please star the repo. The number of stars will determine the time allocated for maintenance.
 
-[![Stargazers over time](https://starchart.cc/szkiba/xk6-faker.svg?variant=adaptive)](https://starchart.cc/szkiba/xk6-faker)
+[![Stargazers over time](https://starchart.cc/grafana/xk6-faker.svg?variant=adaptive)](https://starchart.cc/grafana/xk6-faker)

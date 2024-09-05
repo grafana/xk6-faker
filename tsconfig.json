@@ -14,7 +14,7 @@
     "categorizeByGroup": false,
     "visibilityFilters": {},
     "navigationLinks": {
-      "GitHub": "https://github.com/szkiba/xk6-faker"
+      "GitHub": "https://github.com/grafana/xk6-faker"
     }
   },
   "compilerOptions": {

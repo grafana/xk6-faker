@@ -25,7 +25,7 @@ jobs:
         id: build
         uses: szkiba/xk6bundler@v0
         with:
-          with: github.com/szkiba/xk6-faker=/github/workspace
+          with: github.com/grafana/xk6-faker=/github/workspace
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
