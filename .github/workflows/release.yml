@@ -28,7 +28,7 @@ jobs:
           with: github.com/szkiba/xk6-faker=/github/workspace
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: dist/*.tar.gz
 
@@ -50,7 +50,7 @@ jobs:
             type=semver,pattern={{major}}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           push: true
           context: ./${{ steps.build.outputs.dockerdir }}
