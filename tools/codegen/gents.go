@@ -11,9 +11,9 @@ import (
 
 	"github.com/brianvoe/gofakeit/v6"
 	"github.com/grafana/sobek"
+	"github.com/grafana/xk6-faker/faker"
+	"github.com/grafana/xk6-faker/module"
 	"github.com/iancoleman/strcase"
-	"github.com/szkiba/xk6-faker/faker"
-	"github.com/szkiba/xk6-faker/module"
 )
 
 //go:embed prolog.d.ts

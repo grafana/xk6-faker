@@ -1,4 +1,4 @@
-module github.com/szkiba/xk6-faker
+module github.com/grafana/xk6-faker
 
 go 1.21
 

@@ -3,8 +3,8 @@ package module_test
 import (
 	"testing"
 
+	"github.com/grafana/xk6-faker/module"
 	"github.com/stretchr/testify/require"
-	"github.com/szkiba/xk6-faker/module"
 	"go.k6.io/k6/js/modulestest"
 )
 

@@ -2,7 +2,7 @@
 package faker
 
 import (
-	"github.com/szkiba/xk6-faker/module"
+	"github.com/grafana/xk6-faker/module"
 
 	"go.k6.io/k6/js/modules"
 )

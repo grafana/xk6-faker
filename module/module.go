@@ -4,7 +4,7 @@ package module
 import (
 	"strconv"
 
-	"github.com/szkiba/xk6-faker/faker"
+	"github.com/grafana/xk6-faker/faker"
 	"go.k6.io/k6/js/modules"
 )
 

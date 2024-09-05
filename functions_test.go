@@ -8,9 +8,9 @@ import (
 	"testing"
 
 	"github.com/brianvoe/gofakeit/v6"
+	"github.com/grafana/xk6-faker/faker"
+	"github.com/grafana/xk6-faker/module"
 	"github.com/stretchr/testify/require"
-	"github.com/szkiba/xk6-faker/faker"
-	"github.com/szkiba/xk6-faker/module"
 	"go.k6.io/k6/cmd"
 	"go.k6.io/k6/cmd/tests"
 	"go.k6.io/k6/js/modulestest"

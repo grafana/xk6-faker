@@ -2,7 +2,7 @@
   "name": "xk6-faker",
   "version": "0.3.0",
   "description": "Random fake data generator for k6",
-  "repository": "github:szkiba/xk6-faker",
+  "repository": "github:grafana/xk6-faker",
   "license": "AGPL-3.0-only",
   "devDependencies": {
     "@types/k6": "^0.49.1",
