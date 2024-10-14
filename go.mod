@@ -1,6 +1,7 @@
 module github.com/grafana/xk6-faker
 
 go 1.22
+toolchain go1.23.2
 
 require (
 	github.com/brianvoe/gofakeit/v6 v6.28.0
@@ -8,7 +9,7 @@ require (
 	github.com/iancoleman/strcase v0.3.0
 	github.com/stretchr/testify v1.9.0
 	go.k6.io/k6 v0.54.0
-	lukechampine.com/frand v1.4.2
+	lukechampine.com/frand v1.5.1
 )
 
 require (
@@ -18,7 +19,6 @@ require (
 	github.com/DataDog/datadog-go v0.0.0-20180330214955-e67964b4021a // indirect
 	github.com/PuerkitoBio/goquery v1.9.2 // indirect
 	github.com/Soontao/goHttpDigestClient v0.0.0-20170320082612-6d28bb1415c5 // indirect
-	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
 	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/andybalholm/cascadia v1.3.2 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
