@@ -6,6 +6,9 @@ updates:
       interval: "weekly"
       day: "sunday"
       time: "16:00"
+    ignore:
+      - dependency-name: "lukechampine.com/frand"
+        versions: [">=1.5.0"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
