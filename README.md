@@ -1,7 +1,7 @@
 [![API Reference](https://img.shields.io/badge/API-reference-blue?logo=readme&logoColor=lightgray)](https://faker.x.k6.io)
 [![GitHub Release](https://img.shields.io/github/v/release/grafana/xk6-faker)](https://github.com/grafana/xk6-faker/releases/)
 [![Go Report Card](https://goreportcard.com/badge/github.com/grafana/xk6-faker)](https://goreportcard.com/report/github.com/grafana/xk6-faker)
-[![GitHub Actions](https://github.com/grafana/xk6-faker/actions/workflows/test.yml/badge.svg)](https://github.com/grafana/xk6-faker/actions/workflows/test.yml)
+[![GitHub Actions](https://github.com/grafana/xk6-faker/actions/workflows/validate.yml/badge.svg)](https://github.com/grafana/xk6-faker/actions/workflows/validate.yml)
 [![codecov](https://codecov.io/gh/grafana/xk6-faker/graph/badge.svg?token=RDJNHP8NFP)](https://codecov.io/gh/grafana/xk6-faker)
 ![GitHub Downloads](https://img.shields.io/github/downloads/grafana/xk6-faker/total)
 
