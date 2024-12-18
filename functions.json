@@ -862,7 +862,7 @@
         "display": "End Date",
         "type": "string",
         "optional": false,
-        "default": "2024-09-05",
+        "default": "2024-03-13",
         "options": null,
         "description": "End date time string"
       },

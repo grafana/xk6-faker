@@ -60,6 +60,10 @@ func convertLookup(src *gofakeit.Info) (*gofakeit.Info, bool) {
 	info.Params = make([]gofakeit.Param, len(src.Params))
 
 	for idx, from := range src.Params {
+		if from.Field == "enddate" {
+			from.Default = "2024-03-13" // v0.3.0 release date
+		}
+
 		param := from
 		param.Type = typemap(param.Type)
 
