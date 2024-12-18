@@ -2008,7 +2008,7 @@ export declare interface Finance {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "PGS4BL2MVY68"
+   * "MYS4BL2MVY69"
    * ```
    */
   isin(): string;
@@ -4618,7 +4618,7 @@ export declare interface Person {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * {"army":["congolese"],"riches":["choir"],"theirs":["still"],"that":["none"],"unless":["these"],"party":["far"],"instead":["trip"],"here":["computer"],"mine":["how"],"whichever":["keep"]}
+   * {"riches":["choir"],"mine":["how"],"here":["computer"],"whichever":["keep"],"that":["none"],"unless":["these"],"army":["congolese"],"party":["far"],"theirs":["still"],"instead":["trip"]}
    * ```
    */
   teams(people: string[], teams: string[]): Record<string, Array<string>>;
@@ -4997,7 +4997,7 @@ export declare interface Time {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2011-10-23T18:10:11Z"
+   * "1952-06-14T22:21:28Z"
    * ```
    */
   date(format: string): string;
@@ -5015,13 +5015,13 @@ export declare interface Time {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.time.dateRange("1970-01-01","2024-09-05","yyyy-MM-dd"))
+   *  console.log(faker.time.dateRange("1970-01-01","2024-03-13","yyyy-MM-dd"))
    *}
    *
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "1988-03-03"
+   * "2008-04-06"
    * ```
    */
   dateRange(startdate: string, enddate: string, format: string): string;
@@ -5063,7 +5063,7 @@ export declare interface Time {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2024-09-05T22:35:15.223243185+02:00"
+   * "2024-12-18T19:55:55.75608953+01:00"
    * ```
    */
   futureTime(): string;
@@ -5189,7 +5189,7 @@ export declare interface Time {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2024-09-05T02:35:15.223523755+02:00"
+   * "2024-12-17T23:55:55.756548281+01:00"
    * ```
    */
   pastTime(): string;
@@ -8468,7 +8468,7 @@ export declare interface Zen {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "1935-04-15T22:34:18Z"
+   * "1959-04-03T13:46:53Z"
    * ```
    */
   date(format: string): string;
@@ -8486,13 +8486,13 @@ export declare interface Zen {
    *let faker = new Faker(11)
    *
    *export default function () {
-   *  console.log(faker.zen.dateRange("1970-01-01","2024-09-05","yyyy-MM-dd"))
+   *  console.log(faker.zen.dateRange("1970-01-01","2024-03-13","yyyy-MM-dd"))
    *}
    *
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2016-07-25"
+   * "1979-05-06"
    * ```
    */
   dateRange(startdate: string, enddate: string, format: string): string;
@@ -9150,7 +9150,7 @@ export declare interface Zen {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2024-09-05T22:35:15.227971018+02:00"
+   * "2024-12-18T19:55:55.767585665+01:00"
    * ```
    */
   futureTime(): string;
@@ -10062,7 +10062,7 @@ export declare interface Zen {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "CZS4BL2MVY60"
+   * "FOS4BL2MVY60"
    * ```
    */
   isin(): string;
@@ -11556,7 +11556,7 @@ export declare interface Zen {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * "2024-09-05T02:35:15.231901632+02:00"
+   * "2024-12-17T23:55:55.77424777+01:00"
    * ```
    */
   pastTime(): string;
@@ -12763,7 +12763,7 @@ export declare interface Zen {
    *```
    * **Output** (formatted as JSON value)
    *```json
-   * {"riches":["choir"],"theirs":["still"],"here":["computer"],"unless":["these"],"army":["congolese"],"party":["far"],"instead":["trip"],"mine":["how"],"whichever":["keep"],"that":["none"]}
+   * {"instead":["trip"],"whichever":["keep"],"that":["none"],"army":["congolese"],"riches":["choir"],"theirs":["still"],"mine":["how"],"unless":["these"],"party":["far"],"here":["computer"]}
    * ```
    */
   teams(people: string[], teams: string[]): Record<string, Array<string>>;

@@ -279,7 +279,7 @@ export default function () {
   });
   group('time', ()=> {
     check(faker.time.date("RFC3339"), { 'time.date("RFC3339")': checker });
-    check(faker.time.dateRange("1970-01-01","2024-09-05","yyyy-MM-dd"), { 'time.dateRange("1970-01-01","2024-09-05","yyyy-MM-dd")': checker });
+    check(faker.time.dateRange("1970-01-01","2024-03-13","yyyy-MM-dd"), { 'time.dateRange("1970-01-01","2024-03-13","yyyy-MM-dd")': checker });
     check(faker.time.day(), { 'time.day()': checker });
     check(faker.time.futureTime(), { 'time.futureTime()': checker });
     check(faker.time.hour(), { 'time.hour()': checker });
@@ -523,8 +523,8 @@ export default function () {
     check(faker.call("databaseError"), { 'call("databaseError")': checker });
     check(faker.zen.date("RFC3339"), { 'zen.date("RFC3339")': checker });
     check(faker.call("date","RFC3339"), { 'call("date","RFC3339")': checker });
-    check(faker.zen.dateRange("1970-01-01","2024-09-05","yyyy-MM-dd"), { 'zen.dateRange("1970-01-01","2024-09-05","yyyy-MM-dd")': checker });
-    check(faker.call("dateRange","1970-01-01","2024-09-05","yyyy-MM-dd"), { 'call("dateRange","1970-01-01","2024-09-05","yyyy-MM-dd")': checker });
+    check(faker.zen.dateRange("1970-01-01","2024-03-13","yyyy-MM-dd"), { 'zen.dateRange("1970-01-01","2024-03-13","yyyy-MM-dd")': checker });
+    check(faker.call("dateRange","1970-01-01","2024-03-13","yyyy-MM-dd"), { 'call("dateRange","1970-01-01","2024-03-13","yyyy-MM-dd")': checker });
     check(faker.zen.day(), { 'zen.day()': checker });
     check(faker.call("day"), { 'call("day")': checker });
     check(faker.zen.demonstrativeAdjective(), { 'zen.demonstrativeAdjective()': checker });
