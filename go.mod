@@ -7,7 +7,7 @@ require (
 	github.com/grafana/sobek v0.0.0-20241024150027-d91f02b05e9b
 	github.com/iancoleman/strcase v0.3.0
 	github.com/stretchr/testify v1.10.0
-	go.k6.io/k6 v0.55.0
+	go.k6.io/k6 v0.55.2
 	lukechampine.com/frand v1.4.2
 )
 
@@ -90,7 +90,7 @@ require (
 	go.uber.org/goleak v1.3.0 // indirect
 	golang.org/x/crypto v0.31.0 // indirect
 	golang.org/x/crypto/x509roots/fallback v0.0.0-20240806160748-b2d3a6a4b4d3 // indirect
-	golang.org/x/net v0.30.0 // indirect
+	golang.org/x/net v0.33.0 // indirect
 	golang.org/x/sync v0.10.0 // indirect
 	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/term v0.27.0 // indirect
