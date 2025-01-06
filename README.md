@@ -82,6 +82,10 @@ $ xk6 build --with github.com/grafana/xk6-faker@latest
 
 For more build options and how to use xk6, check out the [xk6 documentation](https://github.com/grafana/xk6).
 
+## Contribute
+
+If you want to contribute or help with the development of **xk6-faker**, start by reading [CONTRIBUTING.md](CONTRIBUTING.md). 
+
 ## Feedback
 
 If you find the xk6-faker extension useful, please star the repo. The number of stars will determine the time allocated for maintenance.
