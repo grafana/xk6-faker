@@ -7,7 +7,7 @@ require (
 	github.com/grafana/sobek v0.0.0-20241024150027-d91f02b05e9b
 	github.com/iancoleman/strcase v0.3.0
 	github.com/stretchr/testify v1.10.0
-	go.k6.io/k6 v0.55.2
+	go.k6.io/k6 v0.56.0
 	lukechampine.com/frand v1.4.2
 )
 
@@ -31,6 +31,7 @@ require (
 	github.com/dlclark/regexp2 v1.11.4 // indirect
 	github.com/evanw/esbuild v0.21.2 // indirect
 	github.com/fatih/color v1.18.0 // indirect
+	github.com/fsnotify/fsnotify v1.8.0 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-sourcemap/sourcemap v2.1.4+incompatible // indirect
@@ -38,7 +39,6 @@ require (
 	github.com/google/pprof v0.0.0-20230728192033-2ba5b33183c6 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/websocket v1.5.3 // indirect
-	github.com/grafana/xk6-browser v1.9.1 // indirect
 	github.com/grafana/xk6-dashboard v0.7.5 // indirect
 	github.com/grafana/xk6-output-opentelemetry v0.3.0 // indirect
 	github.com/grafana/xk6-output-prometheus-remote v0.5.0 // indirect
@@ -58,7 +58,7 @@ require (
 	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/mstoykov/atlas v0.0.0-20220811071828-388f114305dd // indirect
 	github.com/mstoykov/envconfig v1.5.0 // indirect
-	github.com/mstoykov/k6-taskqueue-lib v0.1.0 // indirect
+	github.com/mstoykov/k6-taskqueue-lib v0.1.2 // indirect
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d // indirect
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
@@ -95,12 +95,13 @@ require (
 	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/term v0.27.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
-	golang.org/x/time v0.7.0 // indirect
+	golang.org/x/time v0.8.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240822170219-fc7c04adadcd // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240822170219-fc7c04adadcd // indirect
 	google.golang.org/grpc v1.67.1 // indirect
 	google.golang.org/protobuf v1.35.1 // indirect
 	gopkg.in/cenkalti/backoff.v1 v1.1.0 // indirect
 	gopkg.in/guregu/null.v3 v3.3.0 // indirect
+	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
