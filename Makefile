@@ -19,7 +19,6 @@ __help__:
 	@echo '  makefile Generate the Makefile'
 	@echo '  readme   Update README.md'
 	@echo '  test     Run the tests'
-	@echo '  tools    Install the required tools'
 
 # Clean build
 .PHONY: all
@@ -36,14 +35,14 @@ build:
 .PHONY: clean
 clean: 
 	@(\
-		rm -rf ./k6 ./coverage.out ./build ./node_modules ./bun.lockb;\
+		rm -rf ./k6 ./coverage.txt ./build ./node_modules ./bun.lockb;\
 	)
 
 # View the test coverage report
 .PHONY: coverage
 coverage: test
 	@(\
-		go tool cover -html=coverage.out;\
+		go tool cover -html=coverage.txt;\
 	)
 
 # Generate API documentation
@@ -57,10 +56,7 @@ doc:
 .PHONY: example
 example: 
 	@(\
-		./k6 run examples/default-faker.js;\
-		./k6 run examples/custom-faker.js;\
-		export XK6_FAKER_SEED=11;\
-		./k6 run examples/default-faker-env.js;\
+		bats ./examples;\
 	)
 
 # Format the go source codes
@@ -95,16 +91,6 @@ readme:
 .PHONY: test
 test: 
 	@(\
-		go test -count 1 -race -coverprofile=coverage.out -timeout 60s ./...;\
-	)
-
-# Install the required tools
-.PHONY: tools
-tools: 
-	@(\
-		eget szkiba/mdcode;\
-		eget golangci/golangci-lint;\
-		eget grafana/xk6;\
-		eget oven-sh/bun;\
+		go test -count 1 -race -coverprofile=coverage.txt -timeout 60s ./...;\
 	)
 

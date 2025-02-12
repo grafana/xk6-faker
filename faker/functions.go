@@ -54,7 +54,9 @@ func creditcardstring(r *rand.Rand, _ *gofakeit.MapParams, _ *gofakeit.Info) (an
 }
 
 func creditcardexpmonth(r *rand.Rand, _ *gofakeit.MapParams, _ *gofakeit.Info) (any, error) {
-	month := strconv.Itoa(1 + r.Intn(12))
+	const months = 12
+
+	month := strconv.Itoa(1 + r.Intn(months))
 	if len(month) == 1 {
 		month = "0" + month
 	}
@@ -63,7 +65,11 @@ func creditcardexpmonth(r *rand.Rand, _ *gofakeit.MapParams, _ *gofakeit.Info) (
 }
 
 func creditcardexpyear(r *rand.Rand, _ *gofakeit.MapParams, _ *gofakeit.Info) (any, error) {
-	current := time.Now().Year() - 2000
+	const Y2K = 2000
 
-	return strconv.Itoa(current + 1 + r.Intn(10)), nil
+	current := time.Now().Year() - Y2K
+
+	const maxYear = 10
+
+	return strconv.Itoa(current + 1 + r.Intn(maxYear)), nil
 }

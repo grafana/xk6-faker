@@ -17,9 +17,9 @@ func Test_lookup(t *testing.T) {
 	funcs := []string{"creditcardstring", "creditcardexpmonth", "creditcardexpyear"}
 
 	for _, fun := range funcs {
-		fun := fun
 		t.Run(fun, func(t *testing.T) {
 			t.Parallel()
+
 			info := gofakeit.GetFuncLookup(fun)
 
 			require.NotNil(t, info)
@@ -71,7 +71,7 @@ func Test_creditcardexpmonth(t *testing.T) {
 
 	require.NoError(t, err)
 
-	require.Greater(t, month, 0)
+	require.Positive(t, month)
 	require.Less(t, month, 13)
 }
 
