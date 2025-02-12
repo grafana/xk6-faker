@@ -32,6 +32,7 @@ func lookupCategory(name string) (map[string]*gofakeit.Info, bool) {
 	requireFuncLookups()
 
 	funcs, ok := _categoryFuncs[name]
+
 	return funcs, ok
 }
 
@@ -39,6 +40,7 @@ func lookupFunc(name string) (*gofakeit.Info, bool) {
 	requireFuncLookups()
 
 	fun, ok := _funcLookups[name]
+
 	return fun, ok
 }
 
@@ -138,7 +140,6 @@ func convertFuncLookups() {
 			continue
 		}
 
-		info := info
 		key = fixLookup(key, &info)
 		_funcLookups[key] = &info
 

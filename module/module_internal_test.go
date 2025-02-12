@@ -19,6 +19,7 @@ func Test_getseed(t *testing.T) {
 	vu.InitEnvField.RuntimeOptions.Env = map[string]string{}
 	vu.InitEnvField.LookupEnv = func(key string) (string, bool) {
 		val, ok := vu.InitEnvField.RuntimeOptions.Env[key]
+
 		return val, ok
 	}
 

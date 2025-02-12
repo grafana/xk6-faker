@@ -109,6 +109,7 @@ func (f *faker) toMapParams(info *gofakeit.Info, call sobek.FunctionCall) *gofak
 		if sobek.IsUndefined(val) {
 			if len(param.Default) != 0 {
 				params.Add(param.Field, param.Default)
+
 				continue
 			}
 

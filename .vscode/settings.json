@@ -1,5 +1,0 @@
-{
-  "go.lintTool": "golangci-lint",
-  "go.lintFlags": ["--fast"],
-  "go.buildTags": "codegen"
-}

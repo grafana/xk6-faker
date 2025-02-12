@@ -16,6 +16,7 @@ func Test_Default_Faker(t *testing.T) {
 
 	runtime.VU.InitEnvField.LookupEnv = func(key string) (string, bool) {
 		val, ok := runtime.VU.InitEnvField.RuntimeOptions.Env[key]
+
 		return val, ok
 	}
 
