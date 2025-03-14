@@ -1,7 +1,6 @@
 package faker
 
 import (
-	"bytes"
 	_ "embed"
 	"encoding/json"
 	"fmt"
@@ -11,8 +10,6 @@ import (
 	"github.com/grafana/xk6-faker/faker"
 	"github.com/grafana/xk6-faker/module"
 	"github.com/stretchr/testify/require"
-	"go.k6.io/k6/cmd"
-	"go.k6.io/k6/cmd/tests"
 	"go.k6.io/k6/js/modulestest"
 )
 
@@ -55,30 +52,21 @@ func Test_functions_json(t *testing.T) {
 	}
 }
 
-//go:generate go run -tags codegen ./tools/codegen test ./functions-test.js
+//go:generate go run -tags codegen ./tools/codegen it ./functions-test.js
 //go:embed functions-test.js
-var testJS []byte
+var testJS string
 
-func Test_run_k6_test(t *testing.T) {
-	if testing.Short() {
-		t.Skip()
-	}
-
+func Test_functions_in_js(t *testing.T) {
 	t.Parallel()
 
-	ts := tests.NewGlobalTestState(t)
+	runtime := modulestest.NewRuntime(t)
+	err := runtime.SetupModuleSystem(map[string]any{module.ImportPath: module.New()}, nil, nil)
 
-	ts.CmdArgs = []string{"k6", "run", "--quiet", "-"}
-	ts.Stdin = bytes.NewBuffer(testJS)
-	cmd.ExecuteWithGlobalState(ts.GlobalState)
+	require.NoError(t, err)
 
-	if stdout := ts.Stdout.String(); len(stdout) != 0 {
-		t.Log(stdout)
-	}
+	_, err = runtime.RunOnEventLoop(testJS)
 
-	if stderr := ts.Stderr.String(); len(stderr) != 0 {
-		t.Error(stderr)
-	}
+	require.NoError(t, err)
 }
 
 //go:generate go run -tags codegen ./tools/codegen ts ./index.d.ts

@@ -28,6 +28,8 @@ func main() {
 	)
 
 	switch command {
+	case "it":
+		err = itGen(&buff)
 	case "test":
 		err = goTest(&buff)
 	case "ts":
