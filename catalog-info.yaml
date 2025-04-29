@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: xk6-faker
+  title: xk6-faker
+  description: |
+    Random fake data generator for k6.
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: grafana/xk6-faker
+spec:
+  type: library
+  owner: group:default/k6-extensions
+  lifecycle: production
