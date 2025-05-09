@@ -186,6 +186,7 @@ mdcode update
 ```
 
 [mdcode]: <https://github.com/szkiba/mdcode>
+[readme]: #readme---update-readmemd
 
 ### clean - Clean the working directory
 
@@ -212,7 +213,7 @@ bun x typedoc --out build/docs
 Performs the most important tasks. It can be used to check whether the CI workflow will run successfully.
 
 Requires
-: [clean], [lint], [security], [test], [build], [doc], [example], [makefile]
+: [clean], [lint], [security], [test], [build], [doc], [example], [readme], [makefile]
 
 ### format - Format the go source codes
 

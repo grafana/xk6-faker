@@ -23,7 +23,7 @@ __help__:
 
 # Run all
 .PHONY: all
-all: clean lint security test build doc example makefile
+all: clean lint security test build doc example readme makefile
 
 # Build custom k6 with extension
 .PHONY: build
