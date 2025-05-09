@@ -15,21 +15,21 @@ For convenience, the xk6-faker API resembles the popular [Faker.js](https://fake
 
 Check out the API documentation [here](https://faker.x.k6.io). The TypeScript declaration file can be downloaded from [here](https://faker.x.k6.io/index.d.ts).
 
-> [!NOTE]
-> To use the TypeScript declaration file in your IDE (e.g. Visual Studio Code), you need to create a `jsconfig.json` (or `tsconfig.json`) file with the following content:
->
-> ```json file=examples/jsconfig.json
-> {
->  "compilerOptions": {
->    "target": "ES6",
->    "module": "ES6",
->    "paths": {
->      "k6/x/faker": ["./typings/xk6-faker/index.d.ts"]
->    }
->  }
->}
->```
-> You will need to update the TypeScript declaration file location in the example above to where you downloaded it.
+To use the TypeScript declaration file in your IDE (e.g. Visual Studio Code), you need to create a `jsconfig.json` (or `tsconfig.json`) file with the following content:
+
+```json file=examples/jsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ES6",
+    "paths": {
+      "k6/x/faker": ["./typings/xk6-faker/index.d.ts"]
+    }
+  }
+}
+```
+
+You will need to update the TypeScript declaration file location in the example above to where you downloaded it.
 
 
 ## Usage
