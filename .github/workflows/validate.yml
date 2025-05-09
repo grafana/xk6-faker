@@ -1,5 +1,7 @@
 name: Validate
 
+permissions: {}
+
 on:
   workflow_dispatch:
   push:
