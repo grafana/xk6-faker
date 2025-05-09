@@ -41,7 +41,7 @@ func newFaker(seed int64, runtime *sobek.Runtime) *faker {
 		src.Seed(seed)
 	}
 
-	return &faker{rand: rand.New(src), runtime: runtime} //nolint:gosec
+	return &faker{rand: rand.New(src), runtime: runtime} //#nosec G404
 }
 
 // Delete implements sobek.DynamicObject.
