@@ -1,5 +1,7 @@
 name: Release
 
+permissions: {}
+
 on:
   push:
     tags: ["v*.*.*"]
@@ -7,4 +9,12 @@ on:
 jobs:
   release:
     name: Release
-    uses: grafana/k6-extension-workflows/.github/workflows/release.yml@v0.2.1
+    uses: grafana/xk6/.github/workflows/extension-release.yml@v0.19.3
+    permissions:
+      contents: write
+    with:
+      go-version: ${{vars.GO_VERSION}}
+      k6-version: ${{vars.K6_VERSION}}
+      xk6-version: ${{vars.XK6_VERSION}}
+      os: ${{vars.OS}}
+      arch: ${{vars.ARCH}}

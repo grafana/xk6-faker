@@ -48,7 +48,10 @@ func Test_creditcardexpyear(t *testing.T) {
 	require.NoError(t, err)
 	require.Len(t, val, 2)
 
-	year, err := strconv.Atoi(val.(string))
+	str, ok := val.(string)
+	require.True(t, ok)
+
+	year, err := strconv.Atoi(str)
 
 	require.NoError(t, err)
 
@@ -67,7 +70,10 @@ func Test_creditcardexpmonth(t *testing.T) {
 	require.NoError(t, err)
 	require.Len(t, val, 2)
 
-	month, err := strconv.Atoi(val.(string))
+	str, ok := val.(string)
+	require.True(t, ok)
+
+	month, err := strconv.Atoi(str)
 
 	require.NoError(t, err)
 
