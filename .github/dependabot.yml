@@ -5,7 +5,6 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday"
-      time: "16:00"
     ignore:
       - dependency-name: "lukechampine.com/frand"
         versions: [">=1.5.0"]
@@ -14,4 +13,3 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday"
-      time: "16:00"
