@@ -6,7 +6,7 @@ require (
 	github.com/brianvoe/gofakeit/v6 v6.28.0
 	github.com/grafana/sobek v0.0.0-20250723111835-dd8a13f0d439
 	github.com/iancoleman/strcase v0.3.0
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 	go.k6.io/k6 v1.2.2
 	lukechampine.com/frand v1.4.2
 )
