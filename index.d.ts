@@ -4930,7 +4930,7 @@ declare module "k6/x/faker" {
      * "none"
      * ```
      */
-    randomString(strs: string[]): string[];
+    randomString(strs: string[]): string;
 
     /**
      * Shuffle an array of strings.
