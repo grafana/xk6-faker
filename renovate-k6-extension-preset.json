@@ -1,0 +1,271 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Presets used by official k6 extensions",
+  "customManagers": [
+    // golangci-lint: A fast Go linters runner.
+    // https://github.com/golangci/golangci-lint
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "matchStrings": [
+        "golangci-lint-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
+        "GOLANGCI-LINT_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "golangci/golangci-lint",
+      "versioningTemplate": "semver"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "matchStrings": [
+        "ghcr\\.io/devcontainers/features/go:\\d+\":[^}]+\"golangciLintVersion\":\\s+\"(?<currentValue>[0-9.]+)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "golangci/golangci-lint",
+      "versioningTemplate": "semver"
+    },
+
+    // goreleaser: A release automation tool for Go projects.
+    // https://github.com/goreleaser/goreleaser
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "matchStrings": [
+        "goreleaser-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
+        "GORELEASER_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "goreleaser/goreleaser",
+      "versioningTemplate": "semver"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "matchStrings": [
+        "ghcr\\.io/guiyomh/features/goreleaser:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "goreleaser/goreleaser",
+      "versioningTemplate": "semver"
+    },
+
+    // govulncheck: A tool for detecting known vulnerabilities in Go dependencies.
+    // https://github.com/golang/vuln
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "matchStrings": [
+        "govulncheck-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
+        "GOVULNCHECK_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "golang.org/x/vuln/cmd/govulncheck",
+      "versioningTemplate": "semver"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "matchStrings": [
+        "ghcr\\.io/szkiba/devcontainer-features/govulncheck:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
+      ],
+      "datasourceTemplate": "go",
+      "depNameTemplate": "golang.org/x/vuln/cmd/govulncheck",
+      "versioningTemplate": "semver"
+    },
+
+    // gosec: A security-focused static analysis tool for Go code.
+    // https://github.com/securego/gosec
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "matchStrings": [
+        "gosec-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
+        "GOSEC_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "securego/gosec",
+      "versioningTemplate": "semver"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "matchStrings": [
+        "ghcr\\.io/szkiba/devcontainer-features/gosec:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "securego/gosec",
+      "versioningTemplate": "semver"
+    },
+
+    // bats: Bash Automated Testing System for shell script testing.
+    // https://github.com/bats-core/bats-core
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "matchStrings": [
+        "bats-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
+        "BATS_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "bats-core/bats-core",
+      "versioningTemplate": "semver"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "matchStrings": [
+        "ghcr\\.io/szkiba/devcontainer-features/bats:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "bats-core/bats-core",
+      "versioningTemplate": "semver"
+    },
+
+    // bun: Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+    // https://github.com/oven-sh/bun
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "matchStrings": [
+        "ghcr\\.io/michidk/devcontainer-features/bun:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "oven-sh/bun",
+      "versioningTemplate": "semver"
+    },
+
+    // cdo: A tool for executing code blocks from documentation files.
+    // https://github.com/szkiba/cdo
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "matchStrings": [
+        "ghcr\\.io/szkiba/devcontainer-features/cdo:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "szkiba/cdo",
+      "versioningTemplate": "semver"
+    },
+
+    // mdcode: A tool for extracting and executing code from markdown files.
+    // https://github.com/szkiba/mdcode
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "matchStrings": [
+        "ghcr\\.io/szkiba/devcontainer-features/mdcode:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "szkiba/mdcode",
+      "versioningTemplate": "semver"
+    },
+
+    // xk6: A builder tool for creating custom k6 binaries with extensions.
+    // https://github.com/grafana/xk6
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "matchStrings": [
+        "xk6-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
+        "XK6_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "grafana/xk6",
+      "versioningTemplate": "semver"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "matchStrings": [
+        "ghcr\\.io/grafana/devcontainer-features/xk6:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "grafana/xk6",
+      "versioningTemplate": "semver"
+    },
+
+    // k6: A modern load testing tool, using Go and JavaScript
+    // https://github.com/grafana/k6
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "matchStrings": [
+        "k6-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
+        "k6-versions:\\s+'\\[\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
+        "K6_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "grafana/k6",
+      "versioningTemplate": "semver"
+    }
+  ],
+  "packageRules": [
+    {
+      "description": "Update GitHub Actions workflow dependencies",
+      "matchManagers": ["github-actions"]
+    },
+    {
+      "description": "Update workflow tooling versions",
+      "matchManagers": ["custom.regex"],
+      "matchDepNames": [
+        "golangci/golangci-lint",
+        "goreleaser/goreleaser",
+        "bats-core/bats-core",
+        "securego/gosec",
+        "golang.org/x/vuln/cmd/govulncheck",
+        "oven-sh/bun",
+        "szkiba/cdo",
+        "szkiba/mdcode",
+        "grafana/xk6"
+      ],
+      "matchFileNames": [".github/workflows/**", ".devcontainer/**"],
+      "groupName": "workflow tooling",
+      "extends": ["schedule:weekly"]
+    },
+    {
+      "description": "Update Go modules with automatic tidying and import path updates",
+      "matchManagers": ["gomod"],
+      "enabled": true,
+      "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
+      "extends": ["schedule:weekly"]
+    },
+    {
+      "description": "Skip indirect Go dependency updates",
+      "matchManagers": ["gomod"],
+      "matchDepTypes": ["indirect"],
+      "enabled": false
+    },
+    {
+      "description": "Skip Go runtime versions with zero patch number (allow 1.23.1 but skip 1.23.0)",
+      "matchManagers": ["gomod"],
+      "matchPackageNames": ["go"],
+      "allowedVersions": "/^(?:v)?\\d+\\.\\d+\\.[1-9]\\d*$/",
+      "extends": ["schedule:weekly"]
+    },
+    {
+      "description": "Update k6 core and ecosystem packages",
+      "matchManagers": ["gomod"],
+      "matchPackageNames": [
+        "/^go\\.k6\\.io\\/k6/",
+        "/^github\\.com\\/grafana\\/k6/"
+      ],
+      "groupName": "k6 ecosystem",
+      "extends": ["schedule:weekly"]
+    },
+    {
+      "description": "Group golang.org/x module updates",
+      "matchManagers": ["gomod"],
+      "matchPackageNames": ["/^golang\\.org\\/x\\//"],
+      "groupName": "golang.org/x packages",
+      "extends": ["schedule:daily"]
+    },
+    {
+      "description": "Group google.golang.org module updates",
+      "matchManagers": ["gomod"],
+      "matchPackageNames": ["/^google\\.golang\\.org\\//"],
+      "groupName": "google.golang.org packages",
+      "extends": ["schedule:daily"]
+    }
+  ]
+}
