@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Presets used by official k6 extensions",
   "ignoreDeps": [
-    // k6 direct dependencies
     "buf.build/gen/go/prometheus/prometheus/protocolbuffers/go",
     "github.com/Azure/go-ntlmssp",
     "github.com/Masterminds/semver/v3",
@@ -19,6 +18,7 @@
     "github.com/gorilla/websocket",
     "github.com/grafana/k6provider",
     "github.com/grafana/sobek",
+    "github.com/grafana/xk6-browser",
     "github.com/grafana/xk6-dashboard",
     "github.com/grafana/xk6-redis",
     "github.com/grpc-ecosystem/go-grpc-middleware",
@@ -35,6 +35,7 @@
     "github.com/serenize/snaker",
     "github.com/sirupsen/logrus",
     "github.com/spf13/afero",
+    "github.com/spf13/cast",
     "github.com/spf13/cobra",
     "github.com/spf13/pflag",
     "github.com/stretchr/testify",
@@ -55,7 +56,9 @@
     "golang.org/x/crypto/x509roots/fallback",
     "golang.org/x/net",
     "golang.org/x/sync",
+    "golang.org/x/sys",
     "golang.org/x/term",
+    "golang.org/x/text",
     "golang.org/x/time",
     "google.golang.org/grpc",
     "google.golang.org/protobuf",
@@ -63,8 +66,6 @@
     "gopkg.in/yaml.v3"
   ],
   "customManagers": [
-    // golangci-lint: A fast Go linters runner.
-    // https://github.com/golangci/golangci-lint
     {
       "customType": "regex",
       "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
@@ -86,9 +87,6 @@
       "depNameTemplate": "golangci/golangci-lint",
       "versioningTemplate": "semver"
     },
-
-    // goreleaser: A release automation tool for Go projects.
-    // https://github.com/goreleaser/goreleaser
     {
       "customType": "regex",
       "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
@@ -110,9 +108,6 @@
       "depNameTemplate": "goreleaser/goreleaser",
       "versioningTemplate": "semver"
     },
-
-    // govulncheck: A tool for detecting known vulnerabilities in Go dependencies.
-    // https://github.com/golang/vuln
     {
       "customType": "regex",
       "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
@@ -134,9 +129,6 @@
       "depNameTemplate": "golang.org/x/vuln/cmd/govulncheck",
       "versioningTemplate": "semver"
     },
-
-    // gosec: A security-focused static analysis tool for Go code.
-    // https://github.com/securego/gosec
     {
       "customType": "regex",
       "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
@@ -158,9 +150,6 @@
       "depNameTemplate": "securego/gosec",
       "versioningTemplate": "semver"
     },
-
-    // bats: Bash Automated Testing System for shell script testing.
-    // https://github.com/bats-core/bats-core
     {
       "customType": "regex",
       "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
@@ -182,9 +171,6 @@
       "depNameTemplate": "bats-core/bats-core",
       "versioningTemplate": "semver"
     },
-
-    // bun: Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
-    // https://github.com/oven-sh/bun
     {
       "customType": "regex",
       "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
@@ -195,9 +181,6 @@
       "depNameTemplate": "oven-sh/bun",
       "versioningTemplate": "semver"
     },
-
-    // cdo: A tool for executing code blocks from documentation files.
-    // https://github.com/szkiba/cdo
     {
       "customType": "regex",
       "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
@@ -208,9 +191,6 @@
       "depNameTemplate": "szkiba/cdo",
       "versioningTemplate": "semver"
     },
-
-    // mdcode: A tool for extracting and executing code from markdown files.
-    // https://github.com/szkiba/mdcode
     {
       "customType": "regex",
       "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
@@ -221,9 +201,6 @@
       "depNameTemplate": "szkiba/mdcode",
       "versioningTemplate": "semver"
     },
-
-    // xk6: A builder tool for creating custom k6 binaries with extensions.
-    // https://github.com/grafana/xk6
     {
       "customType": "regex",
       "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
@@ -245,9 +222,6 @@
       "depNameTemplate": "grafana/xk6",
       "versioningTemplate": "semver"
     },
-
-    // k6: A modern load testing tool, using Go and JavaScript
-    // https://github.com/grafana/k6
     {
       "customType": "regex",
       "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
@@ -301,7 +275,7 @@
       "description": "Skip Go runtime versions with zero patch number (allow 1.23.1 but skip 1.23.0)",
       "matchManagers": ["gomod"],
       "matchPackageNames": ["go"],
-      "allowedVersions": "/^(?:v)?\\d+\\.\\d+\\.[1-9]\\d*$/",
+      "allowedVersions": "/^(?:v)?\\d+\\.\\d+(?:\\.[1-9]\\d*)?$/",
       "extends": ["schedule:weekly"]
     },
     {

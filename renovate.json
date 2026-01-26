@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["./renovate-k6-extension-preset.json"],
+  "extends": ["local>renovate-k6-extension-preset.json"],
   "prConcurrentLimit": 20,
   "packageRules": [
     {
