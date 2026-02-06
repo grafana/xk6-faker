@@ -68,7 +68,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "fileMatch": ["/\\.github/workflows/.+\\.yml$/"],
       "matchStrings": [
         "golangci-lint-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
         "GOLANGCI-LINT_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
@@ -79,7 +79,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "fileMatch": ["/\\.devcontainer/devcontainer\\.json$/"],
       "matchStrings": [
         "ghcr\\.io/devcontainers/features/go:\\d+\":[^}]+\"golangciLintVersion\":\\s+\"(?<currentValue>[0-9.]+)\""
       ],
@@ -89,7 +89,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "fileMatch": ["/\\.github/workflows/.+\\.yml$/"],
       "matchStrings": [
         "goreleaser-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
         "GORELEASER_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
@@ -100,7 +100,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "fileMatch": ["/\\.devcontainer/devcontainer\\.json$/"],
       "matchStrings": [
         "ghcr\\.io/guiyomh/features/goreleaser:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
       ],
@@ -110,7 +110,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "fileMatch": ["/\\.github/workflows/.+\\.yml$/"],
       "matchStrings": [
         "govulncheck-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
         "GOVULNCHECK_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
@@ -121,7 +121,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "fileMatch": ["/\\.devcontainer/devcontainer\\.json$/"],
       "matchStrings": [
         "ghcr\\.io/szkiba/devcontainer-features/govulncheck:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
       ],
@@ -131,7 +131,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "fileMatch": ["/\\.github/workflows/.+\\.yml$/"],
       "matchStrings": [
         "gosec-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
         "GOSEC_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
@@ -142,7 +142,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "fileMatch": ["/\\.devcontainer/devcontainer\\.json$/"],
       "matchStrings": [
         "ghcr\\.io/szkiba/devcontainer-features/gosec:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
       ],
@@ -152,7 +152,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "fileMatch": ["/\\.github/workflows/.+\\.yml$/"],
       "matchStrings": [
         "bats-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
         "BATS_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
@@ -163,7 +163,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "fileMatch": ["/\\.devcontainer/devcontainer\\.json$/"],
       "matchStrings": [
         "ghcr\\.io/szkiba/devcontainer-features/bats:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
       ],
@@ -173,7 +173,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "fileMatch": ["/\\.devcontainer/devcontainer\\.json$/"],
       "matchStrings": [
         "ghcr\\.io/michidk/devcontainer-features/bun:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
       ],
@@ -183,7 +183,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "fileMatch": ["/\\.devcontainer/devcontainer\\.json$/"],
       "matchStrings": [
         "ghcr\\.io/szkiba/devcontainer-features/cdo:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
       ],
@@ -193,7 +193,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "fileMatch": ["/\\.devcontainer/devcontainer\\.json$/"],
       "matchStrings": [
         "ghcr\\.io/szkiba/devcontainer-features/mdcode:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
       ],
@@ -203,7 +203,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "fileMatch": ["/\\.github/workflows/.+\\.yml$/"],
       "matchStrings": [
         "xk6-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
         "XK6_VERSION:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?"
@@ -214,7 +214,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.devcontainer/devcontainer\\.json$/"],
+      "fileMatch": ["/\\.devcontainer/devcontainer\\.json$/"],
       "matchStrings": [
         "ghcr\\.io/grafana/devcontainer-features/xk6:\\d+\":[^}]+\"version\":\\s+\"(?<currentValue>[0-9.]+)\""
       ],
@@ -224,7 +224,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": ["/\\.github/workflows/.+\\.yml$/"],
+      "fileMatch": ["/\\.github/workflows/.+\\.yml$/"],
       "matchStrings": [
         "k6-version:\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
         "k6-versions:\\s+'\\[\\s+[\"']?(?<currentValue>v?[0-9.]+)[\"']?",
