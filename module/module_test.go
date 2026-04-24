@@ -5,7 +5,7 @@ import (
 
 	"github.com/grafana/xk6-faker/module"
 	"github.com/stretchr/testify/require"
-	"go.k6.io/k6/js/modulestest"
+	"go.k6.io/k6/v2/js/modulestest"
 )
 
 func Test_Default_Faker(t *testing.T) {
