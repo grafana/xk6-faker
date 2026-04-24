@@ -1,0 +1,55 @@
+[
+  {
+    "k6_versions": [
+      2
+    ],
+    "description": "A modern load testing tool, using Go and JavaScript",
+    "imports": [
+      "k6"
+    ],
+    "module": "go.k6.io/k6/v2",
+    "tier": "official"
+  },
+  {
+    "k6_versions": [
+      2
+    ],
+    "description": "Generate random fake data for k6 tests",
+    "imports": [
+      "k6/x/faker"
+    ],
+    "module": "github.com/grafana/xk6-faker",
+    "repo": {
+      "clone_url": "https://github.com/grafana/xk6-faker.git",
+      "description": "Random fake data generator for k6.",
+      "homepage": "http://faker.x.k6.io/",
+      "license": "AGPL-3.0",
+      "name": "xk6-faker",
+      "owner": "grafana",
+      "public": true,
+      "stars": 116,
+      "timestamp": 1771309289,
+      "topics": [
+        "k6",
+        "xk6"
+      ],
+      "url": "https://github.com/grafana/xk6-faker"
+    },
+    "tier": "official",
+    "versions": [
+      "v0.4.4",
+      "v0.4.3",
+      "v0.4.2",
+      "v0.4.1",
+      "v0.4.0",
+      "v0.3.2",
+      "v0.3.1",
+      "v0.3.0",
+      "v0.3.0-alpha.1",
+      "v0.2.2",
+      "v0.2.1",
+      "v0.2.0",
+      "v0.1.0"
+    ]
+  }
+]
