@@ -3,7 +3,7 @@ package faker
 
 import (
 	"github.com/grafana/xk6-faker/module"
-	"go.k6.io/k6/js/modules"
+	"go.k6.io/k6/v2/js/modules"
 )
 
 func register() {

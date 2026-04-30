@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/grafana/xk6-faker/faker"
-	"go.k6.io/k6/js/modules"
+	"go.k6.io/k6/v2/js/modules"
 )
 
 // rootModule is k6 JavaScript module.
