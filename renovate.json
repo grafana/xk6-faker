@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["renovate-k6-extension-preset.json"],
-  "prConcurrentLimit": 20,
+  "extends": [
+    "github>grafana/grafana-renovate-config//presets/k6/k6-engine-base.json"
+  ],
   "packageRules": [
     {
       "description": "Block lukechampine.com/frand updates to 1.5.0 or higher",
