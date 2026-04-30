@@ -1,6 +1,6 @@
 module github.com/grafana/xk6-faker
 
-go 1.23.0
+go 1.25.0
 
 require (
 	github.com/brianvoe/gofakeit/v6 v6.28.0
