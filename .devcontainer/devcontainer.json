@@ -24,7 +24,7 @@
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/devcontainers/features/go:1": { "version": "1.26", "golangciLintVersion": "2.1.6" },
+    "ghcr.io/devcontainers/features/go:1": { "version": "1.26", "golangciLintVersion": "2.10.1" },
     "ghcr.io/guiyomh/features/goreleaser:0": { "version": "2.9.0" },
     "ghcr.io/michidk/devcontainers-features/bun:1": { "version": "1.2.12" },
     "ghcr.io/szkiba/devcontainer-features/gosec:1": { "version": "2.22.4" },
