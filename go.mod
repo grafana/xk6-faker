@@ -3,7 +3,7 @@ module github.com/grafana/xk6-faker
 go 1.25.8
 
 require (
-	github.com/brianvoe/gofakeit/v6 v6.28.0
+	github.com/brianvoe/gofakeit/v7 v7.14.1
 	github.com/grafana/sobek v0.0.0-20260331145705-2272ac4993ef
 	github.com/iancoleman/strcase v0.3.0
 	github.com/stretchr/testify v1.11.1
