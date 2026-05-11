@@ -9,7 +9,7 @@ on:
 jobs:
   release:
     name: Release
-    uses: grafana/xk6/.github/workflows/extension-release.yml@v1.4.0
+    uses: grafana/xk6/.github/workflows/extension-release.yml@1556f094f3883e37ebff04b967fddac30681c466 # v1.4.1
     permissions:
       contents: write
     with:
@@ -17,4 +17,4 @@ jobs:
       os: '["linux", "windows", "darwin"]'
       arch: '["amd64", "arm64"]'
       k6-version: "v2.0.0-rc1"
-      xk6-version: "1.4.0"
+      xk6-version: "1.4.1"
