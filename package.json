@@ -1,6 +1,7 @@
 {
   "name": "xk6-faker",
   "version": "0.4.4",
+  "packageManager": "npm@10.9.2",
   "description": "Random fake data generator for k6",
   "repository": "github:grafana/xk6-faker",
   "license": "AGPL-3.0-only",
