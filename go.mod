@@ -6,7 +6,7 @@ toolchain go1.25.10
 
 require (
 	github.com/brianvoe/gofakeit/v6 v6.28.0
-	github.com/grafana/sobek v0.0.0-20260331145705-2272ac4993ef
+	github.com/grafana/sobek v0.0.0-20260429085637-a66d4790012b
 	github.com/iancoleman/strcase v0.3.0
 	github.com/stretchr/testify v1.11.1
 	go.k6.io/k6/v2 v2.0.0-rc1
@@ -18,7 +18,7 @@ require (
 	github.com/cenkalti/backoff/v5 v5.0.3 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/dlclark/regexp2 v1.11.5 // indirect
+	github.com/dlclark/regexp2 v1.12.0 // indirect
 	github.com/evanw/esbuild v0.28.0 // indirect
 	github.com/fatih/color v1.19.0 // indirect
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
