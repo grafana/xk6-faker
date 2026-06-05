@@ -1,6 +1,6 @@
 module github.com/grafana/xk6-faker
 
-go 1.25.8
+go 1.25.0
 
 toolchain go1.25.11
 
