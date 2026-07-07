@@ -33,7 +33,7 @@ func testRand(t *testing.T) *rand.Rand {
 	src := frand.NewSource()
 	src.Seed(11)
 
-	return rand.New(src) //nolint:gosec
+	return rand.New(src)
 }
 
 func Test_creditcardexpyear(t *testing.T) {

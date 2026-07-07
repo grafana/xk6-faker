@@ -40,7 +40,7 @@ func getseed(vu modules.VU) int64 {
 // NewModuleInstance creates new module instance.
 func (root *rootModule) NewModuleInstance(vu modules.VU) modules.Instance {
 	mod := &module{exports: modules.Exports{
-		Named:   make(map[string]interface{}),
+		Named:   make(map[string]any),
 		Default: faker.New(getseed(vu), vu.Runtime()),
 	}}
 
