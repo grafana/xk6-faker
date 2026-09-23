@@ -359,6 +359,145 @@
     "params": null,
     "any": null
   },
+  "brCity": {
+    "display": "BR City",
+    "category": "br",
+    "description": "Name of a random Brazilian city, either from a real city list or dynamically generated",
+    "example": "Santa Maria",
+    "output": "string",
+    "content_type": "text/plain",
+    "params": null,
+    "any": null
+  },
+  "brCnpj": {
+    "display": "BR CNPJ",
+    "category": "br",
+    "description": "Brazilian company taxpayer registry identification number (CNPJ) with valid check digits",
+    "example": "11.222.333/0001-81",
+    "output": "string",
+    "content_type": "text/plain",
+    "params": [
+      {
+        "field": "formatted",
+        "display": "Formatted",
+        "type": "boolean",
+        "optional": false,
+        "default": "true",
+        "options": null,
+        "description": "If true, returns the CNPJ with formatting (XX.XXX.XXX/XXXX-XX). If false, returns only digits or characters"
+      },
+      {
+        "field": "alphanumeric",
+        "display": "Alphanumeric",
+        "type": "boolean",
+        "optional": false,
+        "default": "false",
+        "options": null,
+        "description": "If true, allows alphanumeric characters in positions 1 to 12 as per IN RFB 2.229/2024. If false, generates strictly numeric CNPJ"
+      }
+    ],
+    "any": null
+  },
+  "brCpf": {
+    "display": "BR CPF",
+    "category": "br",
+    "description": "Brazilian individual taxpayer registry identification number (CPF) with valid check digits",
+    "example": "123.456.789-09",
+    "output": "string",
+    "content_type": "text/plain",
+    "params": [
+      {
+        "field": "formatted",
+        "display": "Formatted",
+        "type": "boolean",
+        "optional": false,
+        "default": "true",
+        "options": null,
+        "description": "If true, returns the CPF with formatting (XXX.XXX.XXX-XX). If false, returns only digits"
+      }
+    ],
+    "any": null
+  },
+  "brPhoneNumber": {
+    "display": "BR Phone Number",
+    "category": "br",
+    "description": "Brazilian fake phone number with area code (DDD) in mobile or landline format",
+    "example": "(55) 98765-4321",
+    "output": "string",
+    "content_type": "text/plain",
+    "params": [
+      {
+        "field": "mobile",
+        "display": "Mobile",
+        "type": "boolean",
+        "optional": false,
+        "default": "true",
+        "options": null,
+        "description": "If true, generates a mobile number (XX) 9XXXX-XXXX. If false, generates a landline number (XX) XXXX-XXXX"
+      }
+    ],
+    "any": null
+  },
+  "brRg": {
+    "display": "BR RG",
+    "category": "br",
+    "description": "Brazilian general registration number (RG) as a 9-digit numeric string",
+    "example": "284736519",
+    "output": "string",
+    "content_type": "text/plain",
+    "params": null,
+    "any": null
+  },
+  "brSearchTerm": {
+    "display": "BR Search Term",
+    "category": "br",
+    "description": "Random Brazilian e-commerce search query term (marketplace/products)",
+    "example": "smartphone 128gb",
+    "output": "string",
+    "content_type": "text/plain",
+    "params": [
+      {
+        "field": "mode",
+        "display": "Mode",
+        "type": "string",
+        "optional": false,
+        "default": "random",
+        "options": null,
+        "description": "Search term mode: 'random' (mix of simple and compound), 'simple' (single/core product term), or 'compound' (product with brand/attributes/specs)"
+      }
+    ],
+    "any": null
+  },
+  "brState": {
+    "display": "BR State",
+    "category": "br",
+    "description": "Full name of a random Brazilian state",
+    "example": "Rio Grande do Sul",
+    "output": "string",
+    "content_type": "text/plain",
+    "params": null,
+    "any": null
+  },
+  "brStateAbbr": {
+    "display": "BR State Abbr",
+    "category": "br",
+    "description": "Two-letter abbreviation of a random Brazilian state",
+    "example": "RS",
+    "output": "string",
+    "content_type": "text/plain",
+    "params": null,
+    "any": null
+  },
+  "brZipCode": {
+    "display": "BR Zip Code",
+    "category": "br",
+    "description": "Brazilian postal code (CEP) in the format XXXXX-XXX",
+    "example": "01310-100",
+    "output": "string",
+    "content_type": "text/plain",
+    "params": null,
+    "any": null
+  },
   "breakfast": {
     "display": "Breakfast",
     "category": "food",
