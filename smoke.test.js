@@ -58,6 +58,17 @@ export default function () {
     check(faker.book.bookGenre(), { 'book.bookGenre()': checker });
     check(faker.book.bookTitle(), { 'book.bookTitle()': checker });
   });
+  group('br', ()=> {
+    check(faker.br.brCity(), { 'br.brCity()': checker });
+    check(faker.br.brCnpj(true,false), { 'br.brCnpj(true,false)': checker });
+    check(faker.br.brCpf(true), { 'br.brCpf(true)': checker });
+    check(faker.br.brPhoneNumber(true), { 'br.brPhoneNumber(true)': checker });
+    check(faker.br.brRg(), { 'br.brRg()': checker });
+    check(faker.br.brSearchTerm("random"), { 'br.brSearchTerm("random")': checker });
+    check(faker.br.brState(), { 'br.brState()': checker });
+    check(faker.br.brStateAbbr(), { 'br.brStateAbbr()': checker });
+    check(faker.br.brZipCode(), { 'br.brZipCode()': checker });
+  });
   group('car', ()=> {
     check(faker.car.car(), { 'car.car()': checker });
     check(faker.car.carFuelType(), { 'car.carFuelType()': checker });
@@ -441,6 +452,24 @@ export default function () {
     check(faker.call("bookTitle"), { 'call("bookTitle")': checker });
     check(faker.zen.boolean(), { 'zen.boolean()': checker });
     check(faker.call("boolean"), { 'call("boolean")': checker });
+    check(faker.zen.brCity(), { 'zen.brCity()': checker });
+    check(faker.call("brCity"), { 'call("brCity")': checker });
+    check(faker.zen.brCnpj(true,false), { 'zen.brCnpj(true,false)': checker });
+    check(faker.call("brCnpj",true,false), { 'call("brCnpj",true,false)': checker });
+    check(faker.zen.brCpf(true), { 'zen.brCpf(true)': checker });
+    check(faker.call("brCpf",true), { 'call("brCpf",true)': checker });
+    check(faker.zen.brPhoneNumber(true), { 'zen.brPhoneNumber(true)': checker });
+    check(faker.call("brPhoneNumber",true), { 'call("brPhoneNumber",true)': checker });
+    check(faker.zen.brRg(), { 'zen.brRg()': checker });
+    check(faker.call("brRg"), { 'call("brRg")': checker });
+    check(faker.zen.brSearchTerm("random"), { 'zen.brSearchTerm("random")': checker });
+    check(faker.call("brSearchTerm","random"), { 'call("brSearchTerm","random")': checker });
+    check(faker.zen.brState(), { 'zen.brState()': checker });
+    check(faker.call("brState"), { 'call("brState")': checker });
+    check(faker.zen.brStateAbbr(), { 'zen.brStateAbbr()': checker });
+    check(faker.call("brStateAbbr"), { 'call("brStateAbbr")': checker });
+    check(faker.zen.brZipCode(), { 'zen.brZipCode()': checker });
+    check(faker.call("brZipCode"), { 'call("brZipCode")': checker });
     check(faker.zen.breakfast(), { 'zen.breakfast()': checker });
     check(faker.call("breakfast"), { 'call("breakfast")': checker });
     check(faker.zen.bs(), { 'zen.bs()': checker });
